@@ -1,0 +1,10 @@
+heap
+*.png
+thing.obf
+.vs
+/Sample/Profiles/*.*
+/Sample/Profiles/BattlEye
+/Sample/Profiles/Users
+/Sample/Profiles/DataCache
+/Sample/Profiles/ERA/Items/Dictonary/items.json
+

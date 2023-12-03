@@ -1,0 +1,82 @@
+{
+	"folders": [
+		{
+			"name": "SERVER",
+			"path": "./Server"
+		},
+		{
+			"name": "PROFILES",
+			"path": "./Sample/Profiles"
+		},
+		{
+			"name": "ROOT",
+			"path": "."
+		},
+
+	],
+	"settings": {
+		//Папочка где лежит конфиг сервера для запуска
+		"DayZ.Server.Config":"Sample\\serverDZ.cfg",
+		//Папочка где лежит экземпляр сервера DAYZ
+		"DayZ.Server.Path":"C:\\Program Files (x86)\\Steam\\steamapps\\common\\DayZServer",
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"detail": "Очистить логи сервера",
+				"label": "Clear Server Logs",
+				"command": "del ${workspaceFolder:PROFILES}\\*.MDMP;del ${workspaceFolder:PROFILES}\\*.log;del ${workspaceFolder:PROFILES}\\*.RPT;del ${workspaceFolder:PROFILES}\\*.ADM",
+				"type": "shell",
+				"presentation": {
+					"echo": true,
+					"reveal": "always",
+					"focus": false,
+					"panel": "shared",
+					"showReuseMessage": false,
+					"clear": false
+				}
+			},
+			{
+				"detail": "Запустить сервер с собранным модом",
+				"label": "Start Server",
+				"type": "shell",
+				"command": "${config:DayZ.Server.Path}\\DayZServer_x64.exe",
+				"args": [
+					"-config=${workspaceFolder:ROOT}\\${config:DayZ.Server.Config}",
+					"-profiles=${workspaceFolder:PROFILES}",
+					"-port=2302",
+					"-doLogs",
+					"-adminLog",
+					"-freezeCheck",
+					"-filePatching",
+					"-serverMod='KUBCconsole;KUBC.DAYZ.ITEMS'"
+				],
+				"presentation": {
+					"echo": true,
+					"reveal": "always",
+					"focus": false,
+					"panel": "shared",
+					"showReuseMessage": false,
+					"clear": false
+				},
+				"problemMatcher": []
+			},
+			{
+				"detail": "Запустить тестовый сервер с очисткой логов",
+				"label": "Start Test Server",
+				"dependsOrder": "sequence",
+				"dependsOn": [
+					"Clear Server Logs",
+					"Start Server"
+				],
+				"group": {
+					"kind": "test",
+					"isDefault": false
+				},
+				"problemMatcher": []
+			}
+		]
+	}
+
+}
