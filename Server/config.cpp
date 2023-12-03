@@ -18,6 +18,10 @@ class CfgMods
 		type = "mod";
 		class defs 
 		{
+			class worldScriptModule {
+				value = "";
+				files[] = {"KUBC.DAYZ.ITEMS\4_World"};
+			};
 			class missionScriptModule
 			{
 				value="";

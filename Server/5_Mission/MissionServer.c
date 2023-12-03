@@ -6,8 +6,9 @@ modded class MissionServer
     */
     override void OnInit()
     {
-        Print("Из итемов");
         super.OnInit();      
+        KCItems.CreatePaths();
+        KCItemDesc.CreateDictonary();
     }
     
 

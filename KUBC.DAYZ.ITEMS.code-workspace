@@ -50,7 +50,7 @@
 					"-adminLog",
 					"-freezeCheck",
 					"-filePatching",
-					"-serverMod='KUBCconsole;KUBC.DAYZ.ITEMS'"
+					"-serverMod='KUBC.DAYZ.CONSOLE;KUBC.DAYZ.ITEMS'"
 				],
 				"presentation": {
 					"echo": true,
