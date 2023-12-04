@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KUBC.DAYZ.ITEMS", ".NET\KUBC.DAYZ.ITEMS\KUBC.DAYZ.ITEMS.csproj", "{F2589C8A-074F-4EF6-8B17-090E174BD367}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KUBC.DAYZ.ITEMS.TEST", ".NET\KUBC.DAYZ.ITEMS.TEST\KUBC.DAYZ.ITEMS.TEST.csproj", "{B99DC060-3357-486F-8C26-27503BAC4996}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2589C8A-074F-4EF6-8B17-090E174BD367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2589C8A-074F-4EF6-8B17-090E174BD367}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2589C8A-074F-4EF6-8B17-090E174BD367}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2589C8A-074F-4EF6-8B17-090E174BD367}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B99DC060-3357-486F-8C26-27503BAC4996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B99DC060-3357-486F-8C26-27503BAC4996}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B99DC060-3357-486F-8C26-27503BAC4996}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B99DC060-3357-486F-8C26-27503BAC4996}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0FD8AD2-3189-446A-96FD-BEED8C204EF1}
+	EndGlobalSection
+EndGlobal

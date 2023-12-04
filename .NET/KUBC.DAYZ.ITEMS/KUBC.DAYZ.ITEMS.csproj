@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>KUBC.DAYZ.ITEMS</Title>
+		<Version>8.0.0</Version>
+		<Authors>kot23rus</Authors>
+		<Company>KUBCODER</Company>
+		<Description>Инструменты для работы с данными мода KUBC.DAYZ.ITEMS</Description>
+		<Copyright>KUBC.DAYZ.ITEMS Copyright (C) 2023 KUBCODER</Copyright>
+		<RepositoryUrl>https://github.com/kubcoder/KUBC.DAYZ.ITEMS</RepositoryUrl>
+		<PackageReleaseNotes>Добавляем элементы справочника.</PackageReleaseNotes>
+		<NeutralLanguage>ru</NeutralLanguage>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageIcon>DayzIcon128.png</PackageIcon>
+		<PackageTags>DAYZ SA; .NET</PackageTags>
+		<PackageProjectUrl>https://kubcoder.ru/dayzgame/about</PackageProjectUrl>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DebugType>full</DebugType>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DebugType>none</DebugType>
+	</PropertyGroup>
+	<ItemGroup>
+	  <None Include="..\..\DayzIcon128.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Include="..\..\LICENSE.txt">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Include="..\..\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+</Project>

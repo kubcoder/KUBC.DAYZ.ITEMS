@@ -1,7 +1,7 @@
 # KUBC.DAYZ.ITEMS
 Серверный мод для игры [DAYZ SA](https://dayz.com/) для работы с игровыми предметами. Для работы мода необходимо подключить серверный мод [KUBC.DAYZ.CONSOLE](https://github.com/kubcoder/KUBC.DAYZ.CONSOLE)
 
-**[Подробное описание на сайте разработчика](https://kubcoder.ru)**
+**[Подробное описание на сайте разработчика](https://kubcoder.ru/dayz/items)**
 
 
 # Инструменты
