@@ -7,6 +7,7 @@ modded class MissionServer
     override void OnInit()
     {
         super.OnInit();      
+        RegisterCommand(KCItemsCMDSpawn.CMD_NAME, new KCItemsCMDSpawn());
         KCItems.CreatePaths();
         KCItemDesc.CreateDictonary();
     }

@@ -21,6 +21,16 @@ class KCItems
         MakeDirectory("$profile:"+ROOT_PATH);
         MakeDirectory(GetModPath());
         MakeDirectory(GetDictonaryPath());
+        if (FileExist(GetSettingsFile()))
+        {
+            Log("Файл настроек сохранения наборов итемов сущесвтует");
+        }
+        else
+        {
+            Log("Создаем файл настроек сохранения наборов итемов по умолчанию");
+            KCItemsSaveSettings options = KCItemsSaveSettings.GetDefault();
+            JsonFileLoader<KCItemsSaveSettings>.JsonSaveFile(GetSettingsFile(), options);
+        }
     }
     /*Полный путь к папке мода*/
     static string GetModPath()
@@ -31,5 +41,13 @@ class KCItems
     static string GetDictonaryPath()
     {
         return GetModPath() + "\\" + DICT_PATH;
+    }
+
+    /*Имя файла настроек*/
+    static const string SETT_FILENAME = "ItemsSetOptions.json";
+
+    static string GetSettingsFile()
+    {
+        return GetModPath() + "\\" + SETT_FILENAME;
     }
 }
