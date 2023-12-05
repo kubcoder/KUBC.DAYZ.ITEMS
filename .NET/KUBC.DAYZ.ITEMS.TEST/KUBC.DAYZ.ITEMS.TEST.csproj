@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -16,14 +16,17 @@
     <PackageReference Include="coverlet.collector" Version="6.0.0" />
   </ItemGroup>
 	<ItemGroup>
-		<None Include="..\..\Sample\Profiles\KUBC\ITEMS\Dictonary\categories.json" Link="TestFiles\categories.json">
+		<None Include="..\..\Sample\Profiles\KUBC\ITEMS\Dictonary\categories.json" Link="Profiles\KUBC\ITEMS\Dictonary\categories.json">
 		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</None>
-		<None Include="..\..\Sample\Profiles\KUBC\ITEMS\Dictonary\items.json" Link="TestFiles\items.json">
+		<None Include="..\..\Sample\Profiles\KUBC\ITEMS\Dictonary\items.json" Link="Profiles\KUBC\ITEMS\Dictonary\items.json">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</None>
 	</ItemGroup>
 	<ItemGroup>
-	  <Folder Include="TestFiles\" />
+	  <Folder Include="Profiles\KUBC\ITEMS\Dictonary\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\KUBC.DAYZ.ITEMS\KUBC.DAYZ.ITEMS.csproj" />
 	</ItemGroup>
 </Project>

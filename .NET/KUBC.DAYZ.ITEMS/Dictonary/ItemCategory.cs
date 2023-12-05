@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace KUBC.DAYZ.ITEMS.Dictonary
@@ -35,6 +37,9 @@ namespace KUBC.DAYZ.ITEMS.Dictonary
         /// да я понимаю что я лажанулся с названием поля, но это было давно и менять лениво.
         /// </remarks>
         public int Priority { get; set; } = 0;
+        
+
+        
 
     }
 }
