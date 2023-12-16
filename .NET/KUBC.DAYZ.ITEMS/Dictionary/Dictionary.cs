@@ -33,7 +33,7 @@ namespace KUBC.DAYZ.ITEMS.Dictionary
             var fullPath = $"{profiles.FullName}\\{DEVPATH}\\{MODPATH}\\{DICTPATH}";
             categoriesFile = new($"{fullPath}\\{Categories.FILENAME}");
             categories = Categories.Load(categoriesFile);
-            items = Items.Load(new FileInfo($"{fullPath}\\{Items.FILENAME}"));
+            items = ItemsCollection.Load(new FileInfo($"{fullPath}\\{ItemsCollection.FILENAME}"));
         }
 
         /// <summary>
@@ -71,11 +71,11 @@ namespace KUBC.DAYZ.ITEMS.Dictionary
         /// <summary>
         /// Список игровых итемов
         /// </summary>
-        private Items? items;
+        private ItemsCollection? items;
         /// <summary>
         /// Список игровых итемов
         /// </summary>
-        public Items Items
+        public ItemsCollection Items
         {
             get
             {

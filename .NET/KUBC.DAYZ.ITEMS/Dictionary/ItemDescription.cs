@@ -12,10 +12,6 @@ namespace KUBC.DAYZ.ITEMS.Dictionary
     public class ItemDescription
     {
         /// <summary>
-        /// Имя класса итема в игре
-        /// </summary>
-        public string ItemName { get; set; } = string.Empty;
-        /// <summary>
         /// Категория итема
         /// </summary>
         public string Category { get; set; } = string.Empty;

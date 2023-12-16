@@ -1,8 +1,6 @@
 /** @brief Описание итема в справочнике*/
 class KCItemDesc
 {
-    /** @brief Класс итема*/
-    string ItemName;
     /** @brief Категория итема*/
     string Category;
     /** @brief Описание итема на языке котором запущен сервер*/
@@ -42,10 +40,9 @@ class KCItemDesc
 					if (scope>1)
 					{
 						KCItemDesc itm = new KCItemDesc();
-						itm.ItemName = strClassName;
 						itm.Description = GetDisplayName(strClassName);
 						itm.Category = GetCategoryName(strClassName,categories);
-						dict.Insert(itm);
+						dict.Insert(strClassName, itm);
 					}
 				}
 			}
@@ -115,4 +112,4 @@ class KCItemDesc
     }
 }
 /** @brief Справочник итемов*/
-typedef array<ref KCItemDesc>	KCItemDictionary;
+typedef map<string, ref KCItemDesc>	KCItemDictionary;

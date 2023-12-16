@@ -10,7 +10,7 @@ namespace KUBC.DAYZ.ITEMS.Dictionary
     /// <summary>
     /// Список известных итемов
     /// </summary>
-    public class Items:List<ItemDescription>
+    public class ItemsCollection:Dictionary<string, ItemDescription>
     {
         /// <summary>
         /// Имя файла категорий
@@ -22,16 +22,16 @@ namespace KUBC.DAYZ.ITEMS.Dictionary
         /// </summary>
         /// <param name="file">Файл из которого нужно грузить</param>
         /// <returns>Список категорий если файл загружен успешно</returns>
-        public static Items? Load(FileInfo file)
+        public static ItemsCollection? Load(FileInfo file)
         {
             try
             {
                 if (!file.Exists)
                     return null;
-                Items? res;
+                ItemsCollection? res;
                 using (var reader = file.OpenText())
                 {
-                    res = JsonSerializer.Deserialize<Items>(reader.BaseStream);
+                    res = JsonSerializer.Deserialize<ItemsCollection>(reader.BaseStream);
                     reader.Close();
                 }
                 return res;
@@ -47,11 +47,11 @@ namespace KUBC.DAYZ.ITEMS.Dictionary
             var r = new Dictionary<string, int>();
             foreach(var i in this)
             {
-                if (r.ContainsKey(i.Category))
-                    r[i.Category]++;
+                if (r.TryGetValue(i.Value.Category, out int value))
+                    r[i.Value.Category] = ++value;
                 else
                 {
-                    r.Add(i.Category, 1);
+                    r.Add(i.Value.Category, 1);
                 }
             }
             return r;
