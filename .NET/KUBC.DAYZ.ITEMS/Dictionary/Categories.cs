@@ -7,7 +7,7 @@ using System.Text.Json;
 using System.Text.Unicode;
 using System.Threading.Tasks;
 
-namespace KUBC.DAYZ.ITEMS.Dictonary
+namespace KUBC.DAYZ.ITEMS.Dictionary
 {
     /// <summary>
     /// Список категорий

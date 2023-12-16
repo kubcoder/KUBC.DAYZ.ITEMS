@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace KUBC.DAYZ.ITEMS.Dictonary
+namespace KUBC.DAYZ.ITEMS.Dictionary
 {
     /// <summary>
     /// Список известных итемов

@@ -10,7 +10,7 @@ class KCItems
     /*Корневая папка класса мода*/
     static const string MOD_PATH = "ITEMS";
     /*Папка где размещается справочник итемов*/
-    static const string DICT_PATH = "Dictonary";
+    static const string DICT_PATH = "Dictionary";
     /*Папка где размещаются сеты итемов*/
     static const string SETS_PATH = "Sets";
     /*Папка где размещаются сеты машин*/
@@ -20,7 +20,7 @@ class KCItems
     {
         MakeDirectory("$profile:"+ROOT_PATH);
         MakeDirectory(GetModPath());
-        MakeDirectory(GetDictonaryPath());
+        MakeDirectory(GetDictionaryPath());
         if (FileExist(GetSettingsFile()))
         {
             Log("Файл настроек сохранения наборов итемов сущесвтует");
@@ -38,7 +38,7 @@ class KCItems
         return "$profile:"+ROOT_PATH + "\\" + MOD_PATH;
     }
     /*Полный путь к папке справочника итемов*/
-    static string GetDictonaryPath()
+    static string GetDictionaryPath()
     {
         return GetModPath() + "\\" + DICT_PATH;
     }

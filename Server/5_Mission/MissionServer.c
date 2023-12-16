@@ -9,7 +9,7 @@ modded class MissionServer
         super.OnInit();      
         RegisterCommand(KCItemsCMDSpawn.CMD_NAME, new KCItemsCMDSpawn());
         KCItems.CreatePaths();
-        KCItemDesc.CreateDictonary();
+        KCItemDesc.CreateDictionary();
     }
     
 

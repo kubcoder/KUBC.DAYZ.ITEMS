@@ -14,7 +14,7 @@ class KCItemCategory
     /** @briefПолное имя файла настроек категорий*/
     static string GetFileName()
     {
-        return KCItems.GetDictonaryPath() + "\\" + FILE_NAME;
+        return KCItems.GetDictionaryPath() + "\\" + FILE_NAME;
     }
     /** @brief Загрузить файл категорий*/
     static KCItemCategories GetCategories()

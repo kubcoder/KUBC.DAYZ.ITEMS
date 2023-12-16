@@ -5,12 +5,12 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KUBC.DAYZ.ITEMS.Dictonary
+namespace KUBC.DAYZ.ITEMS.Dictionary
 {
     /// <summary>
     /// Словарь итемов
     /// </summary>
-    public class Dictonary
+    public class Dictionary 
     {
         /// <summary>
         /// Папка разработчика модов
@@ -23,12 +23,12 @@ namespace KUBC.DAYZ.ITEMS.Dictonary
         /// <summary>
         /// Папка словаря игровых итемов
         /// </summary>
-        public const string DICTPATH = "Dictonary";
+        public const string DICTPATH = "Dictionary";
         /// <summary>
         /// Загружаем справочник
         /// </summary>
         /// <param name="profiles">К папке профилей сервера</param>
-        public Dictonary(DirectoryInfo profiles)
+        public Dictionary(DirectoryInfo profiles)
         {
             var fullPath = $"{profiles.FullName}\\{DEVPATH}\\{MODPATH}\\{DICTPATH}";
             categoriesFile = new($"{fullPath}\\{Categories.FILENAME}");

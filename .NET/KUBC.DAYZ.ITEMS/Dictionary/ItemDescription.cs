@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KUBC.DAYZ.ITEMS.Dictonary
+namespace KUBC.DAYZ.ITEMS.Dictionary
 {
     /// <summary>
     /// Элемент описания итема

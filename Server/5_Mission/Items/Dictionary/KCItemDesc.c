@@ -12,10 +12,10 @@ class KCItemDesc
     /** @brief Полное имя файла справочника*/
     static string GetFileName()
     {
-        return KCItems.GetDictonaryPath() + "\\" + FILE_NAME;
+        return KCItems.GetDictionaryPath() + "\\" + FILE_NAME;
     }
     /** @brief формируем справочник итемов*/
-    static KCItemDictonary GetDictonary()
+    static KCItemDictionary GetDictionary()
     {
         KCItemCategories categories = KCItemCategory.GetCategories();
         if (categories.Count()>0)
@@ -25,7 +25,7 @@ class KCItemDesc
 			{
 				KCItems.Log(cat.BaseClass + "[" + cat.ShowName + "]:" + cat.Priority.ToString());
 			}
-            KCItemDictonary dict = new KCItemDictonary();
+            KCItemDictionary dict = new KCItemDictionary();
 			TStringArray cfgPaths = new TStringArray;
 			cfgPaths.Insert( "CfgVehicles" );
 			cfgPaths.Insert( "CfgWeapons" );
@@ -94,7 +94,7 @@ class KCItemDesc
         return Name;
     }
 
-    static void CreateDictonary()
+    static void CreateDictionary()
     {
         string fnDict = GetFileName();
         if (FileExist(fnDict))
@@ -104,15 +104,15 @@ class KCItemDesc
         else
         {
             KCItems.Log("Начинаем создание справочника итемов");
-            KCItemDictonary dict = GetDictonary();
+            KCItemDictionary dict = GetDictionary();
             if (dict)
             {
                 KCItems.Log("Сохраняем справочник [" + dict.Count() + "] итемов");
-                JsonFileLoader<KCItemDictonary>.JsonSaveFile(GetFileName(), dict);
+                JsonFileLoader<KCItemDictionary>.JsonSaveFile(GetFileName(), dict);
             }
         }
         
     }
 }
 /** @brief Справочник итемов*/
-typedef array<ref KCItemDesc>	KCItemDictonary;
+typedef array<ref KCItemDesc>	KCItemDictionary;

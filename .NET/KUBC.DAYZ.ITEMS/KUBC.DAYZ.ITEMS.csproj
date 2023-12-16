@@ -6,16 +6,16 @@
 		<Nullable>enable</Nullable>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>KUBC.DAYZ.ITEMS</Title>
-		<Version>8.0.0-a</Version>
+		<Version>8.0.0-rc1</Version>
 		<Authors>kot23rus</Authors>
 		<Company>KUBCODER</Company>
 		<Description>Инструменты для работы с данными мода KUBC.DAYZ.ITEMS</Description>
 		<Copyright>KUBC.DAYZ.ITEMS Copyright (C) 2023 KUBCODER</Copyright>
 		<RepositoryUrl>https://github.com/kubcoder/KUBC.DAYZ.ITEMS</RepositoryUrl>
-		<PackageReleaseNotes>Добавляем элементы справочника.</PackageReleaseNotes>
+		<PackageReleaseNotes>Добавляем инструментарий поиска и выборки</PackageReleaseNotes>
 		<NeutralLanguage>ru</NeutralLanguage>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
-		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+		<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
@@ -38,7 +38,7 @@
 	    <Pack>True</Pack>
 	    <PackagePath>\</PackagePath>
 	  </None>
-	  <None Include="..\..\README.md">
+	  <None Include="..\README.md">
 	    <Pack>True</Pack>
 	    <PackagePath>\</PackagePath>
 	  </None>

@@ -16,15 +16,15 @@
     <PackageReference Include="coverlet.collector" Version="6.0.0" />
   </ItemGroup>
 	<ItemGroup>
-		<None Include="..\..\Sample\Profiles\KUBC\ITEMS\Dictonary\categories.json" Link="Profiles\KUBC\ITEMS\Dictonary\categories.json">
+		<None Include="..\..\Sample\Profiles\KUBC\ITEMS\Dictionary\categories.json" Link="Profiles\KUBC\ITEMS\Dictionary\categories.json">
 		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</None>
-		<None Include="..\..\Sample\Profiles\KUBC\ITEMS\Dictonary\items.json" Link="Profiles\KUBC\ITEMS\Dictonary\items.json">
+		<None Include="..\..\Sample\Profiles\KUBC\ITEMS\Dictionary\items.json" Link="Profiles\KUBC\ITEMS\Dictionary\items.json">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</None>
 	</ItemGroup>
 	<ItemGroup>
-	  <Folder Include="Profiles\KUBC\ITEMS\Dictonary\" />
+	  <Folder Include="Profiles\KUBC\ITEMS\Dictionary\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <ProjectReference Include="..\KUBC.DAYZ.ITEMS\KUBC.DAYZ.ITEMS.csproj" />
