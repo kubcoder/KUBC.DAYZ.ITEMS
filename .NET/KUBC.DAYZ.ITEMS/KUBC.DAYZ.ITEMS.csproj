@@ -6,7 +6,7 @@
 		<Nullable>enable</Nullable>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>KUBC.DAYZ.ITEMS</Title>
-		<Version>8.0.0-rc1</Version>
+		<Version>8.0.0-a1</Version>
 		<Authors>kot23rus</Authors>
 		<Company>KUBCODER</Company>
 		<Description>Инструменты для работы с данными мода KUBC.DAYZ.ITEMS</Description>
