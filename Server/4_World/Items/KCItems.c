@@ -5,22 +5,23 @@ class KCItems
     {
         KCLog.Write(MOD_NAME, Message, Level);
     }
-    /*Корневая папка разработчика*/
+    /** @brief Корневая папка разработчика*/
     static const string ROOT_PATH = "KUBC";
-    /*Корневая папка класса мода*/
+    /** @brief Корневая папка класса мода*/
     static const string MOD_PATH = "ITEMS";
-    /*Папка где размещается справочник итемов*/
+    /** @brief Папка где размещается справочник итемов*/
     static const string DICT_PATH = "Dictionary";
-    /*Папка где размещаются сеты итемов*/
+    /** @brief Папка где размещаются сеты итемов*/
     static const string SETS_PATH = "Sets";
-    /*Папка где размещаются сеты машин*/
+    /** @brief Папка где размещаются сеты машин*/
     static const string CARS_PATH = "Cars";
-    //Создаем папку мода и файл настроек если он не существует
+    /** @brief Создаем папку мода и файл настроек если он не существует*/
     static void CreatePaths()
     {
         MakeDirectory("$profile:"+ROOT_PATH);
         MakeDirectory(GetModPath());
         MakeDirectory(GetDictionaryPath());
+        MakeDirectory(GetStetsPath());
         if (FileExist(GetSettingsFile()))
         {
             Log("Файл настроек сохранения наборов итемов сущесвтует");
@@ -32,22 +33,59 @@ class KCItems
             JsonFileLoader<KCItemsSaveSettings>.JsonSaveFile(GetSettingsFile(), options);
         }
     }
-    /*Полный путь к папке мода*/
+    /** @brief Полный путь к папке мода*/
     static string GetModPath()
     {
         return "$profile:"+ROOT_PATH + "\\" + MOD_PATH;
     }
-    /*Полный путь к папке справочника итемов*/
+    /** @brief Полный путь к папке справочника итемов*/
     static string GetDictionaryPath()
     {
         return GetModPath() + "\\" + DICT_PATH;
     }
 
-    /*Имя файла настроек*/
+    /** @brief Полный путь к папке наборов итемов*/
+    static string GetStetsPath()
+    {
+        return GetModPath() + "\\" + SETS_PATH;
+    }
+
+    /** @brief Имя файла настроек*/
     static const string SETT_FILENAME = "ItemsSetOptions.json";
 
+    /** @brief Получить полное имя файла настроек сохранения набора итемов*/
     static string GetSettingsFile()
     {
         return GetModPath() + "\\" + SETT_FILENAME;
+    }
+
+    /** @brief Получить настройки сохранения итемов*/
+    static KCItemsSaveSettings GetItemsSaveSettings()
+    {
+        KCItemsSaveSettings options;
+        JsonFileLoader<KCItemsSaveSettings>.JsonLoadFile(GetSettingsFile(), options);
+        if (options)
+        {
+            return options;
+        }
+        return new KCItemsSaveSettings();
+    }
+
+    /** @brief Имя файла для сохранения набора итемов
+    *   @param SetName введенное имя набора итемов
+    *   @param player игрок который запросил сохранение
+    *           если указано NULL то имя файла будет в общей папке набора
+    */
+    static string GetSetsFile(string SetName, PlayerBase player = NULL)
+    {
+        if (player)
+        {
+            MakeDirectory(GetStetsPath() + "\\" + player.GetIdentity().GetPlainId());
+            return GetStetsPath() + "\\" + player.GetIdentity().GetPlainId() + "\\" + SetName + ".json";
+        }
+        else
+        {
+            return GetStetsPath() + "\\" + SetName + ".json";
+        }
     }
 }
