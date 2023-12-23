@@ -1,3 +1,4 @@
+#ifndef KC_SAVE_ITEM
 /** @brief Описание итема для сохранения*/
 class KCSaveItem
 {
@@ -344,3 +345,5 @@ class KCSaveItem
 }
 /** Коллекция сохраненных итемов*/
 typedef array<ref KCSaveItem>	KCSaveItemCollection;
+#define KC_SAVE_ITEM
+#endif

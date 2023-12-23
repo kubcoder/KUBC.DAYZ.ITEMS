@@ -12,6 +12,7 @@ modded class MissionServer
         RegisterCommand(KCItemsCMDBox.CMD_NAME, new KCItemsCMDBox());
         RegisterCommand(KCItemsCMDSave.CMD_NAME, new KCItemsCMDSave());
         RegisterCommand(KCItemsCMDGet.CMD_NAME, new KCItemsCMDGet());
+        RegisterCommand(KCItemsCMDRepair.CMD_NAME, new KCItemsCMDRepair());
         KCItems.CreatePaths();
         KCItemDesc.CreateDictionary();
     }
