@@ -342,6 +342,56 @@ class KCSaveItem
 		result[2] = pos[2]*Math.Cos(yaw)-pos[0]*Math.Sin(yaw);
 		return result;
 	}
+
+    /** @brief Создать итем на игроке
+    *   @param player - на каком игроке создавать
+    *   @param SetHealt - Востанавливать здоровье итема из файла
+    *   @return Созданный предмет
+    */
+    EntityAI CreateOnPlayer(PlayerBase player, bool SetHealt = false)
+    {
+        HumanInventory hInv = player.GetHumanInventory();
+        EntityAI cItem;
+        EntityAI oItem;
+        if (SlotID!=-1)
+        {
+            if (InventorySlots.GetSlotName(SlotID) == "Hands")
+            {
+                oItem = hInv.GetEntityInHands();
+                if (oItem)
+                {
+                    GetGame().ObjectDelete(oItem);
+                }
+                cItem = hInv.CreateInHands(ItemName);
+            }
+            else
+            {
+                oItem = hInv.FindAttachment(SlotID);
+                if (oItem)
+                {
+                    GetGame().ObjectDelete(oItem);
+                }
+                cItem = hInv.CreateAttachmentEx(ItemName, SlotID);
+            }
+        }
+        else
+        {
+            cItem = hInv.CreateInInventory(ItemName);
+        }
+        if (cItem)
+        {
+            SetQuantity(cItem);
+            if (SetHealt)  
+            {
+                cItem.SetHealth(Healt);
+            }
+            if (Child)
+            {
+                CreateChilds(cItem);
+            }      
+        }
+        return cItem;
+    }
 }
 /** Коллекция сохраненных итемов*/
 typedef array<ref KCSaveItem>	KCSaveItemCollection;

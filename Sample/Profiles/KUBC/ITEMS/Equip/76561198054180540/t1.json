@@ -1,0 +1,944 @@
+{
+    "NickName": "kot23rus",
+    "SteamID": "76561198054180540",
+    "Notes": "",
+    "Items": [
+        {
+            "ItemName": "HikingBootsLow_Blue",
+            "Healt": 119.9758529663086,
+            "Quantity": 0.0,
+            "Col": -1,
+            "Row": -1,
+            "Flip": 0,
+            "Position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "Orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "IsAbsolute": 0,
+            "Child": [],
+            "SlotID": 5308728,
+            "LiquidType": -1
+        },
+        {
+            "ItemName": "PolicePantsOrel",
+            "Healt": 120.0,
+            "Quantity": 0.0,
+            "Col": -1,
+            "Row": -1,
+            "Flip": 0,
+            "Position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "Orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "IsAbsolute": 0,
+            "Child": [
+                {
+                    "ItemName": "PetrolLighter",
+                    "Healt": 20.0,
+                    "Quantity": 19.5,
+                    "Col": 5,
+                    "Row": 0,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -1,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "WeaponCleaningKit",
+                    "Healt": 100.0,
+                    "Quantity": 100.0,
+                    "Col": 3,
+                    "Row": 0,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -1,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "Ammo_357",
+                    "Healt": 100.0,
+                    "Quantity": 5.0,
+                    "Col": 1,
+                    "Row": 0,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -1,
+                    "LiquidType": -1
+                }
+            ],
+            "SlotID": 5612719,
+            "LiquidType": -1
+        },
+        {
+            "ItemName": "PoliceJacketOrel",
+            "Healt": 120.0,
+            "Quantity": 0.0,
+            "Col": -1,
+            "Row": -1,
+            "Flip": 0,
+            "Position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "Orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "IsAbsolute": 0,
+            "Child": [
+                {
+                    "ItemName": "GPSReceiver",
+                    "Healt": 50.0,
+                    "Quantity": 0.0,
+                    "Col": 0,
+                    "Row": 0,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [
+                        {
+                            "ItemName": "Battery9V",
+                            "Healt": 20.0,
+                            "Quantity": 50.0,
+                            "Col": -1,
+                            "Row": -1,
+                            "Flip": 0,
+                            "Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Orientation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "IsAbsolute": 0,
+                            "Child": [],
+                            "SlotID": -131201905,
+                            "LiquidType": -1
+                        }
+                    ],
+                    "SlotID": -1,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "ChernarusMap",
+                    "Healt": 50.0,
+                    "Quantity": 0.0,
+                    "Col": 1,
+                    "Row": 0,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -1,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "OrienteeringCompass",
+                    "Healt": 70.0,
+                    "Quantity": 0.0,
+                    "Col": 2,
+                    "Row": 0,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -1,
+                    "LiquidType": -1
+                }
+            ],
+            "SlotID": 5119774,
+            "LiquidType": -1
+        },
+        {
+            "ItemName": "TacticalGloves_Black",
+            "Healt": 165.0,
+            "Quantity": 0.0,
+            "Col": -1,
+            "Row": -1,
+            "Flip": 0,
+            "Position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "Orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "IsAbsolute": 0,
+            "Child": [],
+            "SlotID": -1239309756,
+            "LiquidType": -1
+        },
+        {
+            "ItemName": "AviatorGlasses",
+            "Healt": 50.0,
+            "Quantity": 0.0,
+            "Col": -1,
+            "Row": -1,
+            "Flip": 0,
+            "Position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "Orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "IsAbsolute": 0,
+            "Child": [],
+            "SlotID": 1436473694,
+            "LiquidType": -1
+        },
+        {
+            "ItemName": "MilitaryBelt",
+            "Healt": 100.0,
+            "Quantity": 0.0,
+            "Col": -1,
+            "Row": -1,
+            "Flip": 0,
+            "Position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "Orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "IsAbsolute": 0,
+            "Child": [
+                {
+                    "ItemName": "PlateCarrierHolster",
+                    "Healt": 100.0,
+                    "Quantity": 0.0,
+                    "Col": -1,
+                    "Row": -1,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [
+                        {
+                            "ItemName": "Magnum",
+                            "Healt": 200.0,
+                            "Quantity": 0.0,
+                            "Col": -1,
+                            "Row": -1,
+                            "Flip": 0,
+                            "Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Orientation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "IsAbsolute": 0,
+                            "Child": [
+                                {
+                                    "ItemName": "Magnum_Ejector",
+                                    "Healt": 100.0,
+                                    "Quantity": 0.0,
+                                    "Col": -1,
+                                    "Row": -1,
+                                    "Flip": 0,
+                                    "Position": [
+                                        0.0,
+                                        0.0,
+                                        0.0
+                                    ],
+                                    "Orientation": [
+                                        0.0,
+                                        0.0,
+                                        0.0
+                                    ],
+                                    "IsAbsolute": 0,
+                                    "Child": [],
+                                    "SlotID": 565910201,
+                                    "LiquidType": -1
+                                },
+                                {
+                                    "ItemName": "Magnum_Cylinder",
+                                    "Healt": 100.0,
+                                    "Quantity": 0.0,
+                                    "Col": -1,
+                                    "Row": -1,
+                                    "Flip": 0,
+                                    "Position": [
+                                        0.0,
+                                        0.0,
+                                        0.0
+                                    ],
+                                    "Orientation": [
+                                        0.0,
+                                        0.0,
+                                        0.0
+                                    ],
+                                    "IsAbsolute": 0,
+                                    "Child": [],
+                                    "SlotID": -1093828493,
+                                    "LiquidType": -1
+                                }
+                            ],
+                            "SlotID": -620636389,
+                            "LiquidType": -1
+                        }
+                    ],
+                    "SlotID": -2104630132,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "Canteen",
+                    "Healt": 100.0,
+                    "Quantity": 1000.0,
+                    "Col": -1,
+                    "Row": -1,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -2146634867,
+                    "LiquidType": 512
+                },
+                {
+                    "ItemName": "NylonKnifeSheath",
+                    "Healt": 100.0,
+                    "Quantity": 0.0,
+                    "Col": -1,
+                    "Row": -1,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [
+                        {
+                            "ItemName": "CombatKnife",
+                            "Healt": 150.0,
+                            "Quantity": 0.0,
+                            "Col": -1,
+                            "Row": -1,
+                            "Flip": 0,
+                            "Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Orientation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "IsAbsolute": 0,
+                            "Child": [],
+                            "SlotID": 206254677,
+                            "LiquidType": -1
+                        }
+                    ],
+                    "SlotID": -2147146993,
+                    "LiquidType": -1
+                }
+            ],
+            "SlotID": 5415916,
+            "LiquidType": -1
+        },
+        {
+            "ItemName": "SmershBag",
+            "Healt": 100.0,
+            "Quantity": 0.0,
+            "Col": -1,
+            "Row": -1,
+            "Flip": 0,
+            "Position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "Orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "IsAbsolute": 0,
+            "Child": [
+                {
+                    "ItemName": "PersonalRadio",
+                    "Healt": 50.0,
+                    "Quantity": 0.0,
+                    "Col": -1,
+                    "Row": -1,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [
+                        {
+                            "ItemName": "Battery9V",
+                            "Healt": 20.0,
+                            "Quantity": 50.0,
+                            "Col": -1,
+                            "Row": -1,
+                            "Flip": 0,
+                            "Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Orientation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "IsAbsolute": 0,
+                            "Child": [],
+                            "SlotID": -131201905,
+                            "LiquidType": -1
+                        }
+                    ],
+                    "SlotID": 1834482835,
+                    "LiquidType": -1
+                }
+            ],
+            "SlotID": 5100557,
+            "LiquidType": -1
+        },
+        {
+            "ItemName": "PlateCarrierVest_Black",
+            "Healt": 225.0,
+            "Quantity": 0.0,
+            "Col": -1,
+            "Row": -1,
+            "Flip": 0,
+            "Position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "Orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "IsAbsolute": 0,
+            "Child": [
+                {
+                    "ItemName": "PlateCarrierHolster_Black",
+                    "Healt": 100.0,
+                    "Quantity": 0.0,
+                    "Col": -1,
+                    "Row": -1,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [
+                        {
+                            "ItemName": "Flaregun",
+                            "Healt": 150.0,
+                            "Quantity": 0.0,
+                            "Col": -1,
+                            "Row": -1,
+                            "Flip": 0,
+                            "Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Orientation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "IsAbsolute": 0,
+                            "Child": [],
+                            "SlotID": -620636389,
+                            "LiquidType": -1
+                        }
+                    ],
+                    "SlotID": -951543029,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "PlateCarrierPouches_Black",
+                    "Healt": 200.0,
+                    "Quantity": 0.0,
+                    "Col": -1,
+                    "Row": -1,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [
+                        {
+                            "ItemName": "Ammo_FlareGreen",
+                            "Healt": 100.0,
+                            "Quantity": 2.0,
+                            "Col": 5,
+                            "Row": 0,
+                            "Flip": 0,
+                            "Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Orientation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "IsAbsolute": 0,
+                            "Child": [],
+                            "SlotID": -1,
+                            "LiquidType": -1
+                        },
+                        {
+                            "ItemName": "Mag_AK74_30Rnd_Black",
+                            "Healt": 100.0,
+                            "Quantity": 30.0,
+                            "Col": 1,
+                            "Row": 0,
+                            "Flip": 0,
+                            "Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Orientation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "IsAbsolute": 0,
+                            "Child": [],
+                            "SlotID": -1,
+                            "LiquidType": -1
+                        },
+                        {
+                            "ItemName": "Mag_AK74_30Rnd_Black",
+                            "Healt": 100.0,
+                            "Quantity": 30.0,
+                            "Col": 3,
+                            "Row": 0,
+                            "Flip": 0,
+                            "Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Orientation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "IsAbsolute": 0,
+                            "Child": [],
+                            "SlotID": -1,
+                            "LiquidType": -1
+                        },
+                        {
+                            "ItemName": "Ammo_Flare",
+                            "Healt": 100.0,
+                            "Quantity": 2.0,
+                            "Col": 4,
+                            "Row": 2,
+                            "Flip": 0,
+                            "Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Orientation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "IsAbsolute": 0,
+                            "Child": [],
+                            "SlotID": -1,
+                            "LiquidType": -1
+                        },
+                        {
+                            "ItemName": "Ammo_545x39Tracer",
+                            "Healt": 100.0,
+                            "Quantity": 20.0,
+                            "Col": 0,
+                            "Row": 3,
+                            "Flip": 0,
+                            "Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Orientation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "IsAbsolute": 0,
+                            "Child": [],
+                            "SlotID": -1,
+                            "LiquidType": -1
+                        },
+                        {
+                            "ItemName": "Ammo_545x39Tracer",
+                            "Healt": 100.0,
+                            "Quantity": 20.0,
+                            "Col": 1,
+                            "Row": 3,
+                            "Flip": 0,
+                            "Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Orientation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "IsAbsolute": 0,
+                            "Child": [],
+                            "SlotID": -1,
+                            "LiquidType": -1
+                        },
+                        {
+                            "ItemName": "Ammo_545x39Tracer",
+                            "Healt": 100.0,
+                            "Quantity": 20.0,
+                            "Col": 2,
+                            "Row": 3,
+                            "Flip": 0,
+                            "Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Orientation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "IsAbsolute": 0,
+                            "Child": [],
+                            "SlotID": -1,
+                            "LiquidType": -1
+                        },
+                        {
+                            "ItemName": "Ammo_545x39Tracer",
+                            "Healt": 100.0,
+                            "Quantity": 10.0,
+                            "Col": 3,
+                            "Row": 3,
+                            "Flip": 0,
+                            "Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Orientation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "IsAbsolute": 0,
+                            "Child": [],
+                            "SlotID": -1,
+                            "LiquidType": -1
+                        },
+                        {
+                            "ItemName": "Ammo_FlareBlue",
+                            "Healt": 100.0,
+                            "Quantity": 5.0,
+                            "Col": 4,
+                            "Row": 1,
+                            "Flip": 0,
+                            "Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Orientation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "IsAbsolute": 0,
+                            "Child": [],
+                            "SlotID": -1,
+                            "LiquidType": -1
+                        },
+                        {
+                            "ItemName": "Ammo_Flare",
+                            "Healt": 100.0,
+                            "Quantity": 5.0,
+                            "Col": 5,
+                            "Row": 1,
+                            "Flip": 0,
+                            "Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Orientation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "IsAbsolute": 0,
+                            "Child": [],
+                            "SlotID": -1,
+                            "LiquidType": -1
+                        },
+                        {
+                            "ItemName": "Mag_AK74_30Rnd_Black",
+                            "Healt": 100.0,
+                            "Quantity": 30.0,
+                            "Col": 2,
+                            "Row": 0,
+                            "Flip": 0,
+                            "Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Orientation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "IsAbsolute": 0,
+                            "Child": [],
+                            "SlotID": -1,
+                            "LiquidType": -1
+                        },
+                        {
+                            "ItemName": "Mag_AK74_30Rnd_Black",
+                            "Healt": 100.0,
+                            "Quantity": 30.0,
+                            "Col": 0,
+                            "Row": 0,
+                            "Flip": 0,
+                            "Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Orientation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "IsAbsolute": 0,
+                            "Child": [],
+                            "SlotID": -1,
+                            "LiquidType": -1
+                        }
+                    ],
+                    "SlotID": -230399667,
+                    "LiquidType": -1
+                }
+            ],
+            "SlotID": 6119694,
+            "LiquidType": -1
+        },
+        {
+            "ItemName": "Magnum",
+            "Healt": 200.0,
+            "Quantity": 0.0,
+            "Col": -1,
+            "Row": -1,
+            "Flip": 0,
+            "Position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "Orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "IsAbsolute": 0,
+            "Child": [
+                {
+                    "ItemName": "Magnum_Ejector",
+                    "Healt": 100.0,
+                    "Quantity": 0.0,
+                    "Col": -1,
+                    "Row": -1,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": 565910201,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "Magnum_Cylinder",
+                    "Healt": 100.0,
+                    "Quantity": 0.0,
+                    "Col": -1,
+                    "Row": -1,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -1093828493,
+                    "LiquidType": -1
+                }
+            ],
+            "SlotID": 199980490,
+            "LiquidType": -1
+        }
+    ]
+}

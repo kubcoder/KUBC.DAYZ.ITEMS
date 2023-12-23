@@ -15,6 +15,8 @@ class KCItems
     static const string SETS_PATH = "Sets";
     /** @brief Папка где размещаются сеты машин*/
     static const string CARS_PATH = "Cars";
+    /** @brief Папка с сохранеными экипировками*/
+    static const string EQUIP_PATH = "Equip";
     /** @brief Создаем папку мода и файл настроек если он не существует*/
     static void CreatePaths()
     {
@@ -22,6 +24,7 @@ class KCItems
         MakeDirectory(GetModPath());
         MakeDirectory(GetDictionaryPath());
         MakeDirectory(GetStetsPath());
+        MakeDirectory(GetEquipPath());
         if (FileExist(GetSettingsFile()))
         {
             Log("Файл настроек сохранения наборов итемов сущесвтует");
@@ -87,5 +90,32 @@ class KCItems
         {
             return GetStetsPath() + "\\" + SetName + ".json";
         }
+    }
+
+    /** @brief Полный путь к папке экипировок
+    *   @param player для какого игрока получать папку, если указан NULL
+    *                 то будет возвращено корневая папка экипировок
+    */
+    static string GetEquipPath(PlayerBase player = NULL)
+    {
+        if (player)
+        {
+            string pathName = GetEquipPath() + "\\" + player.GetIdentity().GetPlainId();
+            MakeDirectory(pathName);
+            return pathName;
+        }
+        else
+        {
+            return GetModPath() + "\\" + EQUIP_PATH;
+        }
+    }
+    /** @brief Получить полный путь к файлу экипировки
+    *   @param SettName имя экипировки
+    *   @param player для какого игрока получать папку, если указан NULL
+    *                 то будет возвращено корневая папка экипировок
+    */
+    static string GetEquipFileName(string SettName, PlayerBase player = NULL)
+    {
+        return GetEquipPath(player) + "\\" + SettName + ".json";
     }
 }
