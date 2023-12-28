@@ -16,4 +16,15 @@
 
 # Журнал версий
 
-## 2.0 (---)
+## 2.0 (28.12.2023)
+Работает [справочник игровых предметов](https://kubcoder.ru/dayz/items/dictionary)
+
+Добавлены [команды](https://kubcoder.ru/dayz/items/cmd/index):
+- [spawn](https://kubcoder.ru/dayz/items/cmd/spawn) создать игровой предмет
+- [box](https://kubcoder.ru/dayz/items/cmd/box) создать ящик игровых предметов
+- [del](https://kubcoder.ru/dayz/items/cmd/del)  удалить игровой предмет
+- [save](https://kubcoder.ru/dayz/items/cmd/save) сохранить набор игровых предметов
+- [get](https://kubcoder.ru/dayz/items/cmd/get) выдать набор игровых предметов
+- [car](https://kubcoder.ru/dayz/items/cmd/car) команда сохранения/создания и обслуживания транспортных средств
+- [equip](https://kubcoder.ru/dayz/items/cmd/equip) команда сохранения/создания экипировки игрока
+- [repair](https://kubcoder.ru/dayz/items/cmd/repair) команда "ремонта" игровых предметов
