@@ -22,6 +22,9 @@
 		<None Include="..\..\Sample\Profiles\KUBC\ITEMS\Dictionary\items.json" Link="Profiles\KUBC\ITEMS\Dictionary\items.json">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</None>
+		<None Include="..\..\Sample\Profiles\KUBC\ITEMS\ItemsSetOptions.json" Link="Profiles\KUBC\ITEMS\ItemsSetOptions.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Profiles\KUBC\ITEMS\Dictionary\" />

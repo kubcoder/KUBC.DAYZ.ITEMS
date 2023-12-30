@@ -12,14 +12,7 @@ namespace KUBC.DAYZ.ITEMS.Dictionary
     /// </summary>
     public class Dictionary 
     {
-        /// <summary>
-        /// Папка разработчика модов
-        /// </summary>
-        public const string DEVPATH = "KUBC";
-        /// <summary>
-        /// Папка данных мода
-        /// </summary>
-        public const string MODPATH = "ITEMS";
+        
         /// <summary>
         /// Папка словаря игровых итемов
         /// </summary>
@@ -30,7 +23,7 @@ namespace KUBC.DAYZ.ITEMS.Dictionary
         /// <param name="profiles">К папке профилей сервера</param>
         public Dictionary(DirectoryInfo profiles)
         {
-            var fullPath = $"{profiles.FullName}\\{DEVPATH}\\{MODPATH}\\{DICTPATH}";
+            var fullPath = $"{profiles.FullName}\\{Paths.DEVPATH}\\{Paths.MODPATH}\\{DICTPATH}";
             categoriesFile = new($"{fullPath}\\{Categories.FILENAME}");
             categories = Categories.Load(categoriesFile);
             items = ItemsCollection.Load(new FileInfo($"{fullPath}\\{ItemsCollection.FILENAME}"));

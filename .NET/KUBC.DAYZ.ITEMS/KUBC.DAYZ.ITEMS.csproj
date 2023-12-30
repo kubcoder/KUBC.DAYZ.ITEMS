@@ -6,7 +6,7 @@
 		<Nullable>enable</Nullable>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>KUBC.DAYZ.ITEMS</Title>
-		<Version>8.0.0-a1</Version>
+		<Version>8.0.0-a2</Version>
 		<Authors>kot23rus</Authors>
 		<Company>KUBCODER</Company>
 		<Description>Инструменты для работы с данными мода KUBC.DAYZ.ITEMS</Description>
@@ -42,5 +42,18 @@
 	    <Pack>True</Pack>
 	    <PackagePath>\</PackagePath>
 	  </None>
+	</ItemGroup>
+	<ItemGroup>
+	  <Compile Update="Resources\ItemsSaveSettings.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>ItemsSaveSettings.resx</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+	<ItemGroup>
+	  <EmbeddedResource Update="Resources\ItemsSaveSettings.resx">
+	    <Generator>ResXFileCodeGenerator</Generator>
+	    <LastGenOutput>ItemsSaveSettings.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
 	</ItemGroup>
 </Project>
