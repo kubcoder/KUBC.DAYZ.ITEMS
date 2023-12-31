@@ -28,5 +28,26 @@ namespace KUBC.DAYZ.ITEMS.TEST
                 fReader.Close();
             }
         }
+        /// <summary>
+        /// Тестируем загрузку сохранение итемов
+        /// </summary>
+        [TestMethod]
+        public void ItemSet()
+        {
+            var testFile = new FileInfo("Profiles\\KUBC\\ITEMS\\Sets\\76561198054180540\\bronik.json");
+            var set = ITEMS.ItemSet.FromJson(testFile);
+            set.Save();
+        }
+
+        /// <summary>
+        /// Тестируем поиск и загрузку наборов
+        /// </summary>
+        [TestMethod]
+        public void FindFiles()
+        {
+            var path = new DirectoryInfo("Profiles");
+            var sets = ITEMS.Paths.GetSets(path);
+            var setsFiles = new ItemSetList(sets);
+        }
     }
 }

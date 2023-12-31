@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace KUBC.DAYZ.ITEMS
 {
-    internal class SaveItemCollection
+    /// <summary>
+    /// Коллекция сохраненных предметов
+    /// </summary>
+    public class SaveItemCollection:List<SaveItem>
     {
     }
 }
