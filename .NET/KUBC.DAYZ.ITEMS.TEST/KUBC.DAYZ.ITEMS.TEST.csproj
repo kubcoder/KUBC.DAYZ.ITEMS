@@ -34,6 +34,9 @@
 		<None Include="..\..\Sample\Profiles\KUBC\ITEMS\Sets\76561198054180540\t2.json" Link="Profiles\KUBC\ITEMS\Sets\t2.json">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</None>
+		<None Include="..\..\Sample\Profiles\KUBC\ITEMS\Sets\76561198054180540\pvp2.json" Link="Profiles\KUBC\ITEMS\Sets\76561198054180540\pvp2.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Profiles\KUBC\ITEMS\Dictionary\" />

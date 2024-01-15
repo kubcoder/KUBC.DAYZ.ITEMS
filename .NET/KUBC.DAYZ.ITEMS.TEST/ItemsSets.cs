@@ -49,5 +49,28 @@ namespace KUBC.DAYZ.ITEMS.TEST
             var sets = ITEMS.Paths.GetSets(path);
             var setsFiles = new ItemSetList(sets);
         }
+        /// <summary>
+        /// Проверяем загрузку и разрезание БОЛЬШИХ файликов
+        /// </summary>
+        [TestMethod]
+        public void SplitFile()
+        {
+            var bigfile = new FileInfo("Profiles\\KUBC\\ITEMS\\Sets\\76561198054180540\\pvp2.json");
+            var set = ITEMS.ItemSet.FromJson(bigfile);
+            int size = 70;//Число объектов в файле
+            string fileNameTempl = "pvp2_{0}.json";
+            ITEMS.ItemSet nset = new();
+            int fileNum = 0;
+            foreach(var item in set.Items)
+            {
+                nset.Items.Add(item);
+                if (nset.Items.Count >= size)
+                {
+                    nset.Save(new FileInfo(string.Format(fileNameTempl, fileNum)));
+                    fileNum++;
+                    nset = new();
+                }
+            }
+        }
     }
 }
