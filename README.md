@@ -16,6 +16,10 @@
 
 # Журнал версий
 
+## 2.1 (15.01.2024)
+
+Добавлена [команда](https://kubcoder.ru/dayz/items/cmd/index) [fence](https://kubcoder.ru/dayz/items/cmd/fence) для определения кода замков на строениях.
+
 ## 2.0 (28.12.2023)
 Работает [справочник игровых предметов](https://kubcoder.ru/dayz/items/dictionary)
 
