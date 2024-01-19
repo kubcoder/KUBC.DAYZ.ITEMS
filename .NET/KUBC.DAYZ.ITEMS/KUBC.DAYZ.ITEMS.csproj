@@ -6,7 +6,7 @@
 		<Nullable>enable</Nullable>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>KUBC.DAYZ.ITEMS</Title>
-		<Version>8.0.0</Version>
+		<Version>8.1.0</Version>
 		<Authors>kot23rus</Authors>
 		<Company>KUBCODER</Company>
 		<Description>Инструменты для работы с данными мода KUBC.DAYZ.ITEMS</Description>
@@ -44,7 +44,7 @@
 	  </None>
 	</ItemGroup>
 	<ItemGroup>
-	  <PackageReference Include="KUBC.DAYZ.GAME" Version="8.2.0" />
+	  <PackageReference Include="KUBC.DAYZ.GAME" Version="8.3.0" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Compile Update="Resources\ItemSet.Designer.cs">

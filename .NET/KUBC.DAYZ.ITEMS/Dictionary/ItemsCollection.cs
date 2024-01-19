@@ -57,5 +57,24 @@ namespace KUBC.DAYZ.ITEMS.Dictionary
             return r;
         }
 
+        /// <summary>
+        /// Получить список добавленых предметов.
+        /// </summary>
+        /// <remarks>
+        /// Т.е. получить список предметов которые есть в указавыемой коллекции, но нету в текущей коллекции.
+        /// </remarks>
+        /// <param name="Comparison">Коллекция для сравнения</param>
+        /// <returns>Список добавленых предметов</returns>
+        public List<string> GetAdded(ItemsCollection Comparison)
+        {
+            List<string> result = [];
+            foreach(var itemName in Comparison.Keys)
+            {
+                if (!ContainsKey(itemName))
+                    result.Add(itemName);
+            }
+            return result;
+        }
+
     }
 }
