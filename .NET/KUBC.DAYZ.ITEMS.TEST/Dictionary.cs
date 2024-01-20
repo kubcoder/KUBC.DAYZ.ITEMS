@@ -34,5 +34,16 @@ namespace KUBC.DAYZ.ITEMS.TEST
             };
             Console.WriteLine(JsonSerializer.Serialize<DictionaryResponse>(resp, o));
         }
+        [TestMethod]
+        public void FoundNewItems()
+        {
+            var i123 = ItemsCollection.Load(new FileInfo("Profiles\\KUBC\\ITEMS\\Dictionary\\items.json"));
+            var i124 = ItemsCollection.Load(new FileInfo("Profiles\\KUBC\\ITEMS\\Dictionary\\items124.json"));
+            var newItems = i123.GetAdded(i124);
+            foreach(var ni in newItems) 
+            {
+                Console.WriteLine(ni);
+            }
+        }
     }
 }
