@@ -54,7 +54,12 @@ class KCItemsCMDDel : KCUserCMD
     bool Delete(Object obj)
 	{
 		if (obj.IsMan())
-			return !obj.IsAlive();
+        {
+            if (obj.IsAlive())
+            {
+                return false;
+            }
+        }
 		if (obj.IsStaticTransmitter())
 			return false;
 		if (obj.IsTree())
