@@ -19,7 +19,23 @@
 		"DayZ.Server.Config":"Sample\\serverDZ.cfg",
 		//Папочка где лежит экземпляр сервера DAYZ
 		"DayZ.Server.Path":"C:\\Program Files (x86)\\Steam\\steamapps\\common\\DayZServer",
-		"C_Cpp.errorSquiggles": "disabled"
+		"Mod.Path": "KUBC.DAYZ.ITEMS",
+		"C_Cpp.configurationWarnings": "disabled",
+		"C_Cpp.default.browse.path": [
+			"P:\\scripts",
+			"P:\\KUBC"
+		],
+		"C_Cpp.default.includePath": [
+			"P:\\scripts",
+			"P:\\KUBC"
+		],
+		"C_Cpp.default.systemIncludePath": [
+			"P:\\scripts",
+			"P:\\KUBC"
+		],
+		"C_Cpp.errorSquiggles": "disabled",
+		"C_Cpp.intelliSenseEngine": "Tag Parser",
+		"C_Cpp.workspaceSymbols": "All"
 	},
 	"tasks": {
 		"version": "2.0.0",
@@ -39,8 +55,8 @@
 				}
 			},
 			{
-				"detail": "Запустить сервер с собранным модом",
-				"label": "Start Server",
+				"detail": "Запустить сервер модом без сборки",
+				"label": "Start Debug Server",
 				"type": "shell",
 				"command": "${config:DayZ.Server.Path}\\DayZServer_x64.exe",
 				"args": [
@@ -51,7 +67,7 @@
 					"-adminLog",
 					"-freezeCheck",
 					"-filePatching",
-					"-serverMod='KUBCconsole;KUBC.DAYZ.ITEMS'"
+					"-serverMod='KUBC;${config:Mod.Path}'"
 				],
 				"presentation": {
 					"echo": true,
@@ -60,8 +76,7 @@
 					"panel": "shared",
 					"showReuseMessage": false,
 					"clear": false
-				},
-				"problemMatcher": []
+				}
 			},
 			{
 				"detail": "Запустить тестовый сервер с очисткой логов",
@@ -69,14 +84,29 @@
 				"dependsOrder": "sequence",
 				"dependsOn": [
 					"Clear Server Logs",
-					"Start Server"
+					"Start Debug Server"
 				],
 				"group": {
 					"kind": "test",
 					"isDefault": false
 				},
 				"problemMatcher": []
-			}
+			},
+			{
+				"detail": "Создать ссылочную папку на сервере",
+				"label": "Create Link",
+				"type": "shell",
+				"command": "cmd /c mklink /j '${config:DayZ.Server.Path}\\${config:Mod.Path}'  '${workspaceFolder:SERVER}'",
+				"presentation": {
+					"echo": true,
+					"reveal": "always",
+					"focus": false,
+					"panel": "shared",
+					"showReuseMessage": false,
+					"clear": false
+				}
+			},
+
 		]
 	}
 
