@@ -34,9 +34,16 @@ class KCItemsCMDBoat : KCUserCMD
         if (pos!=vector.Zero)
         {
             Boat boat = Boat.Cast(GetGame().CreateObject( data.Arg[0], pos));
+            if (boat)
+            {
+                boat.GetInventory().CreateAttachment("SparkPlug");
+                Refuel(boat);
+            }
         }
     }
-
+    /// @brief Получить координату спавна лодки
+    /// @param data данные команды
+    /// @return координаты в море, или vector.Zero если расчетная точка не в море
     vector GetPosition(KCTextCmd data)
     {
         float distance = data.GetFloat("d", 10);
@@ -52,5 +59,16 @@ class KCItemsCMDBoat : KCUserCMD
             Log("Координата это не море");
         }
         return vector.Zero;
+    }
+
+    void Refuel(Boat boat)
+    {
+        float fuelReq = boat.GetFluidCapacity(BoatFluid.FUEL) - (boat.GetFluidCapacity(BoatFluid.FUEL) * boat.GetFluidFraction(BoatFluid.FUEL));
+        boat.Fill(BoatFluid.FUEL, fuelReq);
+    }
+
+    void Repair(Boat boat)
+    {
+
     }
 }
