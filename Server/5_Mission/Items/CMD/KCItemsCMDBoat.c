@@ -14,6 +14,7 @@ class KCItemsCMDBoat : KCUserCMD
         return KCItemsCMDBoat.CMD_NAME;
     }
 
+    
     override bool OnExecute(PlayerBase user, KCTextCmd data)
     {
         if (data.Arg.Count()>0)
