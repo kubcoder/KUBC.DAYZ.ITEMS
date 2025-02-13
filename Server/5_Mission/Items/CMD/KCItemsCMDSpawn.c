@@ -1,11 +1,13 @@
-/** @brief Команда спавна игрового итема*/
+/// @brief Команда спавна игрового итема
 class KCItemsCMDSpawn : KCUserCMD
 {
-    /** @brief название команды*/
+    /// @brief название команды
     static const string CMD_NAME = "spawn";
-    /** @brief аргумент задающий кол-во создаваемых итемов*/
+    
+    /// @brief аргумент задающий кол-во создаваемых итемов
     static const string PARAM_COUNT = "c";
-    /** @brief аргумент задающий размещение игрового итема на земле*/
+    
+    /// @brief аргумент задающий размещение игрового итема на земле
     static const string PARAM_GROUND = "g";
     
     override string GetName()
@@ -133,12 +135,12 @@ class KCItemsCMDSpawn : KCUserCMD
             }
         }
     }
-    /** @brief Разместить предмет на поверхности
-    *   @param player - рядом с каким игроком размещать предметик
-    *   @param distance - на каком расстоянии от игрока спавнить предмет
-    *   @param ItemName - класс предмета для создания
-    *   @return Созданный итем
-    */
+
+    /// @brief Разместить предмет на поверхности
+    /// @param player - рядом с каким игроком размещать предметик
+    /// @param distance - на каком расстоянии от игрока спавнить предмет
+    /// @param ItemName - класс предмета для создания
+    /// @return Созданный итем
     EntityAI SpawnOnSurface(PlayerBase player, float distance, string ItemName)
     {
         vector pos = player.GetPosition() + player.GetDirection()*distance + vector.RandomDir2D()*Math.RandomFloatInclusive(0,0.2);
@@ -146,21 +148,20 @@ class KCItemsCMDSpawn : KCUserCMD
         EntityAI spawnItem = EntityAI.Cast(GetGame().CreateObject(ItemName, pos,false));
         return spawnItem;
     }
-    /** @brief Разместить предмет в инвенторе игрока
-    *   @param player - рядом с каким игроком размещать предметик
-    *   @param ItemName - класс предмета для создания
-    *   @return Созданный итем
-    */
+    
+    /// @brief Разместить предмет в инвенторе игрока
+    /// @param player - рядом с каким игроком размещать предметик
+    /// @param ItemName - класс предмета для создания
+    /// @return Созданный итем
     EntityAI SpawnInInventory(PlayerBase player, string ItemName)
     {
         return EntityAI.Cast(player.GetHumanInventory().CreateInInventory(ItemName));
     }
 
-    /** @brief Изменить кол-во итема
-    *   @param item - число которого нужно изменить
-    *   @param cCount - какое число требуется
-    *   @return Сколько по факту сейчас данного итема
-    */
+    /// @brief Изменить кол-во итема
+    /// @param item - число которого нужно изменить
+    /// @param cCount - какое число требуется
+    /// @return Сколько по факту сейчас данного итема
     int SetCount(EntityAI item, int cCount)
     {
         if (item.ConfigGetBool("canBeSplit"))

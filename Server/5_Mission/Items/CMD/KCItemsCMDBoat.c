@@ -1,12 +1,14 @@
-/** @brief Команда работы с лодочками*/
+/// @brief Команда работы с лодочками
 class KCItemsCMDBoat : KCUserCMD
 {
-    /** @brief название команды*/
+    /// @brief название команды
     static const string CMD_NAME = "boat";
 
-    /** @brief аргумент пнуть машину вперед*/
+    /// @brief аргумент на какой дистанции создать лодку
     static const string ARG_DISTANCE = "d";
 
+    
+     
     override string GetName()
     {
         return KCItemsCMDBoat.CMD_NAME;

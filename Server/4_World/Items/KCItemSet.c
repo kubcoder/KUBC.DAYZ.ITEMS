@@ -1,21 +1,22 @@
-/** @brief описание набора итемов созданного игроком*/
+/// @brief описание набора итемов созданного игроком
 class KCItemSet
 {
-    /** @brief никнейм игрока который аффтор данного набора*/
+    /// @brief никнейм игрока который аффтор данного набора
     string NickName;
-    /** @brief SteamID игрока который это создал*/
+    
+    /// @brief SteamID игрока который это создал
     string SteamID;
-    /** @brief  Примечания к набору. В игре не используются
-    *           испольузются в веб-модуле управления
-    */
+    
+    /// @brief  Примечания к набору. В игре не используются
+    ///           испольузются в веб-модуле управления
     string Notes;
-    /** @brief Итемы включенные в набор*/
+    
+    /// @brief Итемы включенные в набор
     ref KCSaveItemCollection Items = new KCSaveItemCollection();
 
-    /** @brief Выдаем экипировку. Если экипировка полная то весь имеющийся лут удаляется.
-    *   @param player - кому выдать
-    *   @param SetHealth - устанавливать здоровье итемов
-    */
+    /// @brief Выдаем экипировку. Если экипировка полная то весь имеющийся лут удаляется.
+    /// @param player - кому выдать
+    /// @param SetHealth - устанавливать здоровье итемов
     void CreateEquip(PlayerBase player, bool SetHealt = false)
     {
         if(Items.Count()>0)
@@ -38,9 +39,8 @@ class KCItemSet
         }
     }   
 
-    /** @brief Удалить все игровые предметы у игрока
-    *   @param player игрок которого нужно раздеть
-    */
+    /// @brief Удалить все игровые предметы у игрока
+    /// @param player игрок которого нужно раздеть
     static void DeleteAll(PlayerBase player)
     {
         GameInventory inventory = player.GetInventory();
@@ -59,9 +59,9 @@ class KCItemSet
             }
 		}
     }
-    /** @brief Сбросить на землю все игровые предметы у игрока
-    *   @param player игрок которого нужно раздеть
-    */
+
+    /// @brief Сбросить на землю все игровые предметы у игрока
+    /// @param player игрок которого нужно раздеть
     static void DropAll(PlayerBase player)
     {
         GameInventory inventory = player.GetInventory();

@@ -1,10 +1,10 @@
-/** @brief Команда работы с заборами*/
+/// @brief Команда работы с заборами
 class KCItemsCMDFence : KCUserCMD
 {
-    /** @brief название команды*/
+    /// @brief название команды
     static const string CMD_NAME = "fence";
     
-    /** @brief Радиус поиска заборов по умолчанию*/
+    /// @brief Радиус поиска заборов по умолчанию
     static const float DEF_RADIUS = 10;
 
     override string GetName()

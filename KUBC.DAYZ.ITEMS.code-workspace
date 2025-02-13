@@ -67,6 +67,7 @@
 					"-adminLog",
 					"-freezeCheck",
 					"-filePatching",
+					"-mod='@MPH_Boats'",
 					"-serverMod='KUBC;${config:Mod.Path}'"
 				],
 				"presentation": {

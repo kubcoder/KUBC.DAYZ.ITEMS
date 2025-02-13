@@ -1,28 +1,40 @@
-/** @brief Команда работы с машинами*/
+/// @brief Команда работы с машинами
 class KCItemsCMDCar : KCUserCMD
 {
-    /** @brief название команды*/
+    /// @brief название команды
     static const string CMD_NAME = "car";
-    /** @brief Аргумент сохранения машины*/
+    
+    /// @brief Аргумент сохранения машины
     static const string ARG_SAVE = "save";
-    /** @brief Аргумент вызывающий перезапись машины*/
+    
+    /// @brief Аргумент вызывающий перезапись машины
     static const string ARG_REPLACE = "r";
-    /** @brief Аргумент вызывающий сохранение транспорта в общуюю папку*/
+    
+    /// @brief Аргумент вызывающий сохранение транспорта в общуюю папку
     static const string ARG_SHARED = "s";
-    /** @brief На какой дистанции создаем машину*/
+    
+    /// @brief На какой дистанции создаем машину
     static const float DEF_DISTANCE = 10;
-    /** @brief аргумент заправки транспорта*/
+    
+    /// @brief аргумент заправки транспорта
     static const string ARG_REFUEL = "refuel";
-    /** @brief аргумент ремонта машины*/
+    
+    /// @brief аргумент ремонта машины
     static const string ARG_REPAIR = "repair";
-    /** @brief аргумент пнуть машину вперед*/
+    
+    /// @brief аргумент пнуть машину вперед
     static const string ARG_FRONTIMPULSE = "f";
+    
+    /// @brief Импульс прилагаемый к машине по умолчанию
     static const float DEF_IMPULSE = 10000;
-    /** @brief аргумент пнуть машину назад*/
+    
+    /// @brief аргумент пнуть машину назад
     static const string ARG_BACKIMPULSE = "b";
-    /** @brief аргумент пнуть машину в левую бочину*/
+    
+    /// @brief аргумент пнуть машину в левую бочину
     static const string ARG_LEFTIMPULSE = "l";
-    /** @brief аргумент пнуть машину в правую бочину*/
+    
+    /// @brief аргумент пнуть машину в правую бочину
     static const string ARG_RIGHTIMPULSE = "r";
 
 
@@ -215,7 +227,7 @@ class KCItemsCMDCar : KCUserCMD
         }	
     }
 
-    /** @brief Ремонт машины, включая все запчасти, если они убиты в гавно то будет полная замена*/
+    /// @brief Ремонт машины, включая все запчасти, если они убиты в гавно то будет полная замена
     void Repair(CarScript carEntity)
     {
         if ( carEntity == NULL || carEntity == NULL)
@@ -231,11 +243,10 @@ class KCItemsCMDCar : KCUserCMD
         }
     }
 
-    /** @brief Выдать машину
-    *   @param FileName - какую машину выдать
-    *   @param player кто выдает
-    *   @param user кому выдать
-    */
+    /// @brief Выдать машину
+    /// @param FileName - какую машину выдать
+    /// @param player кто выдает
+    /// @param user кому выдать
     bool GetCar(string FileName, PlayerBase player, PlayerBase user)
     {
         KCItemSet cSet;
@@ -263,11 +274,10 @@ class KCItemsCMDCar : KCUserCMD
         }
     }
 
-    /** @brief Сохранить машину на диск сервера
-    *   @param user возле какого игрока шукать тачилу
-    *   @param data данные команды
-    *   @return истина если машина сохранилась
-    */
+    /// @brief Сохранить машину на диск сервера
+    /// @param user возле какого игрока шукать тачилу
+    /// @param data данные команды
+    /// @return истина если машина сохранилась
     bool SaveCar(PlayerBase user, KCTextCmd data)
     {
         CarScript car = GetTransport(user);
@@ -326,10 +336,9 @@ class KCItemsCMDCar : KCUserCMD
         return false;
     }
 
-    /** @brief Найти машину рядом с игроком
-    *   @param player возле какого игрока шукаем тачилу
-    *   @return Найденный транспорт, или null если транспорт найти не удалось
-    */
+    /// @brief Найти машину рядом с игроком
+    /// @param player возле какого игрока шукаем тачилу
+    /// @return Найденный транспорт, или null если транспорт найти не удалось
     CarScript GetTransport(PlayerBase player)
     {
         Log("Начинаем поиск транспорта");

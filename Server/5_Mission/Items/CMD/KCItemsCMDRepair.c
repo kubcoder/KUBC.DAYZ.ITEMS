@@ -1,7 +1,7 @@
-/** @brief Команда починки игровых предметов*/
+/// @brief Команда починки игровых предметов
 class KCItemsCMDRepair  : KCUserCMD
 {
-    /** @brief название команды*/
+    /// @brief название команды
     static const string CMD_NAME = "repair";
 
     override string GetName()
@@ -35,9 +35,8 @@ class KCItemsCMDRepair  : KCUserCMD
     }
 
     
-    /** @brief Починить все предметы игрока
-    *   @param player игрок у которого нужно починять предметы
-    */
+    /// @brief Починить все предметы игрока
+    /// @param player игрок у которого нужно починять предметы
     void RepairAll(PlayerBase player)
     {
         GameInventory inventory = player.GetInventory();

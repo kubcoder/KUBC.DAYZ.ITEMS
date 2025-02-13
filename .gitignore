@@ -366,3 +366,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+Sample/Profiles/MaharlikaPH_Boats/
+Sample/Profiles/KUBC/ITEMS/Equip/

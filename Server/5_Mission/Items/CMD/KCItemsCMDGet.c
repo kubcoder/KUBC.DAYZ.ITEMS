@@ -1,7 +1,7 @@
-/** @brief Команда выдачи сохраненного набора*/
+/// @brief Команда выдачи сохраненного набора
 class KCItemsCMDGet : KCUserCMD
 {
-    /** @brief название команды*/
+    /// @brief название команды
     static const string CMD_NAME = "get";
 
     override string GetName()
