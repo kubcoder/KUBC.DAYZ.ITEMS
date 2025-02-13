@@ -133,7 +133,6 @@ class KCItemsRepairTool
                     repairTool.Healt();
                     repairTool.Child();
                 }
-                    
             }
         }
     }
