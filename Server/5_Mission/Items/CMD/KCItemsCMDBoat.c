@@ -140,7 +140,7 @@ class KCItemsCMDBoat : KCUserCMD
         vector pos = GetPosition(data);
         if (pos!=vector.Zero)
         {
-            Boat boat = Boat.Cast(GetGame().CreateObject( data.Arg[0], pos));
+            BoatScript boat = BoatScript.Cast(GetGame().CreateObject( data.Arg[0], pos));
             if (boat)
             {
                 boat.GetInventory().CreateAttachment("SparkPlug");

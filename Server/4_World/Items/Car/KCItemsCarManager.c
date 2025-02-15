@@ -5,7 +5,7 @@ class KCItemsCarManager
     ///        при манипуляциях
     CarScript target;
 
-    void KCItemsBoatManager(CarScript boat)
+    void KCItemsCarManager(CarScript boat)
     {
         target = boat;
     }
