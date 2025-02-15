@@ -2,6 +2,7 @@
 ///        игрового предмета
 class KCItemsRepairTool
 {
+    /// @brief Игровой предмент для починки
     EntityAI tEntity;
 
     /// @brief Инициализируем починятор
@@ -72,6 +73,10 @@ class KCItemsRepairTool
     /// @brief Чиним все приатаченные итемы
     void Atach()
     {
+        if (!tEntity)
+        {
+            return;
+        }
         ref array<EntityAI> vehParts = new array<EntityAI>;
         TStringArray SlotNames = new TStringArray;
         string cfg_path = CFG_VEHICLESPATH + " " + tEntity.GetType() + " attachments";
@@ -120,20 +125,30 @@ class KCItemsRepairTool
     /// @brief Починить все дочерние предметы
     void Child()
     {
+        if (!tEntity)
+        {
+            return;
+        }
         array<EntityAI> itemsArray = new array<EntityAI>;
         GameInventory inventory = tEntity.GetInventory();
         if (inventory)
         {
             inventory.EnumerateInventory(InventoryTraversalType.PREORDER, itemsArray);
+            KCItems.Log("Обнаружили в инвентаре обеъктов " + itemsArray.Count());
             foreach(EntityAI child: itemsArray)
             {
                 if (child!=tEntity)
                 {
+                    KCItems.Log("Починяем объект" + child);
                     KCItemsRepairTool repairTool = new KCItemsRepairTool(child);
                     repairTool.Healt();
                     repairTool.Child();
                 }
             }
+        }
+        else
+        {
+            KCItems.Log("Не нашли инвентраь для " + tEntity);
         }
     }
 }
