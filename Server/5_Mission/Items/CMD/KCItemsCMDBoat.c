@@ -60,13 +60,13 @@ class KCItemsCMDBoat : KCUserCMD
                     {
                         if (data.ContainsArg(ARG_ALL))
                         {
-                            manager.Repair(false);
-                            KCPlayer.SendMessage(data.Player,user.GetIdentity().GetName(),"Починили лодку и все её детали");
+                            manager.Repair(true);
+                            KCPlayer.SendMessage(data.Player,user.GetIdentity().GetName(),"Починили лодку и все что было в ней");
                         }
                         else
                         {
-                            manager.Repair(true);
-                            KCPlayer.SendMessage(data.Player,user.GetIdentity().GetName(),"Починили лодку и все что было в ней");
+                            manager.Repair(false);
+                            KCPlayer.SendMessage(data.Player,user.GetIdentity().GetName(),"Починили лодку и все её детали");
                         }
                         return true;
                     }

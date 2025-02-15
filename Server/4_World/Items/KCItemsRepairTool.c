@@ -19,6 +19,9 @@ class KCItemsRepairTool
         {
             return;
         }
+        KCItems.Log("Добавляем здоровья до уровня:"+tEntity.GetMaxHealth());
+        tEntity.SetHealth("", "", tEntity.GetMaxHealth());
+
         ref array<string> damageZones;
         string cfgPath = CFG_VEHICLESPATH + " " + tEntity.GetType() + " DamageSystem";
         KCItems.Log("Начинаем поиск точек поломки по пути:"+cfgPath);
@@ -47,16 +50,6 @@ class KCItemsRepairTool
                     }
                 }
             }
-        }
-        else
-        {
-            KCItems.Log("Конфиг не найден, прерываем",KCLogLevel.Error);
-            return;
-        }
-
-        KCItems.Log("Здоровья у предмета:"+tEntity.GetHealth());
-        if ( damageZones && damageZones.Count() > 0 )
-        {
             foreach(string dmgZone: damageZones)
             {
                 KCItems.Log("Обрабатываем зону:"+dmgZone);
@@ -64,9 +57,7 @@ class KCItemsRepairTool
                 KCItems.Log("Максимум " + dmgZone + ":" + tEntity.GetMaxHealth(dmgZone, ""));
                 tEntity.SetHealth(dmgZone, "", tEntity.GetMaxHealth(dmgZone, ""));
             }
-        }
-        KCItems.Log("Добавляем здоровья до уровня:"+tEntity.GetMaxHealth());
-        tEntity.SetHealth("", "", tEntity.GetMaxHealth());
+        }        
         tEntity.SetSynchDirty();
     }
 
