@@ -5,18 +5,19 @@ class KCItemsCarManager
     ///        при манипуляциях
     CarScript target;
 
-    void KCItemsCarManager(CarScript boat)
+    void KCItemsCarManager(CarScript car)
     {
-        target = boat;
+        target = car;
     }
 
-    /// @brief Починить лодку
+    /// @brief Починить машину
     /// @param inventory если ИСТИНА будет чинится и весь инвентарь
     void Repair(bool inventory)
     {
         KCItemsRepairTool tool = new KCItemsRepairTool(target);
         tool.Healt();
         tool.Atach();
+        Charge();
         if (inventory)
         {
             tool.Child();
@@ -24,7 +25,7 @@ class KCItemsCarManager
     }
 
 
-    /// @brief Заправить лодку топливом
+    /// @brief Заправить машину топливом
     void Refuel()
     {
         float fuelReq = target.GetFluidCapacity( CarFluid.FUEL ) - (target.GetFluidCapacity( CarFluid.FUEL ) * target.GetFluidFraction( CarFluid.FUEL ));
@@ -35,6 +36,30 @@ class KCItemsCarManager
         target.Fill( CarFluid.OIL, oilReq );
         target.Fill( CarFluid.COOLANT, coolantReq );
         target.Fill( CarFluid.BRAKE, brakeReq );
+        Charge();
+    }
+
+    /// @brief Заряжаем АКБ в транспорте
+    void Charge()
+    {
+        ref array<EntityAI> vehParts = new array<EntityAI>;
+        TStringArray SlotNames = new TStringArray;
+        string cfg_path = CFG_VEHICLESPATH + " " + target.GetType() + " attachments";
+        KCItems.Log("Начинаем поиск слотов по пути:"+cfg_path);
+        GetGame().ConfigGetTextArray(cfg_path, SlotNames);	
+        
+        foreach(string slotName : SlotNames)
+        {
+            EntityAI part = target.FindAttachmentBySlotName(slotName);
+            if (part)
+            {
+                ComponentEnergyManager em = part.GetCompEM();
+                if (em)
+                {
+                    em.SetEnergy0To1(1);
+                }
+            } 
+        }
     }
 
     /// @brief Получить инструмент для приложения импульса к объекту

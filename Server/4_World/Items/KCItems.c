@@ -133,23 +133,7 @@ class KCItems
         return GetModPath() + "\\" + CARS_PATH;
     }
 
-    /// @brief Полный путь к набору машины
-    /// @param SettName имя сохраненной тачилы
-    /// @param player для какого игрока получать папку, если указан NULL
-    ///                 то будет возвращено корневая папка экипировок
     
-    static string GetCarFile(string SetName, PlayerBase player = NULL)
-    {
-        if (player)
-        {
-            MakeDirectory(GetCarsPath() + "\\" + player.GetIdentity().GetPlainId());
-            return GetCarsPath() + "\\" + player.GetIdentity().GetPlainId() + "\\" + SetName + ".json";
-        }
-        else
-        {
-            return GetCarsPath() + "\\" + SetName + ".json";
-        }
-    }
 
     /// @brief Починить игровой итем, и все его компоненты
     /// @param eAi игровой предмет который нужно починять
