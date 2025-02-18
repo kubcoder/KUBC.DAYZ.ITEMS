@@ -1,17 +1,20 @@
-/** @brief Команда удаления игровых предметов*/
+/// @brief Команда удаления игровых предметов
 class KCItemsCMDDel : KCUserCMD
 {
-    /** @brief название команды*/
+    /// @brief название команды
     static const string CMD_NAME = "del";
-    /** @brief аргумент указывающий что нужно удалить итем из рук*/
+    
+    /// @brief аргумент указывающий что нужно удалить итем из рук
     static const string ARG_INHAND = "h";
-    /** @brief Дистанция удаления по умолчанию*/
+    
+    /// @brief Дистанция удаления по умолчанию
     static const float DEFAULT_RADIUS = 3;
 
     override string GetName()
     {
         return KCItemsCMDDel.CMD_NAME;
     }
+
     override bool OnExecute(PlayerBase user, KCTextCmd data)
     {
         if (!data.Player)
@@ -46,11 +49,11 @@ class KCItemsCMDDel : KCUserCMD
         return true;
     }
 
-    /** @brief  Удаляем объект из мира, с проверкой 
-    *           доступности удаления.
-    *   @param  obj - Объект который в радиусе удаления
-    *   @return истина если объект можно радостно грохнуть
-    */
+    /// @brief  Удаляем объект из мира, с проверкой 
+    ///         доступности удаления.
+    /// @param  obj - Объект который в радиусе удаления
+    /// @return истина если объект можно радостно грохнуть
+    
     bool Delete(Object obj)
 	{
 		if (obj.IsMan())

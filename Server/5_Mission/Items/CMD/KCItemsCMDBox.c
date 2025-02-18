@@ -1,7 +1,7 @@
-/** @brief Команда выдачи ящичка*/
+/// @brief Команда выдачи ящичка
 class KCItemsCMDBox : KCUserCMD
 {
-    /** @brief название команды*/
+    /// @brief название команды
     static const string CMD_NAME = "box";
     
 

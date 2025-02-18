@@ -5,7 +5,10 @@ class CfgPatches
 		units[]= {};
 		weapons[]={};
 		requiredVersion=0.1;
-		requiredAddons[]= {"KUBCconsole","DZ_Characters"};
+		requiredAddons[]= 
+		{
+			"KUBCconsole"
+		};
 	};
 };
 class CfgMods 
@@ -14,7 +17,7 @@ class CfgMods
 	{
 		name = "KUBC.DAYZ.ITEMS";
 		author = "kubcoder";
-		version = 2.2;
+		version = 2.4;
 		type = "mod";
 		class defs 
 		{

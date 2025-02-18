@@ -1,23 +1,30 @@
 class KCItems
 {
     static const string MOD_NAME = "KC.ITEMS";
+
     static void Log(string Message, KCLogLevel Level = KCLogLevel.Info)
     {
         KCLog.Write(MOD_NAME, Message, Level);
     }
-    /** @brief Корневая папка разработчика*/
+    /// @brief Корневая папка разработчика
     static const string ROOT_PATH = "KUBC";
-    /** @brief Корневая папка класса мода*/
+    
+    /// @brief Корневая папка класса мода
     static const string MOD_PATH = "ITEMS";
-    /** @brief Папка где размещается справочник итемов*/
+    
+    /// @brief Папка где размещается справочник итемов
     static const string DICT_PATH = "Dictionary";
-    /** @brief Папка где размещаются сеты итемов*/
+    
+    /// @brief Папка где размещаются сеты итемов
     static const string SETS_PATH = "Sets";
-    /** @brief Папка где размещаются сеты машин*/
+    
+    /// @brief Папка где размещаются сеты машин
     static const string CARS_PATH = "Cars";
-    /** @brief Папка с сохранеными экипировками*/
+    
+    /// @brief Папка с сохранеными экипировками
     static const string EQUIP_PATH = "Equip";
-    /** @brief Создаем папку мода и файл настроек если он не существует*/
+    
+    /// @brief Создаем папку мода и файл настроек если он не существует
     static void CreatePaths()
     {
         MakeDirectory("$profile:"+ROOT_PATH);
@@ -37,33 +44,33 @@ class KCItems
             JsonFileLoader<KCItemsSaveSettings>.JsonSaveFile(GetSettingsFile(), options);
         }
     }
-    /** @brief Полный путь к папке мода*/
+    /// @brief Полный путь к папке мода
     static string GetModPath()
     {
         return "$profile:"+ROOT_PATH + "\\" + MOD_PATH;
     }
-    /** @brief Полный путь к папке справочника итемов*/
+    /// @brief Полный путь к папке справочника итемов
     static string GetDictionaryPath()
     {
         return GetModPath() + "\\" + DICT_PATH;
     }
 
-    /** @brief Полный путь к папке наборов итемов*/
+    /// @brief Полный путь к папке наборов итемов
     static string GetStetsPath()
     {
         return GetModPath() + "\\" + SETS_PATH;
     }
 
-    /** @brief Имя файла настроек*/
+    /// @brief Имя файла настроек
     static const string SETT_FILENAME = "ItemsSetOptions.json";
 
-    /** @brief Получить полное имя файла настроек сохранения набора итемов*/
+    /// @brief Получить полное имя файла настроек сохранения набора итемов
     static string GetSettingsFile()
     {
         return GetModPath() + "\\" + SETT_FILENAME;
     }
 
-    /** @brief Получить настройки сохранения итемов*/
+    /// @brief Получить настройки сохранения итемов
     static KCItemsSaveSettings GetItemsSaveSettings()
     {
         KCItemsSaveSettings options;
@@ -75,11 +82,11 @@ class KCItems
         return new KCItemsSaveSettings();
     }
 
-    /** @brief Имя файла для сохранения набора итемов
-    *   @param SetName введенное имя набора итемов
-    *   @param player игрок который запросил сохранение
-    *           если указано NULL то имя файла будет в общей папке набора
-    */
+    /// @brief Имя файла для сохранения набора итемов
+    /// @param SetName введенное имя набора итемов
+    /// @param player игрок который запросил сохранение
+    ///           если указано NULL то имя файла будет в общей папке набора
+    
     static string GetSetsFile(string SetName, PlayerBase player = NULL)
     {
         if (player)
@@ -93,10 +100,10 @@ class KCItems
         }
     }
 
-    /** @brief Полный путь к папке экипировок
-    *   @param player для какого игрока получать папку, если указан NULL
-    *                 то будет возвращено корневая папка экипировок
-    */
+    /// @brief Полный путь к папке экипировок
+    /// @param player для какого игрока получать папку, если указан NULL
+    ///       то будет возвращено корневая папка экипировок
+    
     static string GetEquipPath(PlayerBase player = NULL)
     {
         if (player)
@@ -110,43 +117,27 @@ class KCItems
             return GetModPath() + "\\" + EQUIP_PATH;
         }
     }
-    /** @brief Получить полный путь к файлу экипировки
-    *   @param SettName имя экипировки
-    *   @param player для какого игрока получать папку, если указан NULL
-    *                 то будет возвращено корневая папка экипировок
-    */
+    /// @brief Получить полный путь к файлу экипировки
+    /// @param SettName имя экипировки
+    /// @param player для какого игрока получать папку, если указан NULL
+    ///                 то будет возвращено корневая папка экипировок
+    
     static string GetEquipFileName(string SettName, PlayerBase player = NULL)
     {
         return GetEquipPath(player) + "\\" + SettName + ".json";
     }
 
-    /** @brief Полный путь к папке наборов машин*/
+    /// @brief Полный путь к папке наборов машин
     static string GetCarsPath()
     {
         return GetModPath() + "\\" + CARS_PATH;
     }
 
-    /** @brief Полный путь к набору машины
-    *   @param SettName имя сохраненной тачилы
-    *   @param player для какого игрока получать папку, если указан NULL
-    *                 то будет возвращено корневая папка экипировок
-    */
-    static string GetCarFile(string SetName, PlayerBase player = NULL)
-    {
-        if (player)
-        {
-            MakeDirectory(GetCarsPath() + "\\" + player.GetIdentity().GetPlainId());
-            return GetCarsPath() + "\\" + player.GetIdentity().GetPlainId() + "\\" + SetName + ".json";
-        }
-        else
-        {
-            return GetCarsPath() + "\\" + SetName + ".json";
-        }
-    }
+    
 
-    /** @brief Починить игровой итем, и все его компоненты
-    *   @param eAi игровой предмет который нужно починять
-    */
+    /// @brief Починить игровой итем, и все его компоненты
+    /// @param eAi игровой предмет который нужно починять
+    
     static void RepairItem(EntityAI eAi)
     {
         eAi.SetHealthMax( "", "" );

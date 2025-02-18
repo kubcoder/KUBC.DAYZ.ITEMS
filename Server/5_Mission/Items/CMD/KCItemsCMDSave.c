@@ -1,17 +1,22 @@
-/** @brief Команда сохранения набора итемов*/
+/// @brief Команда сохранения набора итемов
 class KCItemsCMDSave : KCUserCMD
 {
-    /** @brief название команды*/
+    /// @brief название команды
     static const string CMD_NAME = "save";
-    /** @brief аргумент перезаписи существующего набора*/
+    
+    /// @brief аргумент перезаписи существующего набора
     static const string ARG_REPLACE = "r";
-    /** @brief аргумент записи набора в общую папку админов*/
+    
+    /// @brief аргумент записи набора в общую папку админов
     static const string ARG_SHARED = "s";
-    /** @brief аргумент записи набора вокруг игрока*/
+    
+    /// @brief аргумент записи набора вокруг игрока
     static const string ARG_GROUND = "g";
-    /** @brief аргумент записи набора вокруг игрока с сохренением абсолютных координат*/
+    
+    /// @brief аргумент записи набора вокруг игрока с сохренением абсолютных координат
     static const string ARG_ABSGROUND = "a";
-    /** @brief Растояние поиска предметов по умолчанию*/
+    
+    /// @brief Растояние поиска предметов по умолчанию
     static const float DEF_DISTANCE = 3;
 
     override string GetName()

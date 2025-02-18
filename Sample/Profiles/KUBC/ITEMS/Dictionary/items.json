@@ -71,6 +71,10 @@
         "Category": "",
         "Description": "Around the World in 80 Days"
     },
+    "ProxySedanHood": {
+        "Category": "",
+        "Description": "ProxySedanHood"
+    },
     "Mag_AKM_Palm30Rnd_Green": {
         "Category": "",
         "Description": "Плм. магазин КА-M, 30 пат."
@@ -91,9 +95,17 @@
         "Category": "Оружие",
         "Description": "Дерринджер"
     },
-    "ZmbF_HikerSkinny_Grey": {
-        "Category": "Зомби",
-        "Description": "Зараженный"
+    "ProxyHatchback_02_Hood": {
+        "Category": "",
+        "Description": "ProxyHatchback_02_Hood"
+    },
+    "Headdress_Wolf": {
+        "Category": "Одежда",
+        "Description": "Шапка охотника"
+    },
+    "Sweater_ChristmasBlue": {
+        "Category": "Одежда",
+        "Description": "Свитер"
     },
     "Mosin9130_Black": {
         "Category": "Оружие",
@@ -147,13 +159,13 @@
         "Category": "",
         "Description": "Proxymagazine_M14_10rnd"
     },
-    "Offroad_02_Door_2_1_Rust": {
-        "Category": "",
-        "Description": "Передняя правая дверь M1025"
+    "ZmbF_HikerSkinny_Grey": {
+        "Category": "Зомби",
+        "Description": "Зараженный"
     },
-    "CowPelt": {
+    "Land_wreck_truck01_aban2_blue_DE": {
         "Category": "",
-        "Description": "Шкура коровы."
+        "Description": ""
     },
     "ProxyButtstock_mp5K_stock": {
         "Category": "",
@@ -210,6 +222,14 @@
     "Bandana_Greenpattern": {
         "Category": "Одежда",
         "Description": "Бандана"
+    },
+    "Offroad_02_Door_2_1_Rust": {
+        "Category": "",
+        "Description": "Передняя правая дверь M1025"
+    },
+    "Van_HouseBoat": {
+        "Category": "Транспорт",
+        "Description": "Houseboat"
     },
     "StoneKnife": {
         "Category": "",
@@ -271,9 +291,9 @@
         "Category": "Одежда",
         "Description": "Берет"
     },
-    "Land_Wreck_V3S_DE": {
-        "Category": "",
-        "Description": ""
+    "Shemag_Green": {
+        "Category": "Одежда",
+        "Description": "Шемаг"
     },
     "BomberJacket_Grey": {
         "Category": "Одежда",
@@ -351,13 +371,17 @@
         "Category": "Одежда",
         "Description": "Боевой шлем"
     },
-    "BookTheHiddenChildren": {
-        "Category": "",
-        "Description": "The Hidden Children"
+    "AKS74U": {
+        "Category": "Оружие",
+        "Description": "КАС-74У"
     },
     "ZmbM_CitizenASkinny_Blue": {
         "Category": "Зомби",
         "Description": "Зараженный"
+    },
+    "Mag_CMAG_30Rnd_Black": {
+        "Category": "",
+        "Description": "Магазин Mag-C, 30 пат."
     },
     "NurseDress_Blue": {
         "Category": "Одежда",
@@ -366,6 +390,10 @@
     "Hatchback_02_Door_2_2_Blue": {
         "Category": "",
         "Description": "Задняя правая дверь Gunter 2"
+    },
+    "ProxySedan_02_Wheel_ruined": {
+        "Category": "",
+        "Description": "ProxySedan_02_Wheel_ruined"
     },
     "Proxygrenade": {
         "Category": "",
@@ -407,17 +435,25 @@
         "Category": "",
         "Description": "Фильтр противогаза"
     },
-    "SawedoffMagnum": {
-        "Category": "Оружие",
-        "Description": "Обрез револьвера"
+    "DownJacket_Blue": {
+        "Category": "Одежда",
+        "Description": "Пуховик"
     },
     "ProxyMagazine_PMAG_20": {
         "Category": "",
         "Description": "ProxyMagazine_PMAG_20"
     },
-    "ManSuit_Brown": {
+    "Animal_RangiferTarandusF": {
+        "Category": "Животные",
+        "Description": "Северный олень"
+    },
+    "BeanieHat_Blue": {
         "Category": "Одежда",
-        "Description": "Пиджак мужской"
+        "Description": "Вязаная шапка"
+    },
+    "ZmbM_eastSoldier_Heavy_Navy": {
+        "Category": "Зомби",
+        "Description": "Зараженный"
     },
     "M4_PlasticHndgrd": {
         "Category": "",
@@ -435,9 +471,9 @@
         "Category": "",
         "Description": "head"
     },
-    "B95_Green": {
-        "Category": "Оружие",
-        "Description": "Blaze"
+    "CowPelt": {
+        "Category": "",
+        "Description": "Шкура коровы."
     },
     "GorkaEJacket_Autumn": {
         "Category": "Одежда",
@@ -447,9 +483,9 @@
         "Category": "",
         "Description": "ProxyFeet_DZ"
     },
-    "JungleBoots_Brown": {
-        "Category": "Одежда",
-        "Description": "Ботинки для джунглей"
+    "Animal_VulpesVulpes": {
+        "Category": "Животные",
+        "Description": "Рыжая лисица"
     },
     "Breeches_Beige": {
         "Category": "Одежда",
@@ -459,9 +495,9 @@
         "Category": "Одежда",
         "Description": "Шапка-ушанка"
     },
-    "ProxyOptic_PSO1": {
+    "Plastic_Explosive_Placing": {
         "Category": "",
-        "Description": "ProxyOptic_PSO1"
+        "Description": "Пластичная взрывчатка"
     },
     "WoolCoat_GreyCheck": {
         "Category": "Одежда",
@@ -491,9 +527,9 @@
         "Category": "",
         "Description": "Передняя левая дверь Sarka 120"
     },
-    "AmmoBox_762x54_20Rnd": {
+    "StaticObj_Decal_damage_medium1_DE": {
         "Category": "",
-        "Description": "Коробка патронов 7,62x54 мм R"
+        "Description": ""
     },
     "DressShoes_Black": {
         "Category": "Одежда",
@@ -510,6 +546,10 @@
     "Skirt_Blue": {
         "Category": "Одежда",
         "Description": "Джинсовая юбка"
+    },
+    "ScientificBriefcaseKeys": {
+        "Category": "",
+        "Description": "Ключи от секретного чемоданчика"
     },
     "BoarSteakMeat": {
         "Category": "Еда",
@@ -575,9 +615,9 @@
         "Category": "Одежда",
         "Description": "Лыжная маска"
     },
-    "Mag_MakarovPB_8Rnd": {
+    "Van_Detergent": {
         "Category": "",
-        "Description": "$UNT$Makarov PB6P9 magazine"
+        "Description": "Washer Detergent"
     },
     "SurvivorF_Frida": {
         "Category": "",
@@ -587,9 +627,9 @@
         "Category": "",
         "Description": "Задняя правая дверь Olga 24"
     },
-    "ConstructionHelmet_Blue": {
+    "BalaclavaMask_Chain": {
         "Category": "Одежда",
-        "Description": "Строительная каска"
+        "Description": "Лыжная маска"
     },
     "ProxyEyewear": {
         "Category": "",
@@ -606,6 +646,10 @@
     "SurvivorM_Taiki": {
         "Category": "",
         "Description": "Выживший"
+    },
+    "CrabCan_Opened": {
+        "Category": "Еда",
+        "Description": "Крабовые консервы"
     },
     "TacticalGloves_Black": {
         "Category": "Одежда",
@@ -651,7 +695,11 @@
         "Category": "",
         "Description": ""
     },
-    "Armband_Zenit": {
+    "ProxyVan_01_Door_2_1": {
+        "Category": "",
+        "Description": "ProxyVan_01_Door_2_1"
+    },
+    "Armband_RSTA": {
         "Category": "Одежда",
         "Description": "Нарукавная повязка"
     },
@@ -659,13 +707,13 @@
         "Category": "",
         "Description": "FreeDebugCamera"
     },
-    "Bark_Oak": {
-        "Category": "",
-        "Description": "Темная кора"
+    "PaydayMask_Wolf": {
+        "Category": "Одежда",
+        "Description": "Маска Вулфа"
     },
-    "AmmoBox_556x45_20Rnd": {
-        "Category": "",
-        "Description": "Коробка патронов 5,56x45 мм"
+    "DownJacket_Red": {
+        "Category": "Одежда",
+        "Description": "Пуховик"
     },
     "Mag_AK101_30Rnd": {
         "Category": "",
@@ -795,6 +843,14 @@
         "Category": "",
         "Description": "ProxyLongHorn"
     },
+    "GlassBottle": {
+        "Category": "Еда",
+        "Description": "Стеклянная бутылка"
+    },
+    "Van_WoodenBoat_Kit": {
+        "Category": "",
+        "Description": "Wooden Boat Kit"
+    },
     "Pickaxe": {
         "Category": "",
         "Description": "Кирка"
@@ -843,9 +899,9 @@
         "Category": "",
         "Description": "Набор для ремонта шин"
     },
-    "PSO1Optic": {
-        "Category": "",
-        "Description": "Прицел ПСО-1"
+    "SkiGloves_Blue": {
+        "Category": "Одежда",
+        "Description": "Лыжные перчатки"
     },
     "Sedan_02_Trunk_Grey": {
         "Category": "",
@@ -855,9 +911,9 @@
         "Category": "Животные",
         "Description": "Волк"
     },
-    "ProxySingle_Metal_Sheet": {
-        "Category": "",
-        "Description": "ProxySingle_Metal_Sheet"
+    "Van_Airboat": {
+        "Category": "Транспорт",
+        "Description": "Airboat"
     },
     "Fal_OeBttstck": {
         "Category": "",
@@ -891,9 +947,9 @@
         "Category": "Одежда",
         "Description": "Зимний подшлемник"
     },
-    "CivSedanDoors_Driver_WhiteRust": {
-        "Category": "",
-        "Description": "Передняя левая дверь Olga 24"
+    "BallisticHelmet_BDU": {
+        "Category": "Одежда",
+        "Description": "Камуфляжный шлем"
     },
     "StaticObj_Wreck_Train_Wagon_Tanker_DE": {
         "Category": "",
@@ -915,9 +971,9 @@
         "Category": "",
         "Description": "ProxyMxHelmet_mouthguard"
     },
-    "Mag_FNX45_15Rnd": {
-        "Category": "",
-        "Description": "Магазин FX-45, 15 пат."
+    "SlacksPants_Blue": {
+        "Category": "Одежда",
+        "Description": "Брюки"
     },
     "HipPack_Black": {
         "Category": "Одежда",
@@ -967,13 +1023,17 @@
         "Category": "Оружие",
         "Description": "СВАЛ"
     },
+    "ProxyMosin_Compensator": {
+        "Category": "",
+        "Description": "ProxyMosin_Compensator"
+    },
     "BaseballCap_Pink": {
         "Category": "Одежда",
         "Description": "Бейсболка"
     },
-    "Flashlight": {
+    "PowerGeneratorStatic": {
         "Category": "",
-        "Description": "Фонарик"
+        "Description": "Электрический генератор"
     },
     "MP5_RailHndgrd": {
         "Category": "",
@@ -1063,9 +1123,9 @@
         "Category": "Одежда",
         "Description": "Водонепроницаемый рюкзак"
     },
-    "BookLleMystrieuse": {
-        "Category": "",
-        "Description": "L'Île mystérieuse"
+    "SherpaHat_Red": {
+        "Category": "Одежда",
+        "Description": "Шапочка из шерпы"
     },
     "AgaricusMushroom": {
         "Category": "Еда",
@@ -1075,9 +1135,9 @@
         "Category": "",
         "Description": "Примитивная удочка"
     },
-    "Sedan_02_Door_1_1_Red": {
+    "Land_WarheadStorage_Top": {
         "Category": "",
-        "Description": "Передняя левая дверь Sarka 120"
+        "Description": ""
     },
     "ProxyFlaregun": {
         "Category": "",
@@ -1095,6 +1155,10 @@
         "Category": "Одежда",
         "Description": "Штурмовые ботинки"
     },
+    "ProxySedan_02_Door_1_2": {
+        "Category": "",
+        "Description": "ProxySedan_02_Door_1_2"
+    },
     "Ammo_12gaPellets": {
         "Category": "",
         "Description": "Ружейные патроны 12 калибра"
@@ -1106,6 +1170,10 @@
     "TLRLight": {
         "Category": "",
         "Description": "Фонарик для пистолета"
+    },
+    "ProxyVan_01_Door_1_1": {
+        "Category": "",
+        "Description": "ProxyVan_01_Door_1_1"
     },
     "Proxybuttstock_aks": {
         "Category": "",
@@ -1154,6 +1222,10 @@
     "Armband_APA": {
         "Category": "Одежда",
         "Description": "Нарукавная повязка"
+    },
+    "BallisticHelmet_Navy": {
+        "Category": "Одежда",
+        "Description": "Камуфляжный шлем"
     },
     "EyeMask_Christmas": {
         "Category": "Одежда",
@@ -1243,9 +1315,9 @@
         "Category": "",
         "Description": "Задняя правая дверь Olga 24"
     },
-    "BeanieHat_Blue": {
+    "ManSuit_Brown": {
         "Category": "Одежда",
-        "Description": "Вязаная шапка"
+        "Description": "Пиджак мужской"
     },
     "ProxyBaseBuilding": {
         "Category": "",
@@ -1283,9 +1355,9 @@
         "Category": "",
         "Description": "Большая палатка"
     },
-    "BookTheJungleBook": {
-        "Category": "",
-        "Description": "The Jungle Book"
+    "PaydayMask_Dallas": {
+        "Category": "Одежда",
+        "Description": "Маска Далласа"
     },
     "ProxyHandguard_M4_RIS": {
         "Category": "",
@@ -1302,6 +1374,10 @@
     "StaticObj_Decal_RunwayPanel_Damage_3": {
         "Category": "",
         "Description": ""
+    },
+    "DownJacket_Green": {
+        "Category": "Одежда",
+        "Description": "Пуховик"
     },
     "RidersJacket_Black": {
         "Category": "Одежда",
@@ -1355,6 +1431,10 @@
         "Category": "",
         "Description": "ProxyAK_47_v58_Proxy"
     },
+    "JungleBoots_Brown": {
+        "Category": "Одежда",
+        "Description": "Ботинки для джунглей"
+    },
     "UnknownFoodCan_Opened": {
         "Category": "Еда",
         "Description": "Загадочные консервы"
@@ -1375,9 +1455,21 @@
         "Category": "",
         "Description": "Задняя левая дверь Olga 24"
     },
+    "BallisticHelmet_Woodland": {
+        "Category": "Одежда",
+        "Description": "Камуфляжный шлем"
+    },
     "Pen_Blue": {
         "Category": "",
         "Description": "Ручка"
+    },
+    "ProxySingle_Metal_Sheet": {
+        "Category": "",
+        "Description": "ProxySingle_Metal_Sheet"
+    },
+    "Boat_01_Orange": {
+        "Category": "Транспорт",
+        "Description": "Резиновая лодка"
     },
     "BallisticHelmet_Black": {
         "Category": "Одежда",
@@ -1411,6 +1503,10 @@
         "Category": "",
         "Description": "$UNT$ATLAS Bipod"
     },
+    "Van_Catamaran": {
+        "Category": "Транспорт",
+        "Description": "Catamaran Lagoon 42"
+    },
     "AmmoBox_308WinTracer_20Rnd": {
         "Category": "",
         "Description": "Коробка трассирующих патронов .308 WIN"
@@ -1418,6 +1514,14 @@
     "BookFaust": {
         "Category": "",
         "Description": "Faust"
+    },
+    "Land_Wreck_V3S_DE": {
+        "Category": "",
+        "Description": ""
+    },
+    "ProxyMagazine_PMAG_30": {
+        "Category": "",
+        "Description": "ProxyMagazine_PMAG_30"
     },
     "PressVest_LightBlue": {
         "Category": "Одежда",
@@ -1443,9 +1547,13 @@
         "Category": "",
         "Description": "Proxycombination_lock4"
     },
-    "EngineOil": {
+    "Flag_Refuge": {
         "Category": "",
-        "Description": "Моторное масло"
+        "Description": "Флаг"
+    },
+    "AmmoBox_762x54_20Rnd": {
+        "Category": "",
+        "Description": "Коробка патронов 7,62x54 мм R"
     },
     "Mag_AKM_Palm30Rnd": {
         "Category": "",
@@ -1462,6 +1570,10 @@
     "DressShoes_White": {
         "Category": "Одежда",
         "Description": "Туфли"
+    },
+    "ProxyOffroad_02_Door_1_2": {
+        "Category": "",
+        "Description": "ProxyOffroad_02_Door_1_2"
     },
     "AugShort": {
         "Category": "Оружие",
@@ -1518,10 +1630,6 @@
     "TrackSuitJacket_Blue": {
         "Category": "Одежда",
         "Description": "Спортивная куртка"
-    },
-    "Vodka": {
-        "Category": "Еда",
-        "Description": "Стеклянная бутылка"
     },
     "ZmbM_HeavyIndustryWorker": {
         "Category": "Зомби",
@@ -1631,6 +1739,10 @@
         "Category": "",
         "Description": ""
     },
+    "GhillieHood_Winter": {
+        "Category": "Одежда",
+        "Description": "Маскировочный капюшон"
+    },
     "Mag_Arrows_Quiver": {
         "Category": "",
         "Description": "$UNT$Arrows Quiver"
@@ -1641,7 +1753,7 @@
     },
     "FoxPelt": {
         "Category": "",
-        "Description": "$UNT$Pelt"
+        "Description": "Шкура лисицы"
     },
     "WoolGlovesFingerless_ChristmasBlue": {
         "Category": "Одежда",
@@ -1655,9 +1767,13 @@
         "Category": "Одежда",
         "Description": "Штаны медика"
     },
-    "Armband_Rooster": {
+    "QuiltedJacket_Green": {
         "Category": "Одежда",
-        "Description": "Нарукавная повязка"
+        "Description": "Телогрейка"
+    },
+    "ProxyOffroad_02_Trunk": {
+        "Category": "",
+        "Description": "ProxyOffroad_02_Trunk"
     },
     "Mag_ShockCartridge": {
         "Category": "",
@@ -1671,9 +1787,9 @@
         "Category": "Зомби",
         "Description": "Зараженный"
     },
-    "HescoBox": {
+    "ProxyMagazine_cz61": {
         "Category": "",
-        "Description": "Ограждение из проволочной сетки"
+        "Description": "ProxyMagazine_cz61"
     },
     "Shirt_RedCheck": {
         "Category": "Одежда",
@@ -1703,9 +1819,9 @@
         "Category": "Зомби",
         "Description": "Зараженный"
     },
-    "ProxyMagazine_saiga_mag5": {
+    "Mag_MakarovPB_8Rnd": {
         "Category": "",
-        "Description": "ProxyMagazine_saiga_mag5"
+        "Description": "$UNT$Makarov PB6P9 magazine"
     },
     "RDG2SmokeGrenade_Black": {
         "Category": "",
@@ -1719,9 +1835,9 @@
         "Category": "",
         "Description": "Магазин DMR, 10 пат."
     },
-    "Proxymagazine_cz550_4rnd": {
+    "Chemlight_NearBubble": {
         "Category": "",
-        "Description": "Proxymagazine_cz550_4rnd"
+        "Description": "Химсвет"
     },
     "ProxyOTs14_Silencer": {
         "Category": "",
@@ -1735,6 +1851,10 @@
         "Category": "",
         "Description": "face"
     },
+    "ConstructionHelmet_Blue": {
+        "Category": "Одежда",
+        "Description": "Строительная каска"
+    },
     "AmmoBox_45ACP_25rnd": {
         "Category": "",
         "Description": "Коробка патронов .45 ACP"
@@ -1747,6 +1867,10 @@
         "Category": "",
         "Description": "ProxyRadiator_car"
     },
+    "NBCHoodWhite": {
+        "Category": "Одежда",
+        "Description": "Капюшон химкостюма"
+    },
     "Aug_Barrel": {
         "Category": "",
         "Description": "$UNT$Aug Steyr Barrel"
@@ -1754,6 +1878,10 @@
     "BookBlackJack": {
         "Category": "",
         "Description": "Black Jack"
+    },
+    "OMKPants_Navy": {
+        "Category": "Одежда",
+        "Description": "Штаны ОМК"
     },
     "ProxyCookingPot": {
         "Category": "",
@@ -1779,6 +1907,10 @@
         "Category": "",
         "Description": "Moby Dick"
     },
+    "ScientificBriefcase": {
+        "Category": "",
+        "Description": "Секретный чемоданчик"
+    },
     "ZmbM_CommercialPilotOld_Olive": {
         "Category": "Зомби",
         "Description": "Зараженный"
@@ -1787,9 +1919,9 @@
         "Category": "",
         "Description": "Коробка патронов 9x39 мм"
     },
-    "ProxyMagazine_PMAG_10": {
+    "ProxyBattery_Car": {
         "Category": "",
-        "Description": "ProxyMagazine_PMAG_10"
+        "Description": "ProxyBattery_Car"
     },
     "BookErewhon": {
         "Category": "",
@@ -1871,9 +2003,9 @@
         "Category": "",
         "Description": ""
     },
-    "UnderSlugGrenadeM4": {
-        "Category": "Оружие",
-        "Description": "$UNT$UnderSlugGrenadeM4"
+    "AliceBag_NearBubble": {
+        "Category": "Одежда",
+        "Description": "Полевой рюкзак"
     },
     "Rope": {
         "Category": "",
@@ -1899,9 +2031,9 @@
         "Category": "",
         "Description": "ProxyBysta"
     },
-    "RadarCap_Green": {
-        "Category": "Одежда",
-        "Description": "Вязаная шапка с козырьком"
+    "BookATexasMatchmaker": {
+        "Category": "",
+        "Description": "A Texas Matchmaker"
     },
     "Proxyimprovised_fixture": {
         "Category": "",
@@ -1919,9 +2051,13 @@
         "Category": "",
         "Description": ""
     },
-    "Animal_GallusGallusDomesticus": {
-        "Category": "Животные",
-        "Description": "Петух"
+    "ProxyHatchback_02_Door_1_1": {
+        "Category": "",
+        "Description": "ProxyHatchback_02_Door_1_1"
+    },
+    "LeatherStorageVest_Natural": {
+        "Category": "Одежда",
+        "Description": "Кожаный жилет"
     },
     "QuiltedJacket_Yellow": {
         "Category": "Одежда",
@@ -1959,13 +2095,13 @@
         "Category": "",
         "Description": "Автомобильная лампа в коробке"
     },
-    "LeatherJacket_Black": {
-        "Category": "Одежда",
-        "Description": "Кожаная куртка"
-    },
-    "ProxyMagazine_PMAG_30": {
+    "StaticObj_Roadblock_Wood_Small_DE": {
         "Category": "",
-        "Description": "ProxyMagazine_PMAG_30"
+        "Description": ""
+    },
+    "ClaymoreMine": {
+        "Category": "",
+        "Description": "Мина «Клеймор»"
     },
     "StaticObj_Wreck_Train_Wagon_Flat_Mil_DE": {
         "Category": "",
@@ -1982,6 +2118,10 @@
     "StaticObj_Wreck_Train_Wagon_Flat_DE": {
         "Category": "",
         "Description": ""
+    },
+    "ProxyNivaDoors_Trunk": {
+        "Category": "",
+        "Description": "ProxyNivaDoors_Trunk"
     },
     "ZmbM_priestPopSkinny": {
         "Category": "Зомби",
@@ -2043,9 +2183,13 @@
         "Category": "",
         "Description": ""
     },
-    "TacticalGloves_Beige": {
-        "Category": "Одежда",
-        "Description": "Тактические перчатки"
+    "Lockpick": {
+        "Category": "",
+        "Description": "Отмычка"
+    },
+    "MediumTent": {
+        "Category": "",
+        "Description": "Средняя палатка"
     },
     "Pen_Green": {
         "Category": "",
@@ -2055,9 +2199,9 @@
         "Category": "",
         "Description": "face"
     },
-    "StaticObj_Train_Wagon_Flat_Industrial_Barrels_DE": {
-        "Category": "",
-        "Description": ""
+    "CraterellusMushroom": {
+        "Category": "Еда",
+        "Description": "Лисичка"
     },
     "Mag_CMAG_10Rnd_Black": {
         "Category": "",
@@ -2083,9 +2227,9 @@
         "Category": "",
         "Description": "Магазин КА-74, 30 пат."
     },
-    "ProxyOptic_ACOG": {
+    "ProxySedan_02_Door_2_1": {
         "Category": "",
-        "Description": "ProxyOptic_ACOG"
+        "Description": "ProxySedan_02_Door_2_1"
     },
     "KitchenTimer": {
         "Category": "",
@@ -2107,6 +2251,10 @@
         "Category": "",
         "Description": "Передняя левая дверь Olga 24"
     },
+    "FireplaceFireBarrel": {
+        "Category": "",
+        "Description": "Костер"
+    },
     "ProxyBayonet_Mosin": {
         "Category": "",
         "Description": "ProxyBayonet_Mosin"
@@ -2127,17 +2275,21 @@
         "Category": "",
         "Description": "face"
     },
+    "ProxyIkarusWheel": {
+        "Category": "",
+        "Description": "ProxyIkarusWheel"
+    },
     "SodaCan_Kvass": {
         "Category": "Еда",
         "Description": "Квас Mad Monk"
     },
-    "QuiltedJacket_Violet": {
-        "Category": "Одежда",
-        "Description": "Телогрейка"
+    "RabbitSnareTrap": {
+        "Category": "",
+        "Description": "Силок"
     },
-    "MilitaryBeret_NZ": {
-        "Category": "Одежда",
-        "Description": "Берет"
+    "ZmbM_NBC_White": {
+        "Category": "Зомби",
+        "Description": "Зараженный"
     },
     "Mag_SVD_10Rnd": {
         "Category": "",
@@ -2155,6 +2307,10 @@
         "Category": "Одежда",
         "Description": "Пиджак женский"
     },
+    "CivSedanDoors_Driver_WhiteRust": {
+        "Category": "",
+        "Description": "Передняя левая дверь Olga 24"
+    },
     "GorkaHelmetVisor": {
         "Category": "",
         "Description": "Визор штурмового шлема"
@@ -2166,6 +2322,10 @@
     "ProxyMagazine_FNP45": {
         "Category": "",
         "Description": "ProxyMagazine_FNP45"
+    },
+    "PetushokHat_Green": {
+        "Category": "Одежда",
+        "Description": "Шапка «Петушок»"
     },
     "ProxyRPG7_Proxy": {
         "Category": "",
@@ -2259,6 +2419,10 @@
         "Category": "",
         "Description": ""
     },
+    "ProxyHatchback_02_Trunk": {
+        "Category": "",
+        "Description": "ProxyHatchback_02_Trunk"
+    },
     "RecurveBow": {
         "Category": "Оружие",
         "Description": "$UNT$Recurve Bow"
@@ -2291,13 +2455,17 @@
         "Category": "",
         "Description": "Стандартный глушитель"
     },
-    "BookWutheringHeights": {
+    "Proxybelt_back_proxy": {
         "Category": "",
-        "Description": "Wuthering Heights"
+        "Description": "Proxybelt_back_proxy"
     },
     "HikingBoots_Black": {
         "Category": "Одежда",
         "Description": "Походные ботинки"
+    },
+    "Land_WarheadStorage_Entrance_Roof": {
+        "Category": "",
+        "Description": ""
     },
     "Hatchback_02_Door_1_1_BlueRust": {
         "Category": "",
@@ -2323,9 +2491,9 @@
         "Category": "Зомби",
         "Description": "Зараженный"
     },
-    "Hatchback_02_Door_2_1_RedRust": {
-        "Category": "",
-        "Description": "Передняя правая дверь Gunter 2"
+    "OMKJacket_Navy": {
+        "Category": "Одежда",
+        "Description": "Куртка ОМК"
     },
     "BookTheLastMan": {
         "Category": "",
@@ -2335,9 +2503,17 @@
         "Category": "",
         "Description": ""
     },
+    "Van_Yacht": {
+        "Category": "Транспорт",
+        "Description": "Yacht"
+    },
     "ProxyMagazine_akm_palm30": {
         "Category": "",
         "Description": "ProxyMagazine_akm_palm30"
+    },
+    "ProxyMagazine_PMAG_10": {
+        "Category": "",
+        "Description": "ProxyMagazine_PMAG_10"
     },
     "Truck_01_Door_2_1_OrangeRust": {
         "Category": "",
@@ -2346,6 +2522,10 @@
     "ProxyRed9": {
         "Category": "",
         "Description": "ProxyRed9"
+    },
+    "Boat_01_Camo": {
+        "Category": "Транспорт",
+        "Description": "Резиновая лодка"
     },
     "BaseballCap_Black": {
         "Category": "Одежда",
@@ -2379,13 +2559,21 @@
         "Category": "",
         "Description": "ProxyHandguard_AK_Plastic"
     },
-    "Hacksaw": {
+    "PSO1Optic": {
         "Category": "",
-        "Description": "Слесарная ножовка"
+        "Description": "Прицел ПСО-1"
     },
     "StaticObj_Wreck_Uaz_DE": {
         "Category": "",
         "Description": ""
+    },
+    "ProxyVan_Barrel_1": {
+        "Category": "",
+        "Description": "ProxyVan_Barrel_1"
+    },
+    "ProxyVan_Barrel_2": {
+        "Category": "",
+        "Description": "ProxyVan_Barrel_2"
     },
     "AK_WoodBttstck_Black": {
         "Category": "",
@@ -2403,9 +2591,9 @@
         "Category": "",
         "Description": ""
     },
-    "ProxyBattery_Car": {
+    "Land_WarheadStorage_Main": {
         "Category": "",
-        "Description": "ProxyBattery_Car"
+        "Description": ""
     },
     "BookTheCaveOfGold": {
         "Category": "",
@@ -2431,9 +2619,17 @@
         "Category": "",
         "Description": "Семена перца"
     },
-    "BearPelt": {
+    "Land_WarheadStorage_Room2": {
         "Category": "",
-        "Description": "Шкура медведя"
+        "Description": ""
+    },
+    "Land_WarheadStorage_Room3": {
+        "Category": "",
+        "Description": ""
+    },
+    "Land_WarheadStorage_Room4": {
+        "Category": "",
+        "Description": ""
     },
     "TrackSuitPants_Black": {
         "Category": "Одежда",
@@ -2455,9 +2651,21 @@
         "Category": "Одежда",
         "Description": "Телогрейка"
     },
+    "AssaultBag_Winter": {
+        "Category": "Одежда",
+        "Description": "Штурмовой рюкзак"
+    },
+    "OrientalMachete": {
+        "Category": "",
+        "Description": "Восточное мачете"
+    },
     "GhillieAtt_Woodland": {
         "Category": "",
         "Description": "Маскировочный камуфляж для винтовки"
+    },
+    "ReindeerSteakMeat": {
+        "Category": "Еда",
+        "Description": "Стейк из северного оленя"
     },
     "HatchbackHood_WhiteRust": {
         "Category": "",
@@ -2499,9 +2707,9 @@
         "Category": "",
         "Description": "Three Men in a Boat"
     },
-    "ClearSyringe": {
+    "StaticObj_Decal_damage_long5_DE": {
         "Category": "",
-        "Description": "Шприц"
+        "Description": ""
     },
     "Proxytanned_leather": {
         "Category": "",
@@ -2510,6 +2718,10 @@
     "Armband_Bohemia": {
         "Category": "Одежда",
         "Description": "Нарукавная повязка"
+    },
+    "ProxySedanWheel": {
+        "Category": "",
+        "Description": "ProxySedanWheel"
     },
     "CivSedanDoors_BackLeft_BlackRust": {
         "Category": "",
@@ -2535,9 +2747,9 @@
         "Category": "Еда",
         "Description": "Мясная нарезка"
     },
-    "StaticObj_Decal_damage_long5_DE": {
-        "Category": "",
-        "Description": ""
+    "ZmbM_Jacket_bluechecks": {
+        "Category": "Зомби",
+        "Description": "Зараженный"
     },
     "HeadlightH7": {
         "Category": "",
@@ -2555,9 +2767,9 @@
         "Category": "",
         "Description": "Комплект физраствора"
     },
-    "Crossbow_Wood": {
-        "Category": "Оружие",
-        "Description": "Арбалет"
+    "FilteringBottle": {
+        "Category": "Еда",
+        "Description": "Бутылка-фильтр"
     },
     "BalaclavaMask_Green": {
         "Category": "Одежда",
@@ -2586,6 +2798,14 @@
     "PurificationTablets": {
         "Category": "Еда",
         "Description": "Хлорные таблетки"
+    },
+    "MedicalScrubsShirt_Blue": {
+        "Category": "Одежда",
+        "Description": "Рубашка медика"
+    },
+    "GhillieBushrag_Winter": {
+        "Category": "Одежда",
+        "Description": "Маскировочный халат"
     },
     "Armband_LivoniaArmy": {
         "Category": "Одежда",
@@ -2679,6 +2899,14 @@
         "Category": "Одежда",
         "Description": "Кожаные штаны"
     },
+    "BoneKnife": {
+        "Category": "",
+        "Description": "Костяной нож"
+    },
+    "Vikhr": {
+        "Category": "Оружие",
+        "Description": "Вихрь"
+    },
     "Chainsaw": {
         "Category": "",
         "Description": "$UNT$Chainsaw"
@@ -2694,6 +2922,10 @@
     "ZmbF_ShortSkirt_white": {
         "Category": "Зомби",
         "Description": "Зараженный"
+    },
+    "ProxyVan_Detergent": {
+        "Category": "",
+        "Description": "ProxyVan_Detergent"
     },
     "InjectionVial": {
         "Category": "",
@@ -2739,6 +2971,10 @@
         "Category": "Одежда",
         "Description": "Тактический жилет"
     },
+    "Van_Jetski_Blue": {
+        "Category": "Транспорт",
+        "Description": "Jetski Blue"
+    },
     "StaticObj_Wreck_HMMWV_DE": {
         "Category": "",
         "Description": ""
@@ -2771,9 +3007,9 @@
         "Category": "Одежда",
         "Description": "Кожаный жилет"
     },
-    "MilitaryBelt": {
-        "Category": "Одежда",
-        "Description": "Тактический ремень"
+    "Land_WarheadStorage_Entrance": {
+        "Category": "",
+        "Description": ""
     },
     "HuntingBag_Hannah": {
         "Category": "Одежда",
@@ -2835,6 +3071,10 @@
         "Category": "",
         "Description": "Тормозная жидкость"
     },
+    "ProxyHands": {
+        "Category": "",
+        "Description": "ProxyHands"
+    },
     "AK74_Black": {
         "Category": "Оружие",
         "Description": "КА-74"
@@ -2887,17 +3127,17 @@
         "Category": "Зомби",
         "Description": "Зараженный"
     },
-    "ProxyP1": {
-        "Category": "",
-        "Description": "ProxyP1"
+    "SherpaHat_Blue": {
+        "Category": "Одежда",
+        "Description": "Шапочка из шерпы"
     },
     "FeetCover_Improvised": {
         "Category": "Одежда",
         "Description": "Самодельная повязка на ступни"
     },
-    "RabbitPelt": {
+    "Iceaxe": {
         "Category": "",
-        "Description": "Шкура зайца"
+        "Description": "Ледоруб"
     },
     "SteakKnife": {
         "Category": "",
@@ -2967,10 +3207,6 @@
         "Category": "Одежда",
         "Description": "Блузка"
     },
-    "Mag_CZ550_4rnd": {
-        "Category": "",
-        "Description": "STR_CfgMagazines_Mag_CZ550_4rnd0"
-    },
     "OMNOGloves_Brown": {
         "Category": "Одежда",
         "Description": "Боевые перчатки"
@@ -2983,9 +3219,9 @@
         "Category": "Животные",
         "Description": "Косуля"
     },
-    "CombinationLock4": {
+    "BookTheLastTrail": {
         "Category": "",
-        "Description": "Кодовый замок на 4 цифры"
+        "Description": "The Last Trail"
     },
     "SurvivorF_Judy": {
         "Category": "",
@@ -2995,9 +3231,9 @@
         "Category": "",
         "Description": "Скотч"
     },
-    "MaleEliasHead": {
+    "BookLleMystrieuse": {
         "Category": "",
-        "Description": "face"
+        "Description": "L'Île mystérieuse"
     },
     "DarkMotoHelmet_Green": {
         "Category": "Одежда",
@@ -3043,13 +3279,25 @@
         "Category": "",
         "Description": "$UNT$Candle"
     },
+    "Sedan_02_Door_1_1_Red": {
+        "Category": "",
+        "Description": "Передняя левая дверь Sarka 120"
+    },
     "BookRomeoUndJulia": {
         "Category": "",
         "Description": "Romeo und Julia"
     },
+    "Winchester70_Green": {
+        "Category": "Оружие",
+        "Description": "M70 Tundra"
+    },
     "TTSKOPants": {
         "Category": "Одежда",
         "Description": "Боевые штаны"
+    },
+    "ProxyOffroad_02_Door_2_2": {
+        "Category": "",
+        "Description": "ProxyOffroad_02_Door_2_2"
     },
     "Hatchback_02_Door_1_2_BlackRust": {
         "Category": "",
@@ -3067,6 +3315,10 @@
         "Category": "",
         "Description": "face"
     },
+    "Proxywoodenlog": {
+        "Category": "",
+        "Description": "Proxywoodenlog"
+    },
     "M68Optic": {
         "Category": "",
         "Description": "Оружейный прицел"
@@ -3079,9 +3331,9 @@
         "Category": "",
         "Description": "Кости"
     },
-    "ZmbM_FarmerFat_Blue": {
-        "Category": "Зомби",
-        "Description": "Зараженный"
+    "B95_Green": {
+        "Category": "Оружие",
+        "Description": "Blaze"
     },
     "Mag_CMAG_20Rnd_Black": {
         "Category": "",
@@ -3095,6 +3347,10 @@
         "Category": "Одежда",
         "Description": "Кольчужный капюшон"
     },
+    "ProxyLegs": {
+        "Category": "",
+        "Description": "ProxyLegs"
+    },
     "MessTin": {
         "Category": "",
         "Description": "$UNT$Mess tin"
@@ -3102,6 +3358,10 @@
     "BookTheRightsOfWoman": {
         "Category": "",
         "Description": "A Vindication of the Rights of Women"
+    },
+    "SnowstormUshanka_Brown": {
+        "Category": "Одежда",
+        "Description": "Ушанка «Метель»"
     },
     "MedicalScrubsHat_Blue": {
         "Category": "Одежда",
@@ -3127,6 +3387,10 @@
         "Category": "Одежда",
         "Description": "Полевой жилет"
     },
+    "ProxyIkarusDoors_Right": {
+        "Category": "",
+        "Description": "ProxyIkarusDoors_Right"
+    },
     "Plant_Pepper": {
         "Category": "",
         "Description": "Куст перца"
@@ -3151,9 +3415,17 @@
         "Category": "",
         "Description": "Химсвет"
     },
-    "Lockpick": {
+    "ProxyTruck_01_Hood": {
         "Category": "",
-        "Description": "Отмычка"
+        "Description": "ProxyTruck_01_Hood"
+    },
+    "Van_Airboat_Green": {
+        "Category": "Транспорт",
+        "Description": "Airboat Green"
+    },
+    "Mag_SSG82_5rnd": {
+        "Category": "",
+        "Description": "Магазин SSG 82, 5 пат."
     },
     "CourierBag": {
         "Category": "Одежда",
@@ -3191,9 +3463,9 @@
         "Category": "Одежда",
         "Description": "Телогрейка"
     },
-    "NBCBootsGray": {
+    "ChernarusSportShirt": {
         "Category": "Одежда",
-        "Description": "Сапоги химкостюма"
+        "Description": "Спортивная рубашка"
     },
     "DisinfectantAlcohol": {
         "Category": "Еда",
@@ -3223,6 +3495,10 @@
         "Category": "",
         "Description": "Легкий приклад для КАС-74У"
     },
+    "WalleyePollockFilletMeat": {
+        "Category": "Еда",
+        "Description": "Филе сайды"
+    },
     "GardenPlot": {
         "Category": "",
         "Description": ""
@@ -3235,9 +3511,9 @@
         "Category": "",
         "Description": "Спички"
     },
-    "ProxyGPSReceiver": {
+    "Flag_APA": {
         "Category": "",
-        "Description": "ProxyGPSReceiver"
+        "Description": "Флаг"
     },
     "GrozaOptic": {
         "Category": "",
@@ -3315,9 +3591,13 @@
         "Category": "Одежда",
         "Description": "Визор мотошлема"
     },
-    "ArmyPouch_Green": {
-        "Category": "Одежда",
-        "Description": "Армейская сумка"
+    "AK_FoldingBttstck": {
+        "Category": "",
+        "Description": "Легкий приклад для КА"
+    },
+    "ZmbM_eastSoldier_normal_Navy": {
+        "Category": "Зомби",
+        "Description": "Зараженный"
     },
     "Sweater_Blue": {
         "Category": "Одежда",
@@ -3351,9 +3631,9 @@
         "Category": "Оружие",
         "Description": "Kolt 1911 с рисунком"
     },
-    "BoonieHat_NavyBlue": {
-        "Category": "Одежда",
-        "Description": "Панама"
+    "ZmbM_Gamedev_Blue": {
+        "Category": "Зомби",
+        "Description": "Зараженный"
     },
     "BookTheThunderBird": {
         "Category": "",
@@ -3391,9 +3671,17 @@
         "Category": "Одежда",
         "Description": "Тактическая куртка"
     },
+    "StaticObj_Train_Wagon_Flat_Industrial_Barrels_DE": {
+        "Category": "",
+        "Description": ""
+    },
     "ZmbM_FishermanOld_Red": {
         "Category": "Зомби",
         "Description": "Зараженный"
+    },
+    "Proxyplate_carrier_pouches_g": {
+        "Category": "",
+        "Description": "Proxyplate_carrier_pouches_g"
     },
     "HatchbackWheel": {
         "Category": "",
@@ -3415,6 +3703,10 @@
         "Category": "Одежда",
         "Description": "Кроссовый мотошлем"
     },
+    "ClaymoreMinePlacing": {
+        "Category": "",
+        "Description": "Мина «Клеймор»"
+    },
     "Fireplace": {
         "Category": "",
         "Description": "Костер"
@@ -3422,6 +3714,10 @@
     "HikingJacket_Red": {
         "Category": "Одежда",
         "Description": "Походная куртка"
+    },
+    "SnowstormUshanka_White": {
+        "Category": "Одежда",
+        "Description": "Ушанка «Метель»"
     },
     "BookSpinifexAndSand": {
         "Category": "",
@@ -3535,9 +3831,9 @@
         "Category": "",
         "Description": "Магазин Вайга, 8 пат."
     },
-    "ProxyOTs14_Barrel_Grip": {
-        "Category": "",
-        "Description": "ProxyOTs14_Barrel_Grip"
+    "SnowstormUshanka_Olive": {
+        "Category": "Одежда",
+        "Description": "Ушанка «Метель»"
     },
     "Hatchback_02": {
         "Category": "Транспорт",
@@ -3559,9 +3855,17 @@
         "Category": "",
         "Description": "The Poems of Giacomo Leopardi"
     },
+    "ProxyNivaWheel": {
+        "Category": "",
+        "Description": "ProxyNivaWheel"
+    },
     "ZmbF_ShortSkirt_checks": {
         "Category": "Зомби",
         "Description": "Зараженный"
+    },
+    "Chemlight_FarBubble": {
+        "Category": "",
+        "Description": "Химсвет"
     },
     "Hatchback_02_Door_2_1_Blue": {
         "Category": "",
@@ -3575,6 +3879,10 @@
         "Category": "Одежда",
         "Description": "Нарукавная повязка"
     },
+    "BalaclavaMask_BDU": {
+        "Category": "Одежда",
+        "Description": "Лыжная маска"
+    },
     "Proxydirect_cooking_b": {
         "Category": "",
         "Description": "Proxydirect_cooking_b"
@@ -3583,9 +3891,9 @@
         "Category": "Зомби",
         "Description": "Зараженный"
     },
-    "BoneKnife": {
-        "Category": "",
-        "Description": "Костяной нож"
+    "GhillieBushrag_Tan": {
+        "Category": "Одежда",
+        "Description": "Маскировочный халат"
     },
     "MouflonPelt": {
         "Category": "",
@@ -3599,9 +3907,9 @@
         "Category": "Одежда",
         "Description": "Светоотражающий жилет"
     },
-    "AmmoBox_22_50Rnd": {
+    "ProxySedanTrunk": {
         "Category": "",
-        "Description": "Коробка патронов .22 LR"
+        "Description": "ProxySedanTrunk"
     },
     "ProxyTomato_Seeds": {
         "Category": "",
@@ -3610,6 +3918,10 @@
     "Blouse_White": {
         "Category": "Одежда",
         "Description": "Блузка"
+    },
+    "ProxyButtstock_AK_Folding_Green": {
+        "Category": "",
+        "Description": "ProxyButtstock_AK_Folding_Green"
     },
     "StaticObj_Wreck_Train_742_Blue_Mil_DE": {
         "Category": "",
@@ -3662,6 +3974,10 @@
     "Candycane_Red": {
         "Category": "Еда",
         "Description": "Карамельная трость"
+    },
+    "ProxyOffroad_02_Hood": {
+        "Category": "",
+        "Description": "ProxyOffroad_02_Hood"
     },
     "DeadRabbit": {
         "Category": "Еда",
@@ -3723,9 +4039,17 @@
         "Category": "Одежда",
         "Description": "Штаны санитара"
     },
+    "BookTheJungleBook": {
+        "Category": "",
+        "Description": "The Jungle Book"
+    },
     "Derringer_Pink": {
         "Category": "Оружие",
         "Description": "Дерринджер"
+    },
+    "ProxyHatchback_02_Door_2_2": {
+        "Category": "",
+        "Description": "ProxyHatchback_02_Door_2_2"
     },
     "StaticObj_Decal_RunwayPanel_Damage_1": {
         "Category": "",
@@ -3739,9 +4063,9 @@
         "Category": "Одежда",
         "Description": "Тактическая куртка"
     },
-    "StaticObj_Decal_RunwayPanel_Damage_2": {
-        "Category": "",
-        "Description": ""
+    "BalaclavaMask_Pig": {
+        "Category": "Одежда",
+        "Description": "Лыжная маска"
     },
     "CharcoalTablets": {
         "Category": "Еда",
@@ -3771,9 +4095,9 @@
         "Category": "Одежда",
         "Description": "Штурмовой рюкзак"
     },
-    "Flag_Refuge": {
-        "Category": "",
-        "Description": "Флаг"
+    "ZmbM_PatientSkinny_Winter": {
+        "Category": "Зомби",
+        "Description": "Зараженный"
     },
     "Plant_Zucchini": {
         "Category": "",
@@ -3794,6 +4118,10 @@
     "ParamedicJacket_Blue": {
         "Category": "Одежда",
         "Description": "Куртка санитара"
+    },
+    "ProxysedanDoors_cargo2": {
+        "Category": "",
+        "Description": "ProxysedanDoors_cargo2"
     },
     "PlateCarrierVest_Green": {
         "Category": "Одежда",
@@ -3835,13 +4163,13 @@
         "Category": "",
         "Description": "$UNT$Cassette"
     },
-    "ClaymoreMinePlacing": {
-        "Category": "",
-        "Description": "Мина «Клеймор»"
-    },
-    "QuiltedJacket_Green": {
+    "UKAssVest_Winter": {
         "Category": "Одежда",
-        "Description": "Телогрейка"
+        "Description": "Полевой жилет"
+    },
+    "Armband_Rooster": {
+        "Category": "Одежда",
+        "Description": "Нарукавная повязка"
     },
     "Hatchback_02_Door_1_2_Black": {
         "Category": "",
@@ -3858,6 +4186,10 @@
     "Glock19": {
         "Category": "Оружие",
         "Description": "Mlock-91"
+    },
+    "SteelheadTroutFilletMeat": {
+        "Category": "Еда",
+        "Description": "Филе радужной форели"
     },
     "PortableGasStove": {
         "Category": "",
@@ -3927,9 +4259,13 @@
         "Category": "",
         "Description": "Дверь багажника Ada 4x4"
     },
-    "Grenade_ChemGas": {
+    "ProxyIkarusWheel_rear": {
         "Category": "",
-        "Description": "Сосуд PO-X"
+        "Description": "ProxyIkarusWheel_rear"
+    },
+    "Boat_01_Black": {
+        "Category": "Транспорт",
+        "Description": "Резиновая лодка"
     },
     "TaloonBag_Green": {
         "Category": "Одежда",
@@ -3959,6 +4295,10 @@
         "Category": "",
         "Description": "Задняя левая дверь Olga 24"
     },
+    "ProxyHatchback_02_Door_2_1": {
+        "Category": "",
+        "Description": "ProxyHatchback_02_Door_2_1"
+    },
     "QuiltedJacket_Blue": {
         "Category": "Одежда",
         "Description": "Телогрейка"
@@ -3969,11 +4309,15 @@
     },
     "FoxSteakMeat": {
         "Category": "Еда",
-        "Description": "$UNT$Fox Steak"
+        "Description": "Стейк из лисицы"
     },
     "BoonieHat_Black": {
         "Category": "Одежда",
         "Description": "Панама"
+    },
+    "SawedoffMagnum": {
+        "Category": "Оружие",
+        "Description": "Обрез револьвера"
     },
     "MedicalScrubsPants_White": {
         "Category": "Одежда",
@@ -3991,13 +4335,17 @@
         "Category": "Одежда",
         "Description": "Полевой рюкзак"
     },
-    "JumpsuitJacket_Red": {
+    "LeatherShirt_Natural": {
         "Category": "Одежда",
-        "Description": "Куртка рабочего"
+        "Description": "Кожаная рубашка"
     },
     "KukriKnife": {
         "Category": "",
         "Description": "Кукри"
+    },
+    "Shemag_Red": {
+        "Category": "Одежда",
+        "Description": "Шемаг"
     },
     "WinterCoif_Blue": {
         "Category": "Одежда",
@@ -4023,9 +4371,9 @@
         "Category": "Зомби",
         "Description": "Зараженный"
     },
-    "RabbitSnareTrap": {
-        "Category": "",
-        "Description": "Силок"
+    "QuiltedJacket_Violet": {
+        "Category": "Одежда",
+        "Description": "Телогрейка"
     },
     "SkateHelmet_Gray": {
         "Category": "Одежда",
@@ -4131,9 +4479,9 @@
         "Category": "",
         "Description": "Передняя левая дверь Gunter 2"
     },
-    "FNX45_arrow": {
-        "Category": "Оружие",
-        "Description": "FX-45"
+    "Land_Radio_PanelBig": {
+        "Category": "",
+        "Description": "Пульт радиоуправления"
     },
     "M4_CQBBttstck": {
         "Category": "",
@@ -4163,6 +4511,10 @@
         "Category": "Одежда",
         "Description": "Змеёвка"
     },
+    "ProxyTruck_01_WheelDouble_ruined": {
+        "Category": "",
+        "Description": "ProxyTruck_01_WheelDouble_ruined"
+    },
     "BookBible": {
         "Category": "",
         "Description": "$UNT$The Bible"
@@ -4175,13 +4527,21 @@
         "Category": "Одежда",
         "Description": "Полевой жилет"
     },
-    "NailedBaseballBat": {
-        "Category": "",
-        "Description": "Бита с гвоздями"
+    "SlingBag_Gray": {
+        "Category": "Одежда",
+        "Description": "Сумка на ремне"
     },
     "Land_Wreck_hb01_aban1_police": {
         "Category": "",
         "Description": ""
+    },
+    "SurvivorF_Gabi": {
+        "Category": "",
+        "Description": "Выживший"
+    },
+    "ProxyTruck_01_Door_1_1": {
+        "Category": "",
+        "Description": "ProxyTruck_01_Door_1_1"
     },
     "AnniversarySpotLight": {
         "Category": "",
@@ -4207,13 +4567,17 @@
         "Category": "Оружие",
         "Description": "CR-527"
     },
+    "SalineBag": {
+        "Category": "",
+        "Description": "Пакет физраствора"
+    },
     "ProxyBattery_truck": {
         "Category": "",
         "Description": "ProxyBattery_truck"
     },
-    "GhillieBushrag_Tan": {
+    "NavyUniformPants": {
         "Category": "Одежда",
-        "Description": "Маскировочный халат"
+        "Description": "Штаны ВМФ"
     },
     "ProxyEncore": {
         "Category": "",
@@ -4228,6 +4592,10 @@
         "Description": "Балаклава "
     },
     "ZmbF_MechanicNormal_Green": {
+        "Category": "Зомби",
+        "Description": "Зараженный"
+    },
+    "ZmbM_Gamedev_Gray": {
         "Category": "Зомби",
         "Description": "Зараженный"
     },
@@ -4247,13 +4615,17 @@
         "Category": "",
         "Description": ""
     },
+    "ProxyHatchback_02_Wheel": {
+        "Category": "",
+        "Description": "ProxyHatchback_02_Wheel"
+    },
     "Land_wreck_truck01_aban2_green_DE": {
         "Category": "",
         "Description": ""
     },
-    "LeatherSack_Beige": {
-        "Category": "Одежда",
-        "Description": "Кожаный рюкзак"
+    "EngineOil": {
+        "Category": "",
+        "Description": "Моторное масло"
     },
     "Land_Train_Wagon_Box_Mil_DE": {
         "Category": "",
@@ -4283,6 +4655,10 @@
         "Category": "Одежда",
         "Description": "Гермомешок"
     },
+    "ProxyP1": {
+        "Category": "",
+        "Description": "ProxyP1"
+    },
     "BookTranslationsOfShakuntala": {
         "Category": "",
         "Description": "Translations of Shakuntala and Other Works"
@@ -4295,9 +4671,9 @@
         "Category": "Одежда",
         "Description": "Блузка"
     },
-    "BookThePitAndThePendulum": {
+    "SmallProtectorCase": {
         "Category": "",
-        "Description": "The Pit and the Pendulum"
+        "Description": "Защитный ящик"
     },
     "ZmbF_JoggerSkinny_Blue": {
         "Category": "Зомби",
@@ -4327,17 +4703,21 @@
         "Category": "",
         "Description": "Капот Olga 24"
     },
-    "Land_wreck_truck01_aban2_blue_DE": {
+    "Van_WoodenBoat_Engine": {
         "Category": "",
-        "Description": ""
+        "Description": "Rusty Engine"
     },
-    "Iceaxe": {
-        "Category": "",
-        "Description": "$UNT$Ice axe"
+    "ZmbM_FarmerFat_Blue": {
+        "Category": "Зомби",
+        "Description": "Зараженный"
     },
     "WoolCoat_Beige": {
         "Category": "Одежда",
         "Description": "Бушлат"
+    },
+    "Sedan_02_Door_2_2_GreyRust": {
+        "Category": "",
+        "Description": "Задняя правая дверь Sarka 120"
     },
     "Sword": {
         "Category": "",
@@ -4403,9 +4783,17 @@
         "Category": "",
         "Description": "Надульник SG5-K"
     },
+    "ProxySedanWheel_destroyed": {
+        "Category": "",
+        "Description": "ProxySedanWheel_destroyed"
+    },
     "AntiChemInjector": {
         "Category": "",
         "Description": "Противоядие PO-X"
+    },
+    "Proxyjerrycan": {
+        "Category": "",
+        "Description": "Proxyjerrycan"
     },
     "Mag_VSS_10Rnd": {
         "Category": "",
@@ -4414,6 +4802,10 @@
     "Hoodie_Red": {
         "Category": "Одежда",
         "Description": "Толстовка"
+    },
+    "ZmbM_DoctorFat_Winter": {
+        "Category": "Зомби",
+        "Description": "Зараженный"
     },
     "BookKingLear": {
         "Category": "",
@@ -4427,9 +4819,9 @@
         "Category": "Зомби",
         "Description": "Зараженный"
     },
-    "AK_FoldingBttstck": {
-        "Category": "",
-        "Description": "Легкий приклад для КА"
+    "PaydayMask_Chains": {
+        "Category": "Одежда",
+        "Description": "Маска Чейнса"
     },
     "ProxyMP5k_compensator": {
         "Category": "",
@@ -4442,6 +4834,10 @@
     "Ammo_12gaBeanbag": {
         "Category": "",
         "Description": "TODO"
+    },
+    "ProxyVan_01_Door_2_2": {
+        "Category": "",
+        "Description": "ProxyVan_01_Door_2_2"
     },
     "Land_Wreck_sed02_aban2_red_DE": {
         "Category": "",
@@ -4471,9 +4867,9 @@
         "Category": "Зомби",
         "Description": "Зараженный"
     },
-    "AKS74U": {
-        "Category": "Оружие",
-        "Description": "КАС-74У"
+    "ProxyIkarusDoors_Left": {
+        "Category": "",
+        "Description": "ProxyIkarusDoors_Left"
     },
     "StaticObj_Wreck_Train_742_Red_DE": {
         "Category": "",
@@ -4543,6 +4939,10 @@
         "Category": "",
         "Description": "$UNT$Trash Can"
     },
+    "Mag_1911_7Rnd": {
+        "Category": "",
+        "Description": "Магазин Kolt 1911, 7 пат."
+    },
     "Magnum_Cylinder": {
         "Category": "",
         "Description": ""
@@ -4550,6 +4950,10 @@
     "BookPhilosophiaeNaturalis": {
         "Category": "",
         "Description": "Philosophiae Naturalis Principia Mathematica"
+    },
+    "Van_FishingTrawler": {
+        "Category": "Транспорт",
+        "Description": "Fishing Trawler"
     },
     "Sedan_02_Wheel_Ruined": {
         "Category": "",
@@ -4583,6 +4987,10 @@
         "Category": "",
         "Description": "Капот M3S"
     },
+    "Boat_01_Blue": {
+        "Category": "Транспорт",
+        "Description": "Резиновая лодка"
+    },
     "Pen_Black": {
         "Category": "",
         "Description": "Ручка"
@@ -4594,6 +5002,10 @@
     "HandcuffKeys": {
         "Category": "",
         "Description": "Ключи от наручников"
+    },
+    "ProxysedanDoors_cargo1": {
+        "Category": "",
+        "Description": "ProxysedanDoors_cargo1"
     },
     "AmmoBox_545x39_20Rnd": {
         "Category": "",
@@ -4675,6 +5087,10 @@
         "Category": "",
         "Description": "20000 Lieues sous les mers"
     },
+    "ProxyOptic_FNP45_MRDS": {
+        "Category": "",
+        "Description": "ProxyOptic_FNP45_MRDS"
+    },
     "Armband_Snake": {
         "Category": "Одежда",
         "Description": "Нарукавная повязка"
@@ -4687,9 +5103,9 @@
         "Category": "Зомби",
         "Description": "Зараженный"
     },
-    "BookTheLastTrail": {
+    "MaleRolfHead": {
         "Category": "",
-        "Description": "The Last Trail"
+        "Description": "face"
     },
     "Mag_UMP_25Rnd": {
         "Category": "",
@@ -4699,9 +5115,13 @@
         "Category": "",
         "Description": "De la terre a la lune"
     },
-    "Land_Radio_PanelBig": {
+    "SkiGloves_Red": {
+        "Category": "Одежда",
+        "Description": "Лыжные перчатки"
+    },
+    "BookTheHiddenChildren": {
         "Category": "",
-        "Description": "Пульт радиоуправления"
+        "Description": "The Hidden Children"
     },
     "SawedoffMosin9130_Black": {
         "Category": "Оружие",
@@ -4731,6 +5151,10 @@
         "Category": "Одежда",
         "Description": "Капюшон химкостюма"
     },
+    "Van_Jetski_Camo": {
+        "Category": "Транспорт",
+        "Description": "Jetski Camo"
+    },
     "ProxyWeaponlight_TLR": {
         "Category": "",
         "Description": "ProxyWeaponlight_TLR"
@@ -4747,6 +5171,10 @@
         "Category": "Одежда",
         "Description": "Кроссовый мотошлем"
     },
+    "SkiGoggles_WhiteClear": {
+        "Category": "Одежда",
+        "Description": "Лыжные очки"
+    },
     "FirefightersHelmet_Yellow": {
         "Category": "Одежда",
         "Description": "Шлем пожарного"
@@ -4758,6 +5186,10 @@
     "SodaCan_Cola": {
         "Category": "Еда",
         "Description": "Nota Cola"
+    },
+    "ProxyOffroad_02_Door_2_1": {
+        "Category": "",
+        "Description": "ProxyOffroad_02_Door_2_1"
     },
     "Mag_FAMAS_25Rnd": {
         "Category": "",
@@ -4783,13 +5215,29 @@
         "Category": "",
         "Description": "$UNT$Bolts Quiver"
     },
+    "BushlatPoliceJacket_Blue": {
+        "Category": "Одежда",
+        "Description": "Полицейский бушлат"
+    },
     "Ammo_ImprovisedBolt_2": {
         "Category": "",
         "Description": "Самодельный болт"
     },
+    "ProxyVan_01_Trunk_2": {
+        "Category": "",
+        "Description": "ProxyVan_01_Trunk_2"
+    },
+    "ReindeerPelt": {
+        "Category": "",
+        "Description": "Шкура северного оленя"
+    },
     "PSO11Optic": {
         "Category": "",
         "Description": "Прицел ПСО-1-1"
+    },
+    "ProxynivaDoors_coDriver": {
+        "Category": "",
+        "Description": "ProxynivaDoors_coDriver"
     },
     "ProxyPart": {
         "Category": "",
@@ -4814,6 +5262,10 @@
     "Flag_LivoniaArmy": {
         "Category": "",
         "Description": "Флаг"
+    },
+    "Animal_LepusEuropaeus": {
+        "Category": "Животные",
+        "Description": "Заяц"
     },
     "SurvivorF_Irena": {
         "Category": "",
@@ -4851,9 +5303,9 @@
         "Category": "",
         "Description": "face"
     },
-    "SurvivorF_Gabi": {
+    "StaticObj_FrozenScientist_DE": {
         "Category": "",
-        "Description": "Выживший"
+        "Description": ""
     },
     "Flag_UEC": {
         "Category": "",
@@ -4899,6 +5351,14 @@
         "Category": "",
         "Description": "Садовая известь"
     },
+    "Proxyseachest": {
+        "Category": "",
+        "Description": "Proxyseachest"
+    },
+    "Van_WoodenBoat": {
+        "Category": "Транспорт",
+        "Description": "Wooden Boat"
+    },
     "Raincoat_Orange": {
         "Category": "Одежда",
         "Description": "Дождевик"
@@ -4942,6 +5402,10 @@
     "Proxymagazine_ak74_30rnd": {
         "Category": "",
         "Description": "Proxymagazine_ak74_30rnd"
+    },
+    "UniversalLight": {
+        "Category": "",
+        "Description": "Универсальный фонарик"
     },
     "Ballerinas_Yellow": {
         "Category": "Одежда",
@@ -5099,9 +5563,9 @@
         "Category": "Одежда",
         "Description": "Скейтерский шлем"
     },
-    "BookTheCallOfCthulhu": {
-        "Category": "",
-        "Description": "The Call of Cthulhu"
+    "ZmbM_Gamedev_Black": {
+        "Category": "Зомби",
+        "Description": "Зараженный"
     },
     "CigarettePack_Partyzanka": {
         "Category": "",
@@ -5127,9 +5591,9 @@
         "Category": "Одежда",
         "Description": "Бейсболка"
     },
-    "BrisketSpread_Opened": {
-        "Category": "Еда",
-        "Description": "Свиной паштет"
+    "Balaclava3Holes_White": {
+        "Category": "Одежда",
+        "Description": "Балаклава "
     },
     "LandMineTrap": {
         "Category": "",
@@ -5187,6 +5651,10 @@
         "Category": "",
         "Description": "Растяжка"
     },
+    "PM73Rak": {
+        "Category": "Оружие",
+        "Description": "$UNT$PM73 RAK"
+    },
     "CZ527_Green": {
         "Category": "Оружие",
         "Description": "CR-527"
@@ -5227,9 +5695,9 @@
         "Category": "",
         "Description": "Трубный ключ"
     },
-    "Proxyshockpistol_cartridge": {
+    "NailBox": {
         "Category": "",
-        "Description": "Proxyshockpistol_cartridge"
+        "Description": "Коробка гвоздей"
     },
     "GardenPlotGreenhouse": {
         "Category": "",
@@ -5238,6 +5706,10 @@
     "StartKitIV": {
         "Category": "",
         "Description": "Набор для переливания"
+    },
+    "Proxymagazine_SV98_10Rnd": {
+        "Category": "",
+        "Description": "Proxymagazine_SV98_10Rnd"
     },
     "WinterCoif_Green": {
         "Category": "Одежда",
@@ -5259,6 +5731,10 @@
         "Category": "",
         "Description": ""
     },
+    "CoyoteBag_Winter": {
+        "Category": "Одежда",
+        "Description": "Тактический рюкзак"
+    },
     "Hatchback_02_Trunk_BlueRust": {
         "Category": "",
         "Description": "Дверь багажника Gunter 2"
@@ -5271,9 +5747,17 @@
         "Category": "",
         "Description": "Передняя правая дверь Olga 24"
     },
+    "ProxyTruck_02_Wheel_ruined": {
+        "Category": "",
+        "Description": "ProxyTruck_02_Wheel_ruined"
+    },
     "CowboyHat_black": {
         "Category": "Одежда",
         "Description": "Ковбойская шляпа"
+    },
+    "ProxysedanDoors_Driver": {
+        "Category": "",
+        "Description": "ProxysedanDoors_Driver"
     },
     "PlateCarrierPouches_Camo": {
         "Category": "",
@@ -5339,6 +5823,10 @@
         "Category": "",
         "Description": "Прицел 1ПН51"
     },
+    "OKZKCap_Green": {
+        "Category": "Одежда",
+        "Description": "Кепка от ОКЗК"
+    },
     "Hatchback_02_Door_1_2": {
         "Category": "",
         "Description": "Задняя левая дверь Gunter 2"
@@ -5354,6 +5842,10 @@
     "ProxyGasMask_filter": {
         "Category": "",
         "Description": "ProxyGasMask_filter"
+    },
+    "Hatchback_02_Door_2_1_RedRust": {
+        "Category": "",
+        "Description": "Передняя правая дверь Gunter 2"
     },
     "ZmbF_ClerkFat_GreyPattern": {
         "Category": "Зомби",
@@ -5415,6 +5907,18 @@
         "Category": "Одежда",
         "Description": "Капа мотошлема"
     },
+    "ProxyNivaDoors_Hood": {
+        "Category": "",
+        "Description": "ProxyNivaDoors_Hood"
+    },
+    "Van_Sailboat": {
+        "Category": "Транспорт",
+        "Description": "Sailboat"
+    },
+    "Van_WoodenBoat_Frame": {
+        "Category": "",
+        "Description": "Wooden Boat Crafting Frame"
+    },
     "CanvasPants_Blue": {
         "Category": "Одежда",
         "Description": "Походные штаны"
@@ -5427,9 +5931,13 @@
         "Category": "Одежда",
         "Description": "Летный шлем"
     },
-    "BookTheVariableMan": {
-        "Category": "",
-        "Description": "The Variable Man"
+    "GhillieSuit_Tan": {
+        "Category": "Одежда",
+        "Description": "Маскировочный костюм"
+    },
+    "NBCPantsWhite": {
+        "Category": "Одежда",
+        "Description": "Штаны химкостюма"
     },
     "Breeches_Red": {
         "Category": "Одежда",
@@ -5451,9 +5959,9 @@
         "Category": "Одежда",
         "Description": "Толстовка"
     },
-    "Winchester70_Green": {
+    "UnderSlugGrenadeM4": {
         "Category": "Оружие",
-        "Description": "M70 Tundra"
+        "Description": "$UNT$UnderSlugGrenadeM4"
     },
     "BookTheBrothersKaramazov": {
         "Category": "",
@@ -5487,9 +5995,9 @@
         "Category": "Одежда",
         "Description": "Мотоциклетный шлем"
     },
-    "FishingRod": {
+    "Hacksaw": {
         "Category": "",
-        "Description": "Заводская удочка"
+        "Description": "Слесарная ножовка"
     },
     "CivSedanDoors_BackRight_Black": {
         "Category": "",
@@ -5539,13 +6047,13 @@
         "Category": "Транспорт",
         "Description": "Olga 24"
     },
-    "BookATexasMatchmaker": {
+    "Epinephrine": {
         "Category": "",
-        "Description": "A Texas Matchmaker"
+        "Description": "Адреналин"
     },
-    "WoolGloves_Green": {
+    "CanvasPants_Beige": {
         "Category": "Одежда",
-        "Description": "Шерстяные перчатки"
+        "Description": "Походные штаны"
     },
     "WoolGlovesFingerless_Tan": {
         "Category": "Одежда",
@@ -5591,6 +6099,10 @@
         "Category": "",
         "Description": "Магазин Mag-C, 40 пат."
     },
+    "Bark_Oak": {
+        "Category": "",
+        "Description": "Темная кора"
+    },
     "HikingBootsLow_Grey": {
         "Category": "Одежда",
         "Description": "Треккинговые ботинки"
@@ -5607,9 +6119,9 @@
         "Category": "Оружие",
         "Description": "testing AKM"
     },
-    "Tripod": {
-        "Category": "",
-        "Description": "Тренога для костра"
+    "Van_Airboat_Black": {
+        "Category": "Транспорт",
+        "Description": "Airboat Black"
     },
     "KashtanOptic": {
         "Category": "",
@@ -5627,9 +6139,9 @@
         "Category": "",
         "Description": ""
     },
-    "ZmbM_HunterOld_Winter": {
-        "Category": "Зомби",
-        "Description": "Зараженный"
+    "AntiPestsSpray": {
+        "Category": "",
+        "Description": "Инсектицидный спрей"
     },
     "M14": {
         "Category": "Оружие",
@@ -5759,6 +6271,10 @@
         "Category": "",
         "Description": ""
     },
+    "Proxydummyscope": {
+        "Category": "",
+        "Description": "Proxydummyscope"
+    },
     "Land_Wreck_sed01_aban1_white_DE": {
         "Category": "",
         "Description": ""
@@ -5771,9 +6287,9 @@
         "Category": "",
         "Description": "Брезент"
     },
-    "Mag_AKM_Drum75Rnd_Green": {
+    "NailedBaseballBat": {
         "Category": "",
-        "Description": "Брб. магазин КА-M, 75 пат"
+        "Description": "Бита с гвоздями"
     },
     "BookTheCallOfTheWild": {
         "Category": "",
@@ -5815,9 +6331,9 @@
         "Category": "Зомби",
         "Description": "Зараженный"
     },
-    "ChernarusSportShirt": {
+    "NBCBootsGray": {
         "Category": "Одежда",
-        "Description": "Спортивная рубашка"
+        "Description": "Сапоги химкостюма"
     },
     "ExplosionTest": {
         "Category": "",
@@ -5871,17 +6387,17 @@
         "Category": "Одежда",
         "Description": "Спортивные штаны"
     },
-    "ChristmasHeadband_Trees": {
-        "Category": "Одежда",
-        "Description": "Оленьи рога"
+    "AmmoBox_22_50Rnd": {
+        "Category": "",
+        "Description": "Коробка патронов .22 LR"
     },
     "Flag_Altis": {
         "Category": "",
         "Description": "Флаг"
     },
-    "SparkPlug": {
-        "Category": "",
-        "Description": "Свеча зажигания"
+    "BrisketSpread_Opened": {
+        "Category": "Еда",
+        "Description": "Свиной паштет"
     },
     "BookLaChartreuseDeParme": {
         "Category": "",
@@ -5911,9 +6427,9 @@
         "Category": "Одежда",
         "Description": "Кобура"
     },
-    "Proxyproxy_grenade_d": {
+    "Whetstone": {
         "Category": "",
-        "Description": "Proxyproxy_grenade_d"
+        "Description": "Точильный камень"
     },
     "FNX45": {
         "Category": "Оружие",
@@ -5927,13 +6443,17 @@
         "Category": "Одежда",
         "Description": "Панама"
     },
-    "Binoculars": {
-        "Category": "",
-        "Description": "Бинокль"
+    "SnowstormUshanka_Navy": {
+        "Category": "Одежда",
+        "Description": "Ушанка «Метель»"
     },
     "Proxydirect_cooking_a": {
         "Category": "",
         "Description": "Proxydirect_cooking_a"
+    },
+    "DownJacket_Orange": {
+        "Category": "Одежда",
+        "Description": "Пуховик"
     },
     "Sedan_02_Door_1_1": {
         "Category": "",
@@ -5943,6 +6463,10 @@
         "Category": "Одежда",
         "Description": "Кожаные перчатки"
     },
+    "Proxyrope": {
+        "Category": "",
+        "Description": "Proxyrope"
+    },
     "ZmbM_VillagerOld_Blue": {
         "Category": "Зомби",
         "Description": "Зараженный"
@@ -5950,6 +6474,10 @@
     "Breeches_Beetcheck": {
         "Category": "Одежда",
         "Description": "Брюки капри"
+    },
+    "ProxyOffroad_02_Wheel": {
+        "Category": "",
+        "Description": "ProxyOffroad_02_Wheel"
     },
     "BookThePossessed": {
         "Category": "",
@@ -5991,6 +6519,10 @@
         "Category": "Оружие",
         "Description": "ВСД"
     },
+    "SkiGoggles_BlackYellow": {
+        "Category": "Одежда",
+        "Description": "Лыжные очки"
+    },
     "Flag_Chernarus": {
         "Category": "",
         "Description": "Флаг"
@@ -6007,9 +6539,9 @@
         "Category": "",
         "Description": "face"
     },
-    "MediumTent": {
-        "Category": "",
-        "Description": "Средняя палатка"
+    "TacticalGloves_Beige": {
+        "Category": "Одежда",
+        "Description": "Тактические перчатки"
     },
     "SlacksPants_Brown": {
         "Category": "Одежда",
@@ -6063,9 +6595,9 @@
         "Category": "",
         "Description": "ProxyWooden_stick"
     },
-    "ClaymoreMine": {
+    "BookTheCallOfCthulhu": {
         "Category": "",
-        "Description": "Мина «Клеймор»"
+        "Description": "The Call of Cthulhu"
     },
     "ZmbM_VillagerOld_White": {
         "Category": "Зомби",
@@ -6083,6 +6615,10 @@
         "Category": "Одежда",
         "Description": "Панама"
     },
+    "ProxyVehiclePart": {
+        "Category": "",
+        "Description": "ProxyVehiclePart"
+    },
     "Blouse_Green": {
         "Category": "Одежда",
         "Description": "Блузка"
@@ -6090,6 +6626,14 @@
     "ManSuit_Khaki": {
         "Category": "Одежда",
         "Description": "Пиджак мужской"
+    },
+    "ProxyOptic_ACOG": {
+        "Category": "",
+        "Description": "ProxyOptic_ACOG"
+    },
+    "ProxySedan_02_Door_2_2": {
+        "Category": "",
+        "Description": "ProxySedan_02_Door_2_2"
     },
     "WoolGlovesFingerless_Black": {
         "Category": "Одежда",
@@ -6179,6 +6723,10 @@
         "Category": "Одежда",
         "Description": "Футболка"
     },
+    "GorkaEJacket_Winter": {
+        "Category": "Одежда",
+        "Description": "Патрульная куртка"
+    },
     "Paper": {
         "Category": "",
         "Description": "Бумага"
@@ -6195,9 +6743,13 @@
         "Category": "Оружие",
         "Description": "CR-550 Savanna"
     },
-    "Hatchback_02_Hood_BlueRust": {
+    "BudenovkaHat_Gray": {
+        "Category": "Одежда",
+        "Description": "Буденовка"
+    },
+    "StaticObj_Decal_RunwayPanel_Damage_2": {
         "Category": "",
-        "Description": "Капот Gunter 2"
+        "Description": ""
     },
     "Plant_Tomato": {
         "Category": "",
@@ -6235,9 +6787,13 @@
         "Category": "Еда",
         "Description": "Филе скумбрии"
     },
-    "OrientalMachete": {
-        "Category": "",
-        "Description": "Восточное мачете"
+    "Van_Airboat_Camo": {
+        "Category": "Транспорт",
+        "Description": "Airboat Camo"
+    },
+    "MilitaryBeret_NZ": {
+        "Category": "Одежда",
+        "Description": "Берет"
     },
     "ZmbF_VillagerOld_White": {
         "Category": "Зомби",
@@ -6247,9 +6803,9 @@
         "Category": "Зомби",
         "Description": "Зараженный"
     },
-    "Canteen": {
-        "Category": "Еда",
-        "Description": "Фляжка"
+    "GorkaPants_Winter": {
+        "Category": "Одежда",
+        "Description": "Патрульные штаны"
     },
     "M16A2": {
         "Category": "Оружие",
@@ -6295,9 +6851,9 @@
         "Category": "Еда",
         "Description": "Карамельная трость"
     },
-    "ZmbM_FarmerFat_Beige": {
-        "Category": "Зомби",
-        "Description": "Зараженный"
+    "ShortJeans_Green": {
+        "Category": "Одежда",
+        "Description": "Джинсовые шорты"
     },
     "AirborneMask": {
         "Category": "Одежда",
@@ -6319,9 +6875,9 @@
         "Category": "Зомби",
         "Description": "Зараженный"
     },
-    "SodaCan_Fronta": {
-        "Category": "Еда",
-        "Description": "Лимонад «Fronta»"
+    "SkiGloves_90s": {
+        "Category": "Одежда",
+        "Description": "Лыжные перчатки"
     },
     "AmmoBox_12gaBeanbag_10Rnd": {
         "Category": "",
@@ -6351,6 +6907,10 @@
         "Category": "",
         "Description": "Капот Gunter 2"
     },
+    "ProxyOffroad_02_Wheel_ruined": {
+        "Category": "",
+        "Description": "ProxyOffroad_02_Wheel_ruined"
+    },
     "Truck_01_Hood_BlueRust": {
         "Category": "",
         "Description": "Капот M3S"
@@ -6363,13 +6923,13 @@
         "Category": "Зомби",
         "Description": "Зараженный"
     },
-    "BaseballCap_Camo": {
-        "Category": "Одежда",
-        "Description": "Бейсболка"
+    "Animal_RangiferTarandus_Xmas": {
+        "Category": "Животные",
+        "Description": "Северный олень"
     },
-    "BomberJacket_Olive": {
-        "Category": "Одежда",
-        "Description": "Бомбер"
+    "WalleyePollock": {
+        "Category": "Еда",
+        "Description": "Сайда"
     },
     "ConstructionHelmet_Lime": {
         "Category": "Одежда",
@@ -6390,6 +6950,10 @@
     "AK_Suppressor": {
         "Category": "",
         "Description": "Обычный глушитель"
+    },
+    "ProxyString_MetalWire": {
+        "Category": "",
+        "Description": "ProxyString_MetalWire"
     },
     "CarBattery": {
         "Category": "",
@@ -6423,9 +6987,9 @@
         "Category": "",
         "Description": "ProxyFNP45"
     },
-    "CowboyHat_green": {
-        "Category": "Одежда",
-        "Description": "Ковбойская шляпа"
+    "StaticObj_Decal_damage_long4_DE": {
+        "Category": "",
+        "Description": ""
     },
     "MedicalScrubsPants_Green": {
         "Category": "Одежда",
@@ -6434,6 +6998,10 @@
     "Mag_AKM_Palm30Rnd_Black": {
         "Category": "",
         "Description": "Плм. магазин КА-M, 30 пат."
+    },
+    "ChelatingTablets": {
+        "Category": "Еда",
+        "Description": "Хелатные таблетки"
     },
     "Jeans_Blue": {
         "Category": "Одежда",
@@ -6467,9 +7035,9 @@
         "Category": "",
         "Description": "Proxywooden_log"
     },
-    "CivSedanDoors_CoDriver_BlackRust": {
+    "BookTheVariableMan": {
         "Category": "",
-        "Description": "Передняя правая дверь Olga 24"
+        "Description": "The Variable Man"
     },
     "WomanSuit_LightGrey": {
         "Category": "Одежда",
@@ -6499,6 +7067,10 @@
         "Category": "",
         "Description": "Задняя левая дверь Gunter 2"
     },
+    "TortillaBag_Winter": {
+        "Category": "Одежда",
+        "Description": "Боевой рюкзак"
+    },
     "M18SmokeGrenade_Red": {
         "Category": "",
         "Description": "Дым. граната 1-M8"
@@ -6510,6 +7082,10 @@
     "AmmoBox": {
         "Category": "",
         "Description": "Ящик для патронов"
+    },
+    "Proxyroad_flare": {
+        "Category": "",
+        "Description": "Proxyroad_flare"
     },
     "Mosin9130": {
         "Category": "Оружие",
@@ -6543,6 +7119,10 @@
         "Category": "",
         "Description": "Задняя левая дверь Sarka 120"
     },
+    "GhillieSuit_Winter": {
+        "Category": "Одежда",
+        "Description": "Маскировочный костюм"
+    },
     "PUScopeOptic": {
         "Category": "",
         "Description": "Прицел ПУ"
@@ -6575,6 +7155,10 @@
         "Category": "Одежда",
         "Description": "Куртка химкостюма"
     },
+    "SparkPlug": {
+        "Category": "",
+        "Description": "Свеча зажигания"
+    },
     "HandDrillKit": {
         "Category": "",
         "Description": "Набор для разведения костра"
@@ -6595,6 +7179,10 @@
         "Category": "Еда",
         "Description": "Pájka"
     },
+    "ProxyOptic_PSO1": {
+        "Category": "",
+        "Description": "ProxyOptic_PSO1"
+    },
     "LeatherHat_Beige": {
         "Category": "Одежда",
         "Description": "Кожаная шляпа"
@@ -6607,6 +7195,10 @@
         "Category": "Одежда",
         "Description": "Пиджак женский"
     },
+    "BoonieHat_NavyBlue": {
+        "Category": "Одежда",
+        "Description": "Панама"
+    },
     "GorkaHelmet_Green": {
         "Category": "Одежда",
         "Description": "Штурмовой шлем"
@@ -6614,6 +7206,10 @@
     "FlatCap_GreyCheck": {
         "Category": "Одежда",
         "Description": "Кепка"
+    },
+    "FishingRod": {
+        "Category": "",
+        "Description": "Заводская удочка"
     },
     "ZmbM_CitizenASkinny_Brown": {
         "Category": "Зомби",
@@ -6642,6 +7238,10 @@
     "ProxyOptic_Hunting": {
         "Category": "",
         "Description": "ProxyOptic_Hunting"
+    },
+    "Van_WaterContainer": {
+        "Category": "Еда",
+        "Description": "Water Container"
     },
     "Land_Wreck_sed02_aban1_grey_DE": {
         "Category": "",
@@ -6719,9 +7319,9 @@
         "Category": "Еда",
         "Description": "Стейк из козлятины"
     },
-    "MedicalScrubsShirt_Blue": {
+    "NBCBootsWhite": {
         "Category": "Одежда",
-        "Description": "Рубашка медика"
+        "Description": "Сапоги химкостюма"
     },
     "AmmoBox_308Win_20Rnd": {
         "Category": "",
@@ -6815,6 +7415,10 @@
         "Category": "",
         "Description": "Proxytripod_deployed"
     },
+    "ProxyTruck_01_Wheel": {
+        "Category": "",
+        "Description": "ProxyTruck_01_Wheel"
+    },
     "SlacksPants_Beige": {
         "Category": "Одежда",
         "Description": "Брюки"
@@ -6827,9 +7431,9 @@
         "Category": "",
         "Description": "ProxyWalkieTalkie"
     },
-    "Epinephrine": {
+    "RabbitPelt": {
         "Category": "",
-        "Description": "Адреналин"
+        "Description": "Шкура зайца"
     },
     "MaleHassanHead": {
         "Category": "",
@@ -6842,6 +7446,10 @@
     "Armband_UEC": {
         "Category": "Одежда",
         "Description": "Нарукавная повязка"
+    },
+    "Land_Wreck_Volha_Police": {
+        "Category": "",
+        "Description": ""
     },
     "CombatBoots_Beige": {
         "Category": "Одежда",
@@ -6867,9 +7475,9 @@
         "Category": "",
         "Description": "ProxyHandguard_mp5k_plastic"
     },
-    "ProxyOptic_FNP45_MRDS": {
-        "Category": "",
-        "Description": "ProxyOptic_FNP45_MRDS"
+    "SV98": {
+        "Category": "Оружие",
+        "Description": "ВС-89"
     },
     "StaticObj_Wreck_T72_Turret_DE": {
         "Category": "",
@@ -6895,9 +7503,13 @@
         "Category": "Одежда",
         "Description": "Охотничьи ботинки"
     },
-    "Proxyoptic_red_point": {
+    "ProxyHatchback_02_Door_1_2": {
         "Category": "",
-        "Description": "Proxyoptic_red_point"
+        "Description": "ProxyHatchback_02_Door_1_2"
+    },
+    "Van_Airboat_Purple": {
+        "Category": "Транспорт",
+        "Description": "Airboat Purple"
     },
     "BookTheShunnedHouse": {
         "Category": "",
@@ -6959,6 +7571,10 @@
         "Category": "Еда",
         "Description": "Сардины"
     },
+    "Jig": {
+        "Category": "",
+        "Description": "Приманка"
+    },
     "MiniDress_BlueWithDots": {
         "Category": "Одежда",
         "Description": "Платье с воротником"
@@ -6970,6 +7586,10 @@
     "MouthRag": {
         "Category": "Одежда",
         "Description": "Тряпка"
+    },
+    "ProxysedanDoors_coDriver": {
+        "Category": "",
+        "Description": "ProxysedanDoors_coDriver"
     },
     "SurgicalGloves_LightBlue": {
         "Category": "Одежда",
@@ -7003,13 +7623,21 @@
         "Category": "",
         "Description": "Lord Jim"
     },
+    "AmmoBox_556x45_20Rnd": {
+        "Category": "",
+        "Description": "Коробка патронов 5,56x45 мм"
+    },
     "Offroad_02_Door_2_1": {
         "Category": "",
         "Description": "Передняя правая дверь M1025"
     },
-    "Mag_CMAG_30Rnd_Black": {
-        "Category": "",
-        "Description": "Магазин Mag-C, 30 пат."
+    "LeatherSack_Beige": {
+        "Category": "Одежда",
+        "Description": "Кожаный рюкзак"
+    },
+    "BoonieHat_Winter": {
+        "Category": "Одежда",
+        "Description": "Панама"
     },
     "CowboyHat_Brown": {
         "Category": "Одежда",
@@ -7017,7 +7645,7 @@
     },
     "UndergroundStash": {
         "Category": "",
-        "Description": "Куча грязи"
+        "Description": "Бугор"
     },
     "M4_RISHndgrd_Green": {
         "Category": "",
@@ -7079,6 +7707,10 @@
         "Category": "",
         "Description": "The Island of Doctor Moreau"
     },
+    "NBCJacketWhite": {
+        "Category": "Одежда",
+        "Description": "Куртка химкостюма"
+    },
     "Sneakers_White": {
         "Category": "Одежда",
         "Description": "Кроссовки"
@@ -7087,13 +7719,17 @@
         "Category": "Одежда",
         "Description": "Укор. походные штаны"
     },
-    "AntiPestsSpray": {
-        "Category": "",
-        "Description": "Инсектицидный спрей"
+    "ZmbM_HunterOld_Winter": {
+        "Category": "Зомби",
+        "Description": "Зараженный"
     },
     "Izh18": {
         "Category": "Оружие",
         "Description": "БK-18"
+    },
+    "Mag_FNX45_15Rnd": {
+        "Category": "",
+        "Description": "Магазин FX-45, 15 пат."
     },
     "FemaleIrenaHead": {
         "Category": "",
@@ -7131,9 +7767,9 @@
         "Category": "",
         "Description": "Магазин CR-527, 5 пат."
     },
-    "Sedan_02_Grey": {
-        "Category": "Транспорт",
-        "Description": "Sarka 120"
+    "NavyUniformJacket": {
+        "Category": "Одежда",
+        "Description": "Куртка ВМФ"
     },
     "BookFaustErsterTeil": {
         "Category": "",
@@ -7179,6 +7815,10 @@
         "Category": "",
         "Description": "Навес"
     },
+    "CivSedanDoors_CoDriver_BlackRust": {
+        "Category": "",
+        "Description": "Передняя правая дверь Olga 24"
+    },
     "MountainBag_Red": {
         "Category": "Одежда",
         "Description": "Альпинистский рюкзак"
@@ -7191,9 +7831,9 @@
         "Category": "Одежда",
         "Description": "Платье медсестры"
     },
-    "LeatherStorageVest_Natural": {
-        "Category": "Одежда",
-        "Description": "Кожаный жилет"
+    "ZmbM_FarmerFat_Beige": {
+        "Category": "Зомби",
+        "Description": "Зараженный"
     },
     "FlashGrenade": {
         "Category": "",
@@ -7203,9 +7843,9 @@
         "Category": "Зомби",
         "Description": "Зараженный"
     },
-    "StaticObj_Roadblock_Wood_Small_DE": {
-        "Category": "",
-        "Description": ""
+    "LeatherJacket_Black": {
+        "Category": "Одежда",
+        "Description": "Кожаная куртка"
     },
     "Hatchback_02_Trunk_BlackRust": {
         "Category": "",
@@ -7219,9 +7859,17 @@
         "Category": "Одежда",
         "Description": "Балаклава "
     },
+    "Land_WarheadStorage_Room1": {
+        "Category": "",
+        "Description": ""
+    },
     "ZmbM_CitizenASkinny_Grey": {
         "Category": "Зомби",
         "Description": "Зараженный"
+    },
+    "Proxyfabric": {
+        "Category": "",
+        "Description": "Proxyfabric"
     },
     "Hatchback_02_Door_1_2_BlueRust": {
         "Category": "",
@@ -7234,6 +7882,10 @@
     "P1": {
         "Category": "Оружие",
         "Description": "P1"
+    },
+    "BearPelt": {
+        "Category": "",
+        "Description": "Шкура медведя"
     },
     "ChestHolster": {
         "Category": "Одежда",
@@ -7259,6 +7911,10 @@
         "Category": "Одежда",
         "Description": "Ведьминский капюшон"
     },
+    "Van_WoodenBoat_Packed": {
+        "Category": "",
+        "Description": "Wooden Boat"
+    },
     "MiniDress_BlueChecker": {
         "Category": "Одежда",
         "Description": "Платье с воротником"
@@ -7267,9 +7923,9 @@
         "Category": "Одежда",
         "Description": "Вязаная шапка"
     },
-    "PetushokHat_Green": {
+    "Shemag_Brown": {
         "Category": "Одежда",
-        "Description": "Шапка «Петушок»"
+        "Description": "Шемаг"
     },
     "BookScaramouche": {
         "Category": "",
@@ -7319,6 +7975,10 @@
         "Category": "Одежда",
         "Description": "Скейтерский шлем"
     },
+    "Tripod": {
+        "Category": "",
+        "Description": "Тренога для костра"
+    },
     "Proxymagazine_aug30": {
         "Category": "",
         "Description": "Proxymagazine_aug30"
@@ -7327,6 +7987,10 @@
         "Category": "Одежда",
         "Description": "Карнавальная маска"
     },
+    "Van_Jetski_Black": {
+        "Category": "Транспорт",
+        "Description": "Jetski Black"
+    },
     "BookDeLorigineDesEspces": {
         "Category": "",
         "Description": "De l'origine des especes"
@@ -7334,6 +7998,10 @@
     "ZmbF_JournalistNormal_White": {
         "Category": "Зомби",
         "Description": "Зараженный"
+    },
+    "ProxySedan_02_Hood": {
+        "Category": "",
+        "Description": "ProxySedan_02_Hood"
     },
     "Mag_12gaSnaploader_2Rnd": {
         "Category": "",
@@ -7443,9 +8111,13 @@
         "Category": "Одежда",
         "Description": "Самодельная повязка на лицо"
     },
-    "StaticObj_Wreck_Train_742_Red_Mil_DE": {
+    "Mag_AKM_Drum75Rnd_Green": {
         "Category": "",
-        "Description": ""
+        "Description": "Брб. магазин КА-M, 75 пат"
+    },
+    "ChristmasHeadband_Trees": {
+        "Category": "Одежда",
+        "Description": "Оленьи рога"
     },
     "ZmbF_JournalistNormal_Red": {
         "Category": "Зомби",
@@ -7527,9 +8199,9 @@
         "Category": "",
         "Description": "Selected Stories"
     },
-    "ZmbM_Jacket_bluechecks": {
-        "Category": "Зомби",
-        "Description": "Зараженный"
+    "Mag_CZ550_4rnd": {
+        "Category": "",
+        "Description": "STR_CfgMagazines_Mag_CZ550_4rnd0"
     },
     "FemaleGabiHead": {
         "Category": "",
@@ -7547,13 +8219,17 @@
         "Category": "",
         "Description": "Шкура овцы"
     },
-    "ProxyButtstock_AK_Folding_Green": {
+    "ProxyTruck_02_Door_1_1": {
         "Category": "",
-        "Description": "ProxyButtstock_AK_Folding_Green"
+        "Description": "ProxyTruck_02_Door_1_1"
     },
     "SkateHelmet_Black": {
         "Category": "Одежда",
         "Description": "Скейтерский шлем"
+    },
+    "Van_Jetski_Orange": {
+        "Category": "Транспорт",
+        "Description": "Jetski Orange"
     },
     "BaseballBat": {
         "Category": "",
@@ -7595,6 +8271,14 @@
         "Category": "",
         "Description": "Плюшевый медведь"
     },
+    "ProxynivaDoors_Driver": {
+        "Category": "",
+        "Description": "ProxynivaDoors_Driver"
+    },
+    "Van_RHIB": {
+        "Category": "Транспорт",
+        "Description": "RHIB"
+    },
     "Balaclava3Holes_Green": {
         "Category": "Одежда",
         "Description": "Балаклава "
@@ -7602,6 +8286,10 @@
     "Cleaver": {
         "Category": "",
         "Description": "Тесак"
+    },
+    "Grenade_ChemGas": {
+        "Category": "",
+        "Description": "Сосуд PO-X"
     },
     "PVCBow": {
         "Category": "Оружие",
@@ -7611,9 +8299,17 @@
         "Category": "Одежда",
         "Description": "Карнавальная маска"
     },
+    "ArmyPouch_Green": {
+        "Category": "Одежда",
+        "Description": "Армейская сумка"
+    },
     "MedicalScrubsHat_White": {
         "Category": "Одежда",
         "Description": "Шапочка медика"
+    },
+    "Shemag_White": {
+        "Category": "Одежда",
+        "Description": "Шемаг"
     },
     "BloodSyringe": {
         "Category": "",
@@ -7675,6 +8371,10 @@
         "Category": "",
         "Description": "Светлая кора"
     },
+    "StaticObj_Wreck_Train_742_Red_Mil_DE": {
+        "Category": "",
+        "Description": ""
+    },
     "SeaGull": {
         "Category": "",
         "Description": "SeaGull"
@@ -7691,9 +8391,9 @@
         "Category": "",
         "Description": "Пусковая установка для фейерверков"
     },
-    "UniversalLight": {
+    "UndergroundStashSnow": {
         "Category": "",
-        "Description": "Универсальный фонарик"
+        "Description": "Бугор"
     },
     "Land_Radio_PanelPAS": {
         "Category": "",
@@ -7747,21 +8447,21 @@
         "Category": "",
         "Description": "Флаг"
     },
-    "Ammo_22": {
-        "Category": "",
-        "Description": "Патроны .22 LR"
+    "MilitaryBelt": {
+        "Category": "Одежда",
+        "Description": "Тактический ремень"
     },
-    "Proxyproxy_grenade_b": {
-        "Category": "",
-        "Description": "Proxyproxy_grenade_b"
+    "AliceBag_FarBubble": {
+        "Category": "Одежда",
+        "Description": "Полевой рюкзак"
     },
     "HatchbackWheel_Ruined": {
         "Category": "",
         "Description": "Колесо Ada 4x4"
     },
-    "PM73Rak": {
-        "Category": "Оружие",
-        "Description": "$UNT$PM73 RAK"
+    "Van_RHIB_Black": {
+        "Category": "Транспорт",
+        "Description": "RHIB Black"
     },
     "Proxyproxy_grenade_c": {
         "Category": "",
@@ -7770,6 +8470,10 @@
     "Magnum": {
         "Category": "Оружие",
         "Description": "Револьвер"
+    },
+    "Proxyproxy_grenade_d": {
+        "Category": "",
+        "Description": "Proxyproxy_grenade_d"
     },
     "LeatherJacket_Brown": {
         "Category": "Одежда",
@@ -7815,6 +8519,10 @@
         "Category": "Еда",
         "Description": "Нога зайца"
     },
+    "PlateCarrierVest_Winter": {
+        "Category": "Одежда",
+        "Description": "Бронежилет"
+    },
     "GhillieHood_Mossy": {
         "Category": "Одежда",
         "Description": "Маскировочный капюшон"
@@ -7826,6 +8534,10 @@
     "HuntingJacket_Autumn": {
         "Category": "Одежда",
         "Description": "Охотничья куртка"
+    },
+    "Crossbow_Wood": {
+        "Category": "Оружие",
+        "Description": "Арбалет"
     },
     "JumpsuitJacket_Green": {
         "Category": "Одежда",
@@ -7839,13 +8551,13 @@
         "Category": "",
         "Description": "ProxyButtstock_M4_CQB"
     },
-    "ProxyLegs": {
+    "Hatchback_02_Wheel_Ruined": {
         "Category": "",
-        "Description": "ProxyLegs"
+        "Description": "Колесо Gunter 2"
     },
-    "Mag_AKM_30Rnd": {
+    "Flashlight": {
         "Category": "",
-        "Description": "Магазин КА-M, 30 пат."
+        "Description": "Фонарик"
     },
     "Ammo_308WinTracer": {
         "Category": "",
@@ -7883,9 +8595,9 @@
         "Category": "Еда",
         "Description": "Яблоко"
     },
-    "CivilianBelt": {
-        "Category": "Одежда",
-        "Description": "Ремень"
+    "Hatchback_02_Hood_BlueRust": {
+        "Category": "",
+        "Description": "Капот Gunter 2"
     },
     "MaleQuinnHead": {
         "Category": "",
@@ -7895,9 +8607,9 @@
         "Category": "Одежда",
         "Description": "Футболка"
     },
-    "SlingBag_Gray": {
+    "BallisticHelmet_Desert": {
         "Category": "Одежда",
-        "Description": "Сумка на ремне"
+        "Description": "Камуфляжный шлем"
     },
     "HatchbackDoors_CoDriver_WhiteRust": {
         "Category": "",
@@ -7919,9 +8631,9 @@
         "Category": "Одежда",
         "Description": "Вязаная шапка"
     },
-    "LeatherShirt_Natural": {
+    "JumpsuitJacket_Red": {
         "Category": "Одежда",
-        "Description": "Кожаная рубашка"
+        "Description": "Куртка рабочего"
     },
     "ZmbM_DoctorFat": {
         "Category": "Зомби",
@@ -7951,6 +8663,10 @@
         "Category": "",
         "Description": "Полимерное цевьё SG5-K"
     },
+    "Sedan_02_Door_2_2_YellowRust": {
+        "Category": "",
+        "Description": "Задняя правая дверь Sarka 120"
+    },
     "PistolSuppressor": {
         "Category": "",
         "Description": "Пистолетный глушитель"
@@ -7958,6 +8674,10 @@
     "Pate": {
         "Category": "Еда",
         "Description": "Печеночный паштет"
+    },
+    "ProxySedan_02_Trunk": {
+        "Category": "",
+        "Description": "ProxySedan_02_Trunk"
     },
     "ProxyButtstock_AK_Wood_Black": {
         "Category": "",
@@ -7967,9 +8687,9 @@
         "Category": "",
         "Description": "Дым. граната 1-M8"
     },
-    "SmallProtectorCase": {
+    "BookThePitAndThePendulum": {
         "Category": "",
-        "Description": "Защитный ящик"
+        "Description": "The Pit and the Pendulum"
     },
     "CigarettePack_Merkur": {
         "Category": "",
@@ -7991,17 +8711,17 @@
         "Category": "",
         "Description": "Задняя правая дверь Gunter 2"
     },
-    "Sedan_02_Door_2_2_GreyRust": {
-        "Category": "",
-        "Description": "Задняя правая дверь Sarka 120"
+    "Sedan_02_Grey": {
+        "Category": "Транспорт",
+        "Description": "Sarka 120"
     },
     "CombatBoots_Grey": {
         "Category": "Одежда",
         "Description": "Охотничьи ботинки"
     },
-    "Plastic_Explosive_Placing": {
-        "Category": "",
-        "Description": "Пластичная взрывчатка"
+    "HuntingVest_Winter": {
+        "Category": "Одежда",
+        "Description": "Охотничий жилет"
     },
     "LargeGasCanister": {
         "Category": "",
@@ -8022,6 +8742,10 @@
     "Heatpack": {
         "Category": "",
         "Description": "Химическая грелка"
+    },
+    "ProxyNivaWheel_destroyed": {
+        "Category": "",
+        "Description": "ProxyNivaWheel_destroyed"
     },
     "Fence": {
         "Category": "",
@@ -8051,17 +8775,13 @@
         "Category": "",
         "Description": ""
     },
-    "SlacksPants_Blue": {
+    "ZmbF_NurseFat_Winter": {
+        "Category": "Зомби",
+        "Description": "Зараженный"
+    },
+    "SkiGoggles_WhiteDark": {
         "Category": "Одежда",
-        "Description": "Брюки"
-    },
-    "ProxyMagazine_cz61": {
-        "Category": "",
-        "Description": "ProxyMagazine_cz61"
-    },
-    "Proxyroad_flare": {
-        "Category": "",
-        "Description": "Proxyroad_flare"
+        "Description": "Лыжные очки"
     },
     "Hatchback_02_Trunk_RedRust": {
         "Category": "",
@@ -8086,6 +8806,10 @@
     "CanOpener": {
         "Category": "",
         "Description": "Консервный нож"
+    },
+    "ProxyVan_WoodenBoat_Engine": {
+        "Category": "",
+        "Description": "ProxyVan_WoodenBoat_Engine"
     },
     "ImprovisedExplosive": {
         "Category": "",
@@ -8118,6 +8842,10 @@
     "EyeMask_Yellow": {
         "Category": "Одежда",
         "Description": "Карнавальная маска"
+    },
+    "ProxyFirstAidKit": {
+        "Category": "",
+        "Description": "ProxyFirstAidKit"
     },
     "ZmbM_ParamedicNormal_Green": {
         "Category": "Зомби",
@@ -8163,6 +8891,10 @@
         "Category": "Еда",
         "Description": "Тыква"
     },
+    "ProxyMagazine_saiga_mag5": {
+        "Category": "",
+        "Description": "ProxyMagazine_saiga_mag5"
+    },
     "BookTrailin": {
         "Category": "",
         "Description": "Trailin'!"
@@ -8199,6 +8931,10 @@
         "Category": "Одежда",
         "Description": "Брюки"
     },
+    "Proxyoptic_red_point": {
+        "Category": "",
+        "Description": "Proxyoptic_red_point"
+    },
     "DirtBikeHelmet_Chernarus": {
         "Category": "Одежда",
         "Description": "Кроссовый мотошлем"
@@ -8214,6 +8950,10 @@
     "Flag_RSTA": {
         "Category": "",
         "Description": "Флаг"
+    },
+    "Proxymagazine_cz550_4rnd": {
+        "Category": "",
+        "Description": "Proxymagazine_cz550_4rnd"
     },
     "ZmbM_PatrolNormal_PautRev": {
         "Category": "Зомби",
@@ -8251,9 +8991,17 @@
         "Category": "Одежда",
         "Description": "Походный рюкзак"
     },
+    "ProxyTruck_02_Wheel": {
+        "Category": "",
+        "Description": "ProxyTruck_02_Wheel"
+    },
     "Ammo_40mm_Smoke_Black": {
         "Category": "",
         "Description": "40-мм дымовая граната"
+    },
+    "ProxyIkarusWheel_destroyed": {
+        "Category": "",
+        "Description": "ProxyIkarusWheel_destroyed"
     },
     "PigPelt": {
         "Category": "",
@@ -8295,9 +9043,9 @@
         "Category": "Одежда",
         "Description": "Туфли"
     },
-    "NailBox": {
-        "Category": "",
-        "Description": "Коробка гвоздей"
+    "Van_Airboat_Orange": {
+        "Category": "Транспорт",
+        "Description": "Airboat Orange"
     },
     "Mag_Saiga_5Rnd": {
         "Category": "",
@@ -8339,9 +9087,9 @@
         "Category": "Оружие",
         "Description": "Pioneer"
     },
-    "OKZKCap_Green": {
+    "Sweater_ChristmasRed": {
         "Category": "Одежда",
-        "Description": "Кепка от ОКЗК"
+        "Description": "Свитер"
     },
     "Mag_PM73_25Rnd": {
         "Category": "",
@@ -8354,6 +9102,10 @@
     "BoxCerealCrunchin": {
         "Category": "Еда",
         "Description": "Хлопья"
+    },
+    "ProxyGPSReceiver": {
+        "Category": "",
+        "Description": "ProxyGPSReceiver"
     },
     "WitchHood_Red": {
         "Category": "Одежда",
@@ -8379,6 +9131,10 @@
         "Category": "Одежда",
         "Description": "Танковый шлемофон"
     },
+    "RedCaviar": {
+        "Category": "Еда",
+        "Description": "Красная икра"
+    },
     "ProxyMagazine_ruger1022_30": {
         "Category": "",
         "Description": "ProxyMagazine_ruger1022_30"
@@ -8391,6 +9147,10 @@
         "Category": "Зомби",
         "Description": "Зараженный"
     },
+    "PaydayMask_Hoxton": {
+        "Category": "Одежда",
+        "Description": "Маска Хокстона"
+    },
     "ProxyHide": {
         "Category": "",
         "Description": "ProxyHide"
@@ -8399,9 +9159,9 @@
         "Category": "",
         "Description": "Flying U Ranch"
     },
-    "CanvasPants_Beige": {
+    "WoolGloves_Green": {
         "Category": "Одежда",
-        "Description": "Походные штаны"
+        "Description": "Шерстяные перчатки"
     },
     "OfficerHat": {
         "Category": "Одежда",
@@ -8455,9 +9215,9 @@
         "Category": "Животные",
         "Description": "Свинья"
     },
-    "Proxyplate_carrier_pouches_g": {
-        "Category": "",
-        "Description": "Proxyplate_carrier_pouches_g"
+    "Van_Jetski": {
+        "Category": "Транспорт",
+        "Description": "Jetski Green"
     },
     "BookSonsAndLovers": {
         "Category": "",
@@ -8503,6 +9263,10 @@
         "Category": "",
         "Description": "Картофель"
     },
+    "ProxyHatchback_02_Wheel_destroyed": {
+        "Category": "",
+        "Description": "ProxyHatchback_02_Wheel_destroyed"
+    },
     "Offroad_02_Door_1_2_Rust": {
         "Category": "",
         "Description": "Задняя левая дверь M1025"
@@ -8527,21 +9291,29 @@
         "Category": "",
         "Description": "Маскировочный камуфляж для винтовки"
     },
-    "Whetstone": {
-        "Category": "",
-        "Description": "Точильный камень"
+    "Animal_RangiferTarandus": {
+        "Category": "Животные",
+        "Description": "Северный олень"
     },
     "OffroadHatchback_White": {
         "Category": "Транспорт",
         "Description": "Ada 4x4"
     },
-    "Hatchback_02_Wheel_Ruined": {
+    "BearTrap": {
         "Category": "",
-        "Description": "Колесо Gunter 2"
+        "Description": "Капкан"
+    },
+    "ProxyVan_01_Wheel_ruined": {
+        "Category": "",
+        "Description": "ProxyVan_01_Wheel_ruined"
     },
     "ZmbM_VillagerOld_Green": {
         "Category": "Зомби",
         "Description": "Зараженный"
+    },
+    "PistolOptic": {
+        "Category": "",
+        "Description": "Пистолетный прицел"
     },
     "Sedan_02_Door_2_1": {
         "Category": "",
@@ -8559,9 +9331,9 @@
         "Category": "",
         "Description": "Легкий приклад для LAR"
     },
-    "Proxybelt_back_proxy": {
+    "ProxyVan_01_Wheel": {
         "Category": "",
-        "Description": "Proxybelt_back_proxy"
+        "Description": "ProxyVan_01_Wheel"
     },
     "BookCandide": {
         "Category": "",
@@ -8575,9 +9347,9 @@
         "Category": "Оружие",
         "Description": "M4-A1"
     },
-    "Mag_SSG82_5rnd": {
-        "Category": "",
-        "Description": "Магазин SSG 82, 5 пат."
+    "CivilianBelt": {
+        "Category": "Одежда",
+        "Description": "Ремень"
     },
     "Sedan_02_Hood_YellowRust": {
         "Category": "",
@@ -8591,6 +9363,10 @@
         "Category": "",
         "Description": "Капот Olga 24"
     },
+    "ProxySedan_02_Door_1_1": {
+        "Category": "",
+        "Description": "ProxySedan_02_Door_1_1"
+    },
     "HikingBootsLow_Blue": {
         "Category": "Одежда",
         "Description": "Треккинговые ботинки"
@@ -8602,6 +9378,10 @@
     "Ballerinas_White": {
         "Category": "Одежда",
         "Description": "Балетки"
+    },
+    "ProxyOffroad_02_Door_1_1": {
+        "Category": "",
+        "Description": "ProxyOffroad_02_Door_1_1"
     },
     "Sedan_02_Hood_Grey": {
         "Category": "",
@@ -8711,13 +9491,13 @@
         "Category": "",
         "Description": "The Time Machine"
     },
-    "MaleRolfHead": {
+    "CombinationLock4": {
         "Category": "",
-        "Description": "face"
+        "Description": "Кодовый замок на 4 цифры"
     },
-    "ProxyString_MetalWire": {
-        "Category": "",
-        "Description": "ProxyString_MetalWire"
+    "CrabCan": {
+        "Category": "Еда",
+        "Description": "Крабовые консервы"
     },
     "Mosin_Compensator": {
         "Category": "",
@@ -8727,13 +9507,17 @@
         "Category": "",
         "Description": "Крышка багажника Olga 24"
     },
-    "StaticObj_Decal_damage_long4_DE": {
+    "Ammo_40mm_Smoke_Green": {
         "Category": "",
-        "Description": ""
+        "Description": "40-мм дымовая граната"
     },
-    "SalineBag": {
+    "CowboyHat_green": {
+        "Category": "Одежда",
+        "Description": "Ковбойская шляпа"
+    },
+    "MaleEliasHead": {
         "Category": "",
-        "Description": "Пакет физраствора"
+        "Description": "face"
     },
     "WolfSteakMeat": {
         "Category": "Еда",
@@ -8783,7 +9567,7 @@
         "Category": "",
         "Description": "Блок дистанционного подрыва"
     },
-    "Armband_RSTA": {
+    "Armband_Zenit": {
         "Category": "Одежда",
         "Description": "Нарукавная повязка"
     },
@@ -8807,13 +9591,21 @@
         "Category": "",
         "Description": "Youth"
     },
+    "ProxyOTs14_Barrel_Grip": {
+        "Category": "",
+        "Description": "ProxyOTs14_Barrel_Grip"
+    },
+    "AthleticShoes_Grey": {
+        "Category": "Одежда",
+        "Description": "Спортивные ботинки"
+    },
     "Mag_CZ61_20Rnd": {
         "Category": "",
         "Description": "Магазин CR-61, 20 пат."
     },
-    "StaticObj_Decal_damage_medium1_DE": {
+    "ClearSyringe": {
         "Category": "",
-        "Description": ""
+        "Description": "Шприц"
     },
     "AK101": {
         "Category": "Оружие",
@@ -8830,6 +9622,10 @@
     "FangeKnife": {
         "Category": "",
         "Description": "Нож с клыками"
+    },
+    "ProxyVan_01_Trunk_1": {
+        "Category": "",
+        "Description": "ProxyVan_01_Trunk_1"
     },
     "ProxyBipod_Atlas": {
         "Category": "",
@@ -8859,13 +9655,17 @@
         "Category": "",
         "Description": "ProxyGloves_DZ"
     },
+    "FNX45_arrow": {
+        "Category": "Оружие",
+        "Description": "FX-45"
+    },
     "Sedan_02_Door_1_2_RedRust": {
         "Category": "",
         "Description": "Задняя левая дверь Sarka 120"
     },
-    "Land_Wreck_Volha_Police": {
+    "HescoBox": {
         "Category": "",
-        "Description": ""
+        "Description": "Ограждение из проволочной сетки"
     },
     "AK_RailHndgrd_Green": {
         "Category": "",
@@ -8907,6 +9707,10 @@
         "Category": "Одежда",
         "Description": "Брюки капри"
     },
+    "SherpaHat_Black": {
+        "Category": "Одежда",
+        "Description": "Шапочка из шерпы"
+    },
     "GorkaEJacket_PautRev": {
         "Category": "Одежда",
         "Description": "Патрульная куртка"
@@ -8927,9 +9731,13 @@
         "Category": "",
         "Description": ""
     },
-    "Flag_APA": {
+    "Canteen": {
+        "Category": "Еда",
+        "Description": "Фляжка"
+    },
+    "Mag_Vikhr_30Rnd": {
         "Category": "",
-        "Description": "Флаг"
+        "Description": "Магазин Вихрь, 30 пат. "
     },
     "AK_WoodHndgrd": {
         "Category": "",
@@ -8983,9 +9791,9 @@
         "Category": "Зомби",
         "Description": "Зараженный"
     },
-    "Mag_1911_7Rnd": {
+    "WoodenHook": {
         "Category": "",
-        "Description": "Магазин Kolt 1911, 7 пат."
+        "Description": "Деревянный крючок"
     },
     "LeatherGloves_Black": {
         "Category": "Одежда",
@@ -9027,9 +9835,9 @@
         "Category": "",
         "Description": "Выживший"
     },
-    "ShortJeans_Green": {
-        "Category": "Одежда",
-        "Description": "Джинсовые шорты"
+    "Animal_GallusGallusDomesticus": {
+        "Category": "Животные",
+        "Description": "Петух"
     },
     "ZmbF_HikerSkinny_Blue": {
         "Category": "Зомби",
@@ -9042,6 +9850,10 @@
     "SurvivorM_Indar": {
         "Category": "",
         "Description": "Выживший"
+    },
+    "Mag_AKM_30Rnd": {
+        "Category": "",
+        "Description": "Магазин КА-M, 30 пат."
     },
     "ProxyMask_DZ": {
         "Category": "",
@@ -9067,6 +9879,10 @@
         "Category": "Зомби",
         "Description": "Зараженный"
     },
+    "SteelheadTrout": {
+        "Category": "Еда",
+        "Description": "Радужная форель"
+    },
     "ImprovisedExplosivePlacing": {
         "Category": "",
         "Description": "Самодельная взрывчатка"
@@ -9083,6 +9899,22 @@
         "Category": "",
         "Description": "Навес"
     },
+    "Proxybait_worm": {
+        "Category": "",
+        "Description": "Proxybait_worm"
+    },
+    "ProxyikarusHood": {
+        "Category": "",
+        "Description": "ProxyikarusHood"
+    },
+    "ProxyTruck_01_Door_2_1": {
+        "Category": "",
+        "Description": "ProxyTruck_01_Door_2_1"
+    },
+    "SodaCan_Fronta": {
+        "Category": "Еда",
+        "Description": "Лимонад «Fronta»"
+    },
     "Land_Wreck_Ikarus_DE": {
         "Category": "",
         "Description": ""
@@ -9090,6 +9922,10 @@
     "TerritoryFlag": {
         "Category": "",
         "Description": "Флагшток"
+    },
+    "ProxyTruck_01_Wheel_ruined": {
+        "Category": "",
+        "Description": "ProxyTruck_01_Wheel_ruined"
     },
     "Animal_CapraHircus_Black": {
         "Category": "Животные",
@@ -9103,6 +9939,10 @@
         "Category": "Одежда",
         "Description": "Штаны рабочего"
     },
+    "ProxyTruck_02_Door_2_1": {
+        "Category": "",
+        "Description": "ProxyTruck_02_Door_2_1"
+    },
     "ButaneCanister": {
         "Category": "",
         "Description": "$UNT$Butane Canister"
@@ -9114,6 +9954,10 @@
     "ProxyButtstock_pp19": {
         "Category": "",
         "Description": "ProxyButtstock_pp19"
+    },
+    "Van_Airboat_Blue": {
+        "Category": "Транспорт",
+        "Description": "Airboat Blue"
     },
     "Rag": {
         "Category": "",
@@ -9207,9 +10051,9 @@
         "Category": "",
         "Description": "Капот Olga 24"
     },
-    "ProxyHands": {
-        "Category": "",
-        "Description": "ProxyHands"
+    "BaseballCap_Camo": {
+        "Category": "Одежда",
+        "Description": "Бейсболка"
     },
     "ZmbM_ConstrWorkerNormal_Black": {
         "Category": "Зомби",
@@ -9219,9 +10063,13 @@
         "Category": "",
         "Description": "The War of the Worlds"
     },
-    "Sedan_02_Door_2_2_YellowRust": {
+    "ProxyIkarusWheel_rear_destroyed": {
         "Category": "",
-        "Description": "Задняя правая дверь Sarka 120"
+        "Description": "ProxyIkarusWheel_rear_destroyed"
+    },
+    "BomberJacket_Olive": {
+        "Category": "Одежда",
+        "Description": "Бомбер"
     },
     "Hatchback_02_Hood_BlackRust": {
         "Category": "",
@@ -9259,9 +10107,9 @@
         "Category": "Одежда",
         "Description": "Рукавицы химкостюма"
     },
-    "Proxydummyscope": {
-        "Category": "",
-        "Description": "Proxydummyscope"
+    "RadarCap_Green": {
+        "Category": "Одежда",
+        "Description": "Вязаная шапка с козырьком"
     },
     "Land_Container_1Moh_DE": {
         "Category": "",
@@ -9274,6 +10122,10 @@
     "MiniDress_BrownChecker": {
         "Category": "Одежда",
         "Description": "Платье с воротником"
+    },
+    "Ammo_22": {
+        "Category": "",
+        "Description": "Патроны .22 LR"
     },
     "Proxyplate_carrier_holster_g": {
         "Category": "",
@@ -9343,6 +10195,10 @@
         "Category": "",
         "Description": "face"
     },
+    "ZmbM_PatrolNormal_Winter": {
+        "Category": "Зомби",
+        "Description": "Зараженный"
+    },
     "StaticObj_Misc_SupplyBox3_DE": {
         "Category": "",
         "Description": ""
@@ -9355,9 +10211,17 @@
         "Category": "Еда",
         "Description": "Zagorky с шоколадом"
     },
+    "PlateCarrierHolster_Winter": {
+        "Category": "Одежда",
+        "Description": "Кобура"
+    },
     "AlarmClock_Red": {
         "Category": "",
         "Description": "Будильник"
+    },
+    "Proxywoodencrate": {
+        "Category": "",
+        "Description": "Proxywoodencrate"
     },
     "GiftBox_Medium_4": {
         "Category": "",
@@ -9387,17 +10251,25 @@
         "Category": "",
         "Description": "$UNT$Groza-4 Threaded Flash Can"
     },
+    "Binoculars": {
+        "Category": "",
+        "Description": "Бинокль"
+    },
+    "PlateCarrierPouches_Winter": {
+        "Category": "",
+        "Description": "Съемные карманы"
+    },
     "FemaleEvaHead": {
         "Category": "",
         "Description": "face"
     },
-    "BearTrap": {
+    "BookWutheringHeights": {
         "Category": "",
-        "Description": "Капкан"
+        "Description": "Wuthering Heights"
     },
-    "PistolOptic": {
-        "Category": "",
-        "Description": "Пистолетный прицел"
+    "ZmbF_PatientOld_Winter": {
+        "Category": "Зомби",
+        "Description": "Зараженный"
     },
     "ProxyChemlight": {
         "Category": "",
@@ -9439,6 +10311,10 @@
         "Category": "Одежда",
         "Description": "Кривой нос"
     },
+    "Van_Sailboat_Fridge": {
+        "Category": "",
+        "Description": "Sailboat Fridge"
+    },
     "BookHunger": {
         "Category": "",
         "Description": "Hunger"
@@ -9446,6 +10322,14 @@
     "M4_MPHndgrd_Black": {
         "Category": "",
         "Description": "Цевьё MP для M4-A1"
+    },
+    "Proxyshockpistol_cartridge": {
+        "Category": "",
+        "Description": "Proxyshockpistol_cartridge"
+    },
+    "Shrimp": {
+        "Category": "Еда",
+        "Description": "Креветка"
     },
     "MKII": {
         "Category": "Оружие",
@@ -9459,13 +10343,17 @@
         "Category": "Животные",
         "Description": "Олениха"
     },
+    "ProxySedan_02_Wheel": {
+        "Category": "",
+        "Description": "ProxySedan_02_Wheel"
+    },
     "SlicedPumpkin": {
         "Category": "Еда",
         "Description": "Ломтики тыквы"
     },
-    "AthleticShoes_Grey": {
+    "BallisticHelmet_Winter": {
         "Category": "Одежда",
-        "Description": "Спортивные ботинки"
+        "Description": "Камуфляжный шлем"
     },
     "Mag_CLIP9x19_10Rnd": {
         "Category": "",
@@ -9535,6 +10423,10 @@
         "Category": "Одежда",
         "Description": "Платье с воротником"
     },
+    "Ammo_CupidsBolt": {
+        "Category": "",
+        "Description": "Стрела Купидона"
+    },
     "ProxyHandguard_M4_Plastic": {
         "Category": "",
         "Description": "ProxyHandguard_M4_Plastic"
@@ -9562,6 +10454,10 @@
     "ZmbM_usSoldier_normal_Desert": {
         "Category": "Зомби",
         "Description": "Зараженный"
+    },
+    "ProxyTruck_01_WheelDouble": {
+        "Category": "",
+        "Description": "ProxyTruck_01_WheelDouble"
     },
     "TaloonBag_Violet": {
         "Category": "Одежда",
@@ -9607,9 +10503,9 @@
         "Category": "",
         "Description": "Задняя левая дверь Sarka 120"
     },
-    "Ammo_40mm_Smoke_Green": {
-        "Category": "",
-        "Description": "40-мм дымовая граната"
+    "GhillieTop_Winter": {
+        "Category": "Одежда",
+        "Description": "Маскировочный плащ"
     },
     "PetrolLighter": {
         "Category": "",
@@ -9671,6 +10567,10 @@
         "Category": "Одежда",
         "Description": "Беговая обувь"
     },
+    "Proxyproxy_grenade_b": {
+        "Category": "",
+        "Description": "Proxyproxy_grenade_b"
+    },
     "ZmbF_SurvivorNormal_Red": {
         "Category": "Зомби",
         "Description": "Зараженный"
@@ -9711,13 +10611,17 @@
         "Category": "Одежда",
         "Description": "Утепленные перчатки"
     },
-    "GhillieSuit_Tan": {
-        "Category": "Одежда",
-        "Description": "Маскировочный костюм"
+    "Flag_Zenit": {
+        "Category": "",
+        "Description": "Флаг"
     },
     "Sedan_02_Door_1_2_YellowRust": {
         "Category": "",
         "Description": "Задняя левая дверь Sarka 120"
+    },
+    "Mag_SV98_10Rnd": {
+        "Category": "",
+        "Description": "Магазин для ВС-89, 10 пат."
     },
     "Hatchback_02_Door_2_1_BlackRust": {
         "Category": "",
@@ -9767,13 +10671,17 @@
         "Category": "",
         "Description": "Капот Ada 4x4"
     },
-    "ProxyMosin_Compensator": {
+    "Van_Sailboat_Washing": {
         "Category": "",
-        "Description": "ProxyMosin_Compensator"
+        "Description": "Washing Machine"
     },
     "Barrel_Yellow": {
         "Category": "",
         "Description": "Бочка"
+    },
+    "GhillieSuit_Mossy": {
+        "Category": "Одежда",
+        "Description": "Маскировочный костюм"
     },
     "Mag_Glock_15Rnd": {
         "Category": "",
@@ -9807,9 +10715,9 @@
         "Category": "",
         "Description": "Охотничий нож"
     },
-    "Flag_Zenit": {
-        "Category": "",
-        "Description": "Флаг"
+    "DeadFox": {
+        "Category": "Еда",
+        "Description": "Рыжая лисица"
     },
     "USMCPants_Woodland": {
         "Category": "Одежда",
@@ -9818,6 +10726,10 @@
     "CanvasBag_Olive": {
         "Category": "Одежда",
         "Description": "Холщовая сумка"
+    },
+    "GhillieAtt_Winter": {
+        "Category": "",
+        "Description": "Маскировочный камуфляж для винтовки"
     },
     "ContaminatedArea_Dynamic": {
         "Category": "",
@@ -9835,9 +10747,9 @@
         "Category": "",
         "Description": "The Day of the Beast"
     },
-    "GhillieSuit_Mossy": {
+    "Sweater_ChristmasGreen": {
         "Category": "Одежда",
-        "Description": "Маскировочный костюм"
+        "Description": "Свитер"
     },
     "Proxybait": {
         "Category": "",

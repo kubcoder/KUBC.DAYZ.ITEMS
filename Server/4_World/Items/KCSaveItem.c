@@ -1,38 +1,48 @@
 #ifndef KC_SAVE_ITEM
-/** @brief Описание итема для сохранения*/
+/// @brief Описание итема для сохранения
 class KCSaveItem
 {
-    /** @brief Класс итема*/
+    /// @brief Класс итема
     string ItemName;
-    /** @brief Здоровье итема*/
+    
+    /// @brief Здоровье итема
     float Healt;
-    /** @brief Колличество итема*/
+    
+    /// @brief Колличество итема
     float Quantity = 0;
-    /** @brief Столбец размещения в инвентаре*/
+    
+    /// @brief Столбец размещения в инвентаре
     int Col;
-    /** @brief Строка размещения в инвентаре*/
+    
+    /// @brief Строка размещения в инвентаре
     int Row;
-    /** @brief Признак что элемент перевернут в инвентаре*/
+    
+    /// @brief Признак что элемент перевернут в инвентаре
     bool Flip;
-    /** @brief положение в мире*/
+    
+    /// @brief положение в мире
     vector Position;
-    /** @brief Ориентация в мире*/
+    
+    /// @brief Ориентация в мире
     vector Orientation;
-    /** @brief Признак что координаты абсолютные*/
+    
+    /// @brief Признак что координаты абсолютные
     bool IsAbsolute = false;
-    /** @brief Дочерние элементы*/
+    
+    /// @brief Дочерние элементы
     ref KCSaveItemCollection Child;
-    /** @brief Слот в котором размещен итем*/
+    
+    /// @brief Слот в котором размещен итем
     int SlotID;
-    /** @brief Тип жидкости, если доступно*/
+    
+    /// @brief Тип жидкости, если доступно
     int LiquidType = -1;
 
 
-    /** @brief Создать итем перед игроком, в направлении взгляда
-    *   @param player игрок возле которого будет создан предмет
-    *   @param Distance на какой дистанции создавать
-    *   @return Игровой итем если получилось создать, иначе NULL
-    */
+    /// @brief Создать итем перед игроком, в направлении взгляда
+    /// @param player игрок возле которого будет создан предмет
+    /// @param Distance на какой дистанции создавать
+    /// @return Игровой итем если получилось создать, иначе NULL
     EntityAI CreateOnRoute(PlayerBase player, float Distance)
     {
         EntityAI spawnItem;
@@ -50,11 +60,10 @@ class KCSaveItem
         return spawnItem;
     }
 
-    /** @brief Создать итем
-    *   @param parrent  родительский итем в который нужно разместить создаваемый
-    *                   или null если итем создается в мире. так же может быть игрок
-    *   @return Игровой итем если получилось создать, иначе NULL
-    */
+    /// @brief Создать итем
+    /// @param parrent  родительский итем в который нужно разместить создаваемый
+    ///                 или null если итем создается в мире. так же может быть игрок
+    /// @return Игровой итем если получилось создать, иначе NULL
     EntityAI Create(EntityAI parrent)
     {
         EntityAI spawnItem;
@@ -171,9 +180,9 @@ class KCSaveItem
         }
         return NULL;
     }
-    /** @brief  Создаем дочерние итемы
-    *   @param parrent итем в который запихиваем дочерние итемы
-    */
+
+    /// @brief  Создаем дочерние итемы
+    /// @param parrent итем в который запихиваем дочерние итемы
     void CreateChilds(EntityAI parrent)
     {
         if (Child)
@@ -185,10 +194,10 @@ class KCSaveItem
         }
         
     }
-    /** @brief  Устанавливаем кол-во итема
-    *   @param item Какой итем требует изменения кол-ва
-    *   @return Кол-во итемов после изменений
-    */
+
+    /// @brief  Устанавливаем кол-во итема
+    /// @param item Какой итем требует изменения кол-ва
+    /// @return Кол-во итемов после изменений
     int SetQuantity(EntityAI item)
     {
         if (Quantity==0)
@@ -213,10 +222,10 @@ class KCSaveItem
         }
         return 0;
     }
-    /** @brief получить итем для сохранения из машины
-    *   @param car транспорт существующий в игровом мире
-    *   @return Данные для сохранения на жестком диске
-    */
+
+    /// @brief получить итем для сохранения из машины
+    /// @param car транспорт существующий в игровом мире
+    /// @return Данные для сохранения на жестком диске
     static KCSaveItem FromCar(CarScript car)
     {
         KCSaveItem iData = new KCSaveItem();
@@ -248,10 +257,9 @@ class KCSaveItem
     }
 
 
-    /** @brief Получаем описание итема для сохранения
-    *   @param из какого итема создать описание
-    *   @return Данные для сохранения
-    */
+    /// @brief Получаем описание итема для сохранения
+    /// @param из какого итема создать описание
+    /// @return Данные для сохранения
     static KCSaveItem FromItem(EntityAI item)
     {
         KCSaveItem iData = new KCSaveItem();
@@ -295,28 +303,28 @@ class KCSaveItem
         }
         return iData;
     }
-    /** @brief Добавить относительные координаты
-    *   @param item итем координаты которого сохраняем
-    *   @param player относительно какого игрока создаем относительную координату
-    */
+
+    /// @brief Добавить относительные координаты
+    /// @param item итем координаты которого сохраняем
+    /// @param player относительно какого игрока создаем относительную координату
     void AddPosition(EntityAI item, PlayerBase player)
     {
         float yaw = (0 - player.GetOrientation()[0]) * Math.DEG2RAD;
         Position = item.GetPosition() - player.GetPosition();
         Position = RotationYaw(Position, yaw);
     }
-    /** @brief Добавить относительный разворот
-    *   @param item итем разворот которого сохраняем
-    *   @param player относительно какого игрока добавляем поворот
-    */
+
+    /// @brief Добавить относительный разворот
+    /// @param item итем разворот которого сохраняем
+    /// @param player относительно какого игрока добавляем поворот
     void AddOrientation(EntityAI item, PlayerBase player)
     {
         Orientation = item.GetOrientation();
         Orientation[0] = Orientation[0]-player.GetOrientation()[0];
     }
-    /** @brief Получить координаты относительно игрока
-    *   @param player относительно какого игрока добавляем поворот
-    */
+
+    /// @brief Получить координаты относительно игрока
+    /// @param player относительно какого игрока добавляем поворот
     vector GetWorldPos(PlayerBase player)
     {
         float yaw = player.GetOrientation()[0] * Math.DEG2RAD;
@@ -343,11 +351,10 @@ class KCSaveItem
 		return result;
 	}
 
-    /** @brief Создать итем на игроке
-    *   @param player - на каком игроке создавать
-    *   @param SetHealt - Востанавливать здоровье итема из файла
-    *   @return Созданный предмет
-    */
+    /// @brief Создать итем на игроке
+    /// @param player - на каком игроке создавать
+    /// @param SetHealt - Востанавливать здоровье итема из файла
+    /// @return Созданный предмет
     EntityAI CreateOnPlayer(PlayerBase player, bool SetHealt = false)
     {
         HumanInventory hInv = player.GetHumanInventory();
@@ -393,7 +400,8 @@ class KCSaveItem
         return cItem;
     }
 }
-/** Коллекция сохраненных итемов*/
+
+/// Коллекция сохраненных итемов
 typedef array<ref KCSaveItem>	KCSaveItemCollection;
 #define KC_SAVE_ITEM
 #endif

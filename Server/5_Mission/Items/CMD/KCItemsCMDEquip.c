@@ -1,28 +1,35 @@
-/** @brief Команда работы с экипировкой*/
+/// @brief Команда работы с экипировкой
 class KCItemsCMDEquip : KCUserCMD
 {
-    /** @brief название команды*/
+    /// @brief название команды
     static const string CMD_NAME = "equip";
-    /** @brief аргумент сохранения экипировки*/
+    
+    /// @brief аргумент сохранения экипировки
     static const string ARG_SAVE = "save";
-    /** @brief аргумент перезаписи существующей экипировки*/
+    
+    /// @brief аргумент перезаписи существующей экипировки
     static const string ARG_REPLACE = "r";
-    /** @brief аргумент сохранения экипировки в общую попку*/
+    
+    /// @brief аргумент сохранения экипировки в общую попку
     static const string ARG_SHARED = "s";
-    /** @brief аргумент сброса всех итемов игрока на землю*/
+    
+    /// @brief аргумент сброса всех итемов игрока на землю
     static const string ARG_DROP = "drop";
-    /** @brief аргумент удаления всей экипировки игрока*/
+    
+    /// @brief аргумент удаления всей экипировки игрока
     static const string ARG_CLEAR = "clear";
-    /** @brief аргумент выдачи экипировки рядом с игроком*/
+    
+    /// @brief аргумент выдачи экипировки рядом с игроком
     static const string AGR_GROUND = "g";
+    
     override string GetName()
     {
         return KCItemsCMDEquip.CMD_NAME;
     }
-    /** @brief получить описание экипировки игрока
-    *   @param player игрок экипировку которого нужно сохранить
-    *   @return набор итемов входящих в экипировку игрока
-    */
+    
+    /// @brief получить описание экипировки игрока
+    /// @param player игрок экипировку которого нужно сохранить
+    /// @return набор итемов входящих в экипировку игрока
     static KCItemSet FromPlayer(PlayerBase player)
     {
         GameInventory inventory = player.GetInventory();
@@ -62,10 +69,10 @@ class KCItemsCMDEquip : KCUserCMD
 		}
         return NULL;
     }
-    /** @brief Сохранить экипировку
-    *   @param user экипировку какого игрока сохранять
-    *   @param data данные текстовой команды
-    */
+    
+    /// @brief Сохранить экипировку
+    /// @param user экипировку какого игрока сохранять
+    /// @param data данные текстовой команды
     bool Save(PlayerBase user, KCTextCmd data)
     {
         string SettName = "";

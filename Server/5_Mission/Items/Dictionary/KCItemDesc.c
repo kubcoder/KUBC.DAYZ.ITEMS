@@ -1,18 +1,22 @@
-/** @brief Описание итема в справочнике*/
+/// @brief Описание итема в справочнике
 class KCItemDesc
 {
-    /** @brief Категория итема*/
+    /// @brief Категория итема
     string Category;
-    /** @brief Описание итема на языке котором запущен сервер*/
+    
+    /// @brief Описание итема на языке котором запущен сервер
     string Description;
-    /** @brief Имя файла справочника*/
+    
+    /// @brief Имя файла справочника
     static const string FILE_NAME = "items.json";
-    /** @brief Полное имя файла справочника*/
+    
+    /// @brief Полное имя файла справочника
     static string GetFileName()
     {
         return KCItems.GetDictionaryPath() + "\\" + FILE_NAME;
     }
-    /** @brief формируем справочник итемов*/
+    
+    /// @brief формируем справочник итемов
     static KCItemDictionary GetDictionary()
     {
         KCItemCategories categories = KCItemCategory.GetCategories();
@@ -111,5 +115,6 @@ class KCItemDesc
         
     }
 }
-/** @brief Справочник итемов*/
+
+/// @brief Справочник итемов
 typedef map<string, ref KCItemDesc>	KCItemDictionary;
