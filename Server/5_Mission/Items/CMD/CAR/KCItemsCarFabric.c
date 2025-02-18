@@ -1,5 +1,5 @@
 /// @brief Фабрика автомобильчиков
-class KCItemsCarFabric
+class KCItemsCarFabric : KCItemsCarFile
 {
     /// @brief На какой дистанции создаем машину
     static const float DEF_DISTANCE = 10;
@@ -27,22 +27,6 @@ class KCItemsCarFabric
         return NULL;
     }
 
-    /// @brief Полный путь к набору машины
-    /// @param SettName имя сохраненной тачилы
-    /// @param player для какого игрока получать папку, если указан NULL
-    ///               то будет возвращено корневая папка машин
-    string GetCarFile(string SetName, PlayerBase player = NULL)
-    {
-        if (player)
-        {
-            MakeDirectory(KCItems.GetCarsPath() + "\\" + player.GetIdentity().GetPlainId());
-            return KCItems.GetCarsPath() + "\\" + player.GetIdentity().GetPlainId() + "\\" + SetName + ".json";
-        }
-        else
-        {
-            return KCItems.GetCarsPath() + "\\" + SetName + ".json";
-        }
-    }
     
     /// @brief Выдать машину
     /// @param FileName - какую машину выдать

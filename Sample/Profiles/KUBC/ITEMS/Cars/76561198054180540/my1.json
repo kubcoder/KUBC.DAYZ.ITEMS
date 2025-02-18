@@ -1,0 +1,427 @@
+{
+    "NickName": "kot23rus",
+    "SteamID": "76561198054180540",
+    "Notes": "",
+    "Items": [
+        {
+            "ItemName": "OffroadHatchback",
+            "Healt": 1000.0,
+            "Quantity": 0.0,
+            "Col": 0,
+            "Row": 0,
+            "Flip": 0,
+            "Position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "Orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "IsAbsolute": 0,
+            "Child": [
+                {
+                    "ItemName": "HatchbackWheel",
+                    "Healt": 200.0,
+                    "Quantity": 0.0,
+                    "Col": -1,
+                    "Row": -1,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -17738153,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "HatchbackWheel",
+                    "Healt": 200.0,
+                    "Quantity": 0.0,
+                    "Col": -1,
+                    "Row": -1,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -17738152,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "CarBattery",
+                    "Healt": 200.0,
+                    "Quantity": 48.0,
+                    "Col": -1,
+                    "Row": -1,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": 1000100489,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "HatchbackWheel",
+                    "Healt": 200.0,
+                    "Quantity": 0.0,
+                    "Col": -1,
+                    "Row": -1,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -17736783,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "HatchbackWheel",
+                    "Healt": 200.0,
+                    "Quantity": 0.0,
+                    "Col": -1,
+                    "Row": -1,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": 2001248129,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "CarRadiator",
+                    "Healt": 250.0,
+                    "Quantity": 0.0,
+                    "Col": -1,
+                    "Row": -1,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": 5271856,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "HatchbackTrunk",
+                    "Healt": 500.0,
+                    "Quantity": 0.0,
+                    "Col": -1,
+                    "Row": -1,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": 1472731642,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "SparkPlug",
+                    "Healt": 20.0,
+                    "Quantity": 0.0,
+                    "Col": -1,
+                    "Row": -1,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -626843635,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "HeadlightH7",
+                    "Healt": 10.0,
+                    "Quantity": 0.0,
+                    "Col": -1,
+                    "Row": -1,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": 673890682,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "HeadlightH7",
+                    "Healt": 10.0,
+                    "Quantity": 0.0,
+                    "Col": -1,
+                    "Row": -1,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": 673892051,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "HatchbackDoors_Driver",
+                    "Healt": 500.0,
+                    "Quantity": 0.0,
+                    "Col": -1,
+                    "Row": -1,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": 673280309,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "HatchbackDoors_CoDriver",
+                    "Healt": 500.0,
+                    "Quantity": 0.0,
+                    "Col": -1,
+                    "Row": -1,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -928807093,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "HatchbackHood",
+                    "Healt": 500.0,
+                    "Quantity": 0.0,
+                    "Col": -1,
+                    "Row": -1,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": 39191380,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "HatchbackWheel",
+                    "Healt": 200.0,
+                    "Quantity": 0.0,
+                    "Col": -1,
+                    "Row": -1,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -17736784,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "AK74",
+                    "Healt": 250.0,
+                    "Quantity": 0.0,
+                    "Col": 0,
+                    "Row": 0,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [
+                        {
+                            "ItemName": "AKS74U_Bttstck",
+                            "Healt": 250.0,
+                            "Quantity": 0.0,
+                            "Col": -1,
+                            "Row": -1,
+                            "Flip": 0,
+                            "Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Orientation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "IsAbsolute": 0,
+                            "Child": [],
+                            "SlotID": -54823519,
+                            "LiquidType": -1
+                        },
+                        {
+                            "ItemName": "AK_PlasticHndgrd",
+                            "Healt": 170.0,
+                            "Quantity": 0.0,
+                            "Col": -1,
+                            "Row": -1,
+                            "Flip": 0,
+                            "Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Orientation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "IsAbsolute": 0,
+                            "Child": [],
+                            "SlotID": -1892350148,
+                            "LiquidType": -1
+                        },
+                        {
+                            "ItemName": "Mag_AK74_30Rnd",
+                            "Healt": 100.0,
+                            "Quantity": 0.0,
+                            "Col": -1,
+                            "Row": -1,
+                            "Flip": 0,
+                            "Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Orientation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "IsAbsolute": 0,
+                            "Child": [],
+                            "SlotID": -493635884,
+                            "LiquidType": -1
+                        }
+                    ],
+                    "SlotID": -1,
+                    "LiquidType": -1
+                }
+            ],
+            "SlotID": 0,
+            "LiquidType": -1
+        }
+    ]
+}

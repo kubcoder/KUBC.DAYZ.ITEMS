@@ -10,6 +10,9 @@ class KCItemsCMDCar : KCUserCMD
     /// @brief аргумент на какой дистанции создать машину
     static const string ARG_DISTANCE = "d";
 
+    /// @brief Дистанция для поиска машины по умолчанию
+    static const float DEF_DIST = 10;
+
     /// @brief аргумент заправки транспорта
     static const string ARG_REFUEL = "refuel";
     
@@ -57,7 +60,49 @@ class KCItemsCMDCar : KCUserCMD
             KCItemsCarManager manager = GetManager(data);
             if (manager)
             {
-
+                float power = DEF_IMPULSE;
+                switch (data.Arg[0])
+                {
+                    case ARG_REPAIR:
+                        if (data.ContainsArg(ARG_ALL))
+                        {
+                            manager.Repair(true);
+                            KCPlayer.SendMessage(data.Player,user.GetIdentity().GetName(),"Починили машину и все что было в ней");
+                        }
+                        else
+                        {
+                            manager.Repair(false);
+                            KCPlayer.SendMessage(data.Player,user.GetIdentity().GetName(),"Починили машину и все её детали");
+                        }
+                        return true;
+                    case ARG_REFUEL:
+                        manager.Refuel();
+                        manager.SetLongLife();
+                        KCPlayer.SendMessage(data.Player,user.GetIdentity().GetName(),"Заправили машину");
+                        return true;
+                    case ARG_FRONT:
+                        power = data.GetFloat(ARG_FRONT, DEF_IMPULSE);
+                        manager.GetImpulseTool().FrontImpulse(power);
+                        KCPlayer.SendMessage(data.Player,user.GetIdentity().GetName(),"Толкнули машину по направлению движения");
+                        return true;
+                    case ARG_BACK:
+                        power = data.GetFloat(ARG_BACK, DEF_IMPULSE);
+                        manager.GetImpulseTool().BackImpulse(power);
+                        KCPlayer.SendMessage(data.Player,user.GetIdentity().GetName(),"Толкнули машину обратно направлению движения");
+                        return true;
+                    case ARG_LEFT:
+                        power = data.GetFloat(ARG_LEFT, DEF_IMPULSE);
+                        manager.GetImpulseTool().LeftImpulse(power);
+                        KCPlayer.SendMessage(data.Player,user.GetIdentity().GetName(),"Толкнули машину в левый борт");
+                        return true;
+                    case ARG_RIGHT:
+                        power = data.GetFloat(ARG_RIGHT, DEF_IMPULSE);
+                        manager.GetImpulseTool().RightImpulse(power);
+                        KCPlayer.SendMessage(data.Player,user.GetIdentity().GetName(),"Толкнули машину в правый борт");
+                        return true;
+                    case ARG_SAVE:
+                        return manager.Save(data.Player, data);
+                }
             }
 
         }
@@ -74,7 +119,7 @@ class KCItemsCMDCar : KCUserCMD
             return false;
         if (data.ContainsArg(ARG_REFUEL))
             return false;
-        if (data.ContainsArg(ARG_BACK))
+        if (data.ContainsArg(ARG_FRONT))
             return false;
         if (data.ContainsArg(ARG_BACK))
             return false;
@@ -92,7 +137,7 @@ class KCItemsCMDCar : KCUserCMD
     /// @return менеджер транспорта, если найден
     KCItemsCarManager GetManager(KCTextCmd data)
     {
-        float radius = data.GetFloat(ARG_DISTANCE, 10);
+        float radius = data.GetFloat(ARG_DISTANCE, DEF_DIST);
         KCItemsCarFinder carFinder = new KCItemsCarFinder();
         CarScript car = carFinder.GetCar(data.Player, radius);
         if (car)

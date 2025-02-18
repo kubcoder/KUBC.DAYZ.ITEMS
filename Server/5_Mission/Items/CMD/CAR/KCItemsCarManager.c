@@ -1,13 +1,19 @@
 /// @brief Менеджер машин реализует различные манипуляции с транспортом
 class KCItemsCarManager
 {
-    /// @brief Какая лодка будет использоваться
+    /// @brief Какая машина будет использоваться
     ///        при манипуляциях
     CarScript target;
 
     void KCItemsCarManager(CarScript car)
     {
         target = car;
+    }
+
+    bool Save(PlayerBase user, KCTextCmd data)
+    {
+        KCItemsCarSaver saver = new KCItemsCarSaver(target);
+        return saver.SaveCar(user, data);
     }
 
     /// @brief Починить машину
@@ -56,7 +62,9 @@ class KCItemsCarManager
                 ComponentEnergyManager em = part.GetCompEM();
                 if (em)
                 {
-                    em.SetEnergy0To1(1);
+                    float addEnergy = em.GetEnergyMax() - em.GetEnergy();
+                    em.AddEnergy(addEnergy);
+                    em.Synch();
                 }
             } 
         }
