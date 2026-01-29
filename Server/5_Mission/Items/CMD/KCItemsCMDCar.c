@@ -38,6 +38,10 @@ class KCItemsCMDCar : KCUserCMD
     ///        включая инвентарь
     static const string ARG_ALL = "all";
 
+    /// @brief Аргумент для продления времени
+    ///        жизни машины
+    static const string ARG_LT = "ll";
+
 
     override string GetName()
     {
@@ -77,8 +81,11 @@ class KCItemsCMDCar : KCUserCMD
                         return true;
                     case ARG_REFUEL:
                         manager.Refuel();
-                        manager.SetLongLife();
                         KCPlayer.SendMessage(data.Player,user.GetIdentity().GetName(),"Заправили машину");
+                        return true;
+                    case ARG_LT:
+                        manager.SetLongLife();
+                        KCPlayer.SendMessage(data.Player,user.GetIdentity().GetName(),"Продлили время жизни  машины");
                         return true;
                     case ARG_FRONT:
                         power = data.GetFloat(ARG_FRONT, DEF_IMPULSE);
@@ -129,6 +136,8 @@ class KCItemsCMDCar : KCUserCMD
             return false;
         if (data.ContainsArg(ARG_SAVE))
             return false;
+        if (data.ContainsArg(ARG_LT))
+            return  false;
         return true;
     }
 
