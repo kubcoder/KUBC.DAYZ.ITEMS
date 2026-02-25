@@ -19,45 +19,7 @@ class KCItemsRepairTool
         {
             return;
         }
-        KCItems.Log("Добавляем здоровья до уровня:"+tEntity.GetMaxHealth());
-        tEntity.SetHealth("", "", tEntity.GetMaxHealth());
-
-        ref array<string> damageZones;
-        string cfgPath = CFG_VEHICLESPATH + " " + tEntity.GetType() + " DamageSystem";
-        KCItems.Log("Начинаем поиск точек поломки по пути:"+cfgPath);
-        if ( GetGame().ConfigIsExisting(cfgPath) )
-        {
-            KCItems.Log("Конфиг найден");
-            damageZones = new array<string>;
-            int dmgZoneCount = GetGame().ConfigGetChildrenCount(cfgPath);
-            KCItems.Log("Найдено зон повреждения:" + dmgZoneCount);
-            if ( dmgZoneCount > 0 )
-            {
-                for (int i = 0; i < dmgZoneCount; ++i)
-                {
-                    string parentClass;
-                    GetGame().ConfigGetChildName(cfgPath, i, parentClass);
-                    parentClass.ToLower();
-                    if ( parentClass == "damagezones" )
-                    {
-                        int dmgZoneIndex = GetGame().ConfigGetChildrenCount(cfgPath + " DamageZones");
-                        for (int j = 0; j < dmgZoneIndex; ++j)
-                        {
-                            string childZone;
-                            GetGame().ConfigGetChildName(cfgPath + " DamageZones", j, childZone);
-                            damageZones.Insert( childZone );
-                        }
-                    }
-                }
-            }
-            foreach(string dmgZone: damageZones)
-            {
-                KCItems.Log("Обрабатываем зону:"+dmgZone);
-                KCItems.Log("Здоровье " + dmgZone + ":" + tEntity.GetHealth(dmgZone,""));
-                KCItems.Log("Максимум " + dmgZone + ":" + tEntity.GetMaxHealth(dmgZone, ""));
-                tEntity.SetHealth(dmgZone, "", tEntity.GetMaxHealth(dmgZone, ""));
-            }
-        }        
+        tEntity.SetFullHealth();
         tEntity.SetSynchDirty();
     }
 

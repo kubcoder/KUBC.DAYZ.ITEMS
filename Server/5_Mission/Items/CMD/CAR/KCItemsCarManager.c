@@ -20,6 +20,7 @@ class KCItemsCarManager
     /// @param inventory если ИСТИНА будет чинится и весь инвентарь
     void Repair(bool inventory)
     {
+        target.ClearEngineDamage();
         KCItemsRepairTool tool = new KCItemsRepairTool(target);
         tool.Healt();
         tool.Atach();
@@ -28,6 +29,7 @@ class KCItemsCarManager
         {
             tool.Child();
         }
+        
     }
 
 
