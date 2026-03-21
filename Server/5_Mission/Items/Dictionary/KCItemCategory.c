@@ -11,5 +11,3 @@ class KCItemCategory
     int Priority;
     
 }
-/// @brief Массив категорий
-typedef array<ref KCItemCategory>	KCItemCategories;
