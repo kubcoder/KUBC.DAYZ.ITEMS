@@ -1,0 +1,19 @@
+{
+    "IsBlackList": 1,
+    "BaseClasses": [
+        "SurvivorBase",
+        "DZ_LightAI",
+        "HouseNoDestruct",
+        "Plant",
+        "RockBase",
+        "WoodBase",
+        "Building",
+        "BuildingSuper",
+        "HouseNoDestruct",
+        "BaseBuildingBase",
+        "FenceKit",
+        "WatchtowerKit",
+        "TerritoryFlagKit",
+        "transport"
+    ]
+}

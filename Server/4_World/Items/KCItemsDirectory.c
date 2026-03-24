@@ -9,6 +9,12 @@ class KCItemsDirectory:KCDirectory
         pathNames.Insert(MOD_PATH);
     }
 
+    /// Получить корневую папку мода
+    string GetModPath()
+    {
+        return GetName(pathNames.Count() - 1);
+    }
+
     /// @brief Получить имя файла 
     /// @param setName введенное имя набора
     /// @param player игрок который запросил сохранение

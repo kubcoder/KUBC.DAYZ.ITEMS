@@ -7,8 +7,15 @@ class KCItemsSaveSettings
     ///           сохранение только итемов которые указаны в списке
     bool IsBlackList = true;
 
-    /// @brief список базовых классов
+    /// @brief список базовых классов 
     ref TStringArray BaseClasses = new TStringArray;
+
+    /// @brief настройки загружены
+    /// @return Истина если загружен один или более базовый класс
+    bool IsValid()
+    {
+        return BaseClasses.Count()>0;
+    }
 
     /// @brief  Проверка разрешений на сохранение итема
     /// @param  oType тип сохраняемого итема

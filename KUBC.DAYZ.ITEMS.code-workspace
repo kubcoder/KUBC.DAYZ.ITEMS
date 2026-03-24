@@ -20,22 +20,13 @@
 		//Папочка где лежит экземпляр сервера DAYZ
 		"DayZ.Server.Path":"C:\\Program Files (x86)\\Steam\\steamapps\\common\\DayZ Server Exp",
 		"Mod.Path": "KUBC.DAYZ.ITEMS",
-		"C_Cpp.configurationWarnings": "disabled",
-		"C_Cpp.default.browse.path": [
-			"P:\\scripts",
-			"P:\\KUBC.DAYZ.CONSOLE"
+		"enscript.includePaths": [
+			"P:\\scripts\\",
+			"P:\\KUBC.DAYZ.CONSOLE",
+			"${workspaceFolder:SERVER}"
 		],
-		"C_Cpp.default.includePath": [
-			"P:\\scripts",
-			"P:\\KUBC.DAYZ.CONSOLE"
-		],
-		"C_Cpp.default.systemIncludePath": [
-			"P:\\scripts",
-			"P:\\KUBC.DAYZ.CONSOLE"
-		],
-		"C_Cpp.errorSquiggles": "disabled",
-		"C_Cpp.intelliSenseEngine": "Tag Parser",
-		"C_Cpp.workspaceSymbols": "All"
+		"better-comments.highlightPlainText": true,
+		"better-comments.multilineComments": true
 	},
 	"tasks": {
 		"version": "2.0.0",

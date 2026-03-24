@@ -10,7 +10,7 @@ class KCItemBuilder
     void KCItemBuilder(EntityAI targetItem)
     {
         item = targetItem;
-        iData = new KCSaveItem();
+        ItemData = new KCSaveItem();
     }
 
     /// @brief Сформировать данные игрового предмета
@@ -36,7 +36,7 @@ class KCItemBuilder
         if (inventory)
         {
             InventoryLocation itemLocation = new InventoryLocation();
-            inventory.etCurrentInventoryLocation(itemLocation);
+            inventory.GetCurrentInventoryLocation(itemLocation);
             ItemData.Row = itemLocation.GetRow();
             ItemData.Col = itemLocation.GetCol();
             ItemData.Flip = itemLocation.GetFlip();
@@ -46,11 +46,11 @@ class KCItemBuilder
             ItemData.Child = new KCSaveItemCollection();
             foreach(EntityAI child:itemsArray)
             {
-                EntityAI parent = itemsArray.Get(j).GetHierarchyParent();
+                EntityAI parent = child.GetHierarchyParent();
                 if ((child!=item)&&(parent == item))
                 {
                     KCItemBuilder childBuilder = new KCItemBuilder(child);
-                    childBuilder.Build()
+                    childBuilder.Build();
                     ItemData.Child.Insert(childBuilder.ItemData);
                 }
             }
@@ -65,7 +65,7 @@ class KCItemBuilder
         {
             float yaw = (0 - player.GetOrientation()[0]) * Math.DEG2RAD;
             vector relativePos = item.GetPosition() - player.GetPosition();
-            ItemData.Position = RotationYaw(Position, yaw);
+            ItemData.Position = RotationYaw(relativePos, yaw);
         }
         else
         {
