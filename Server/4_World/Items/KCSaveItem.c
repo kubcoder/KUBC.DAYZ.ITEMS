@@ -36,7 +36,12 @@ class KCSaveItem
     int SlotID;
     
     /// @brief Тип жидкости, если доступно
-    int LiquidType = -1;   
+    int LiquidType = -1;
+
+    bool OnGorund()
+    {
+        return (Position!=vector.Zero);
+    }
 }
 /// Коллекция сохраненных итемов
 typedef array<ref KCSaveItem>	KCSaveItemCollection;

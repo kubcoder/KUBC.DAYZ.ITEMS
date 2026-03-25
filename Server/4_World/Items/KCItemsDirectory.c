@@ -38,4 +38,27 @@ class KCItemsDirectory:KCDirectory
         return GetName() + GetSeparator() + player.GetIdentity().GetPlainId();
     }
 
+
+    string FindDataFile(string setName, PlayerBase player)
+    {
+        string fileName = GetDataFile(setName, player);
+        if(FileExist(fileName))
+        {
+            return fileName;
+        }
+        fileName = GetDataFile(setName);
+        if(FileExist(fileName))
+        {
+            return fileName;
+        }
+        return "";
+    }
+
+    KCItemSet LoadFile(string fileName)
+    {
+        KCItemSet result;
+        JsonFileLoader<KCItemSet>.JsonLoadFile(fileName, result);
+        return result;
+    }
+
 }

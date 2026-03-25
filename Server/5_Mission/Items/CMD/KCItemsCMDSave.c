@@ -107,6 +107,7 @@ class KCItemsCMDSave : KCUserCMD
         {
             KCItemBuilder builder = new KCItemBuilder(itemHands);
             builder.Build();
+            builder.ItemData.SlotID = 0;
             return builder.ItemData;
         }
         KCPlayer.SendMessage(player,"", "В руках не найден предмет для сохранеения");
