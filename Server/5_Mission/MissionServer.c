@@ -12,6 +12,7 @@ modded class MissionServer
         setsDirectory.CreatePaths();
         usersCmd.RegisterCommand(KCItemsCMDSave.CMD_NAME, new KCItemsCMDSave(setsDirectory));
         usersCmd.RegisterCommand(KCItemsCMDGet.CMD_NAME, new KCItemsCMDGet(setsDirectory));
+        usersCmd.RegisterCommand(KCItemsCMDBat.CMD_NAME, new KCItemsCMDBat());
         KCItemsDictionary dictionary = new KCItemsDictionary();
         dictionary.Create();
 
