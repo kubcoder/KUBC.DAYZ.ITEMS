@@ -5,9 +5,15 @@ class KCItemFabric
 {
     private PlayerBase player;
 
+    private ref TStringArray cfgPaths;
+
     void KCItemFabric(PlayerBase target)
     {
         player = target;
+        cfgPaths = new TStringArray();
+        cfgPaths.Insert( "CfgVehicles" );
+        cfgPaths.Insert( "CfgWeapons" );
+        cfgPaths.Insert( "CfgMagazines" );
     }
 
     
@@ -191,4 +197,55 @@ class KCItemFabric
 		result[2] = pos[2]*Math.Cos(yaw)-pos[0]*Math.Sin(yaw);
 		return result;
 	}
+
+
+    EntityAI CreateInHands(string itemName)
+    {
+        if (!CanBeSpawn(itemName))
+        {
+            return NULL;
+        }
+        return EntityAI.Cast(player.GetHumanInventory().CreateInHands(itemName));
+    }
+
+    bool CanBeSpawn(string itemName)
+    {
+        if (itemName=="")
+        {
+            return false;
+        }
+        foreach(string path:cfgPaths)
+        {
+            int scope = GetGame().ConfigGetInt( path + " " + itemName + " scope" );
+            if(scope>1)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    InventoryLocation GetLocation(EntityAI parrent, string itemName)
+    {
+        InventoryLocation loc = new InventoryLocation();
+        if (parrent.GetInventory().FindFirstFreeLocationForNewEntity(itemName, FindInventoryLocationType.ANY_CARGO, loc))
+        {
+            if (loc.GetParent()==parrent)
+            {
+                return loc;
+            }
+        }
+        return NULL;
+    }
+
+    EntityAI Create(EntityAI parrent, string itemName)
+    {
+        InventoryLocation loc = GetLocation(parrent, itemName);
+        if (loc==NULL)
+        {
+            return NULL;
+        }
+        return parrent.GetInventory().LocationCreateEntity(loc, itemName, 0, 0);
+    }
+
 }
