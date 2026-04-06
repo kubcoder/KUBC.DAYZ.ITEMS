@@ -3,6 +3,8 @@ modded class MissionServer
     private ref KCItemsSetsDirectory setsDirectory;
 
     private ref KCItemsCarsDirectory carsDirectory;
+
+    private ref KCItemsEquipDirectory equipDirectory;
     
     /// @brief  Инициализируем настройки мода.
     ///         В частности создаем структуру папочек, и файлы настроек 
@@ -22,6 +24,8 @@ modded class MissionServer
         usersCmd.RegisterCommand(KCItemsCMDCar.CMD_NAME, new KCItemsCMDCar(carsDirectory));
         usersCmd.RegisterCommand(KCItemsCMDDel.CMD_NAME, new KCItemsCMDDel());
         usersCmd.RegisterCommand(KCItemsCMDDry.CMD_NAME, new KCItemsCMDDry());
+        equipDirectory = new KCItemsEquipDirectory();
+        equipDirectory.CreatePaths();
         KCItemsDictionary dictionary = new KCItemsDictionary();
         dictionary.Create();
 
