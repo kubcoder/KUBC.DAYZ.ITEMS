@@ -122,8 +122,13 @@ class KCItemFabric
 
     private EntityAI CreateOnCargo(EntityAI parrent, KCSaveItem itemData)
     {
-        InventoryLocation il = new InventoryLocation;
-	    parrent.GetInventory().GetCurrentInventoryLocation(il);
+        InventoryLocation il = new InventoryLocation();
+	    if (!parrent.GetInventory().GetCurrentInventoryLocation(il))
+        {
+            KCItems.Log("Не смогли обнаружить местоположение инвенторя в " + parrent, KCLogLevel.Error);
+            return NULL;
+        }
+        KCItems.Log("Создание предмета в:" + il.DumpToString(), KCLogLevel.Info);
         EntityAI cItem = parrent.GetInventory().CreateEntityInCargoEx(itemData.ItemName, il.GetIdx(), itemData.Row, itemData.Col, itemData.Flip);
         if (cItem)
         {
@@ -260,7 +265,7 @@ class KCItemFabric
         if (spawnItem)
         {
             spawnItem.PlaceOnSurface();
-            spawnItem.SetOrientation(GetWorldOrientation(player.GetOrientation()));
+            spawnItem.SetOrientation(player.GetOrientation());
             SetQuantity(spawnItem, itemData);
             Create(spawnItem, itemData.Child);
             return spawnItem;
