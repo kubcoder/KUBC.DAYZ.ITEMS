@@ -21,12 +21,15 @@
 		"DayZ.Server.Path":"C:\\Program Files (x86)\\Steam\\steamapps\\common\\DayZ Server Exp",
 		"Mod.Path": "KUBC.DAYZ.ITEMS",
 		"enscript.includePaths": [
-			"P:\\scripts\\",
+			"P:\\scripts",
 			"P:\\KUBC.DAYZ.CONSOLE",
-			"${workspaceFolder:SERVER}"
+			"P:\\KUBC.DAYZ.ITEMS"
 		],
 		"better-comments.highlightPlainText": true,
-		"better-comments.multilineComments": true
+		"better-comments.multilineComments": true,
+		"editor.cursorBlinking": "phase",
+		"editor.smoothScrolling": true,
+		"editor.cursorSmoothCaretAnimation": "on"
 	},
 	"tasks": {
 		"version": "2.0.0",

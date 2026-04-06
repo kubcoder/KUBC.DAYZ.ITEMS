@@ -4,11 +4,6 @@ class KCItemsCMDSave : KCUserCMD
     /// @brief название команды
     static const string CMD_NAME = "save";
     
-    /// @brief аргумент перезаписи существующего набора
-    const string ARG_REPLACE = "r";
-    
-    /// @brief аргумент записи набора в общую папку админов
-    const string ARG_SHARED = "s";
     
     /// @brief аргумент записи набора вокруг игрока
     const string ARG_GROUND = "g";
@@ -33,56 +28,45 @@ class KCItemsCMDSave : KCUserCMD
 
     override bool Execute(KCTextCmd data)
     {
-        string fileName = GetSettName(data);
-        if (fileName == "")
+        auto manager = new KCItemSaveManager(directory, data);
+        manager.InitName(0);
+        if (manager.GetName() == "")
         {
             KCPlayer.SendMessage(data.Owner,"", "Вы не указали имя набора, сохранение не выполнено");
             return true;
         }
-        if (FileExist(fileName))
+        if (!manager.CanBeSave())
         {
-            if (!data.ContainsArg(ARG_REPLACE))
-            {
-                KCPlayer.SendMessage(data.Owner,"", "Набор уже существует, сохранение не выполнено!");
-                return true;
-            }
+            KCPlayer.SendMessage(data.Owner,"", "Набор уже существует, сохранение не выполнено!");
+            return true;
         }
         
-        KCItemSet iSet = GetSet(data);
-        if (iSet.Items.Count() == 0)
+        AddItems(data, manager);
+        if (!manager.Save())
         {
             KCPlayer.SendMessage(data.Owner,"", "Отсутсвуют предметы для сохранения, сохранение не выполнено!");
             return true;
         }
         
-        JsonFileLoader<KCItemSet>.JsonSaveFile(fileName, iSet);
-        KCPlayer.SendMessage(data.Owner,"","Набор " + data.Arg[0] + " сохранен!");
+        KCPlayer.SendMessage(data.Owner,"","Набор " + manager.GetName() + " сохранен!");
         return true;
     }
 
-    private KCItemSet GetSet(KCTextCmd data)
+    private void AddItems(KCTextCmd data, KCItemSaveManager manager)
     {
-        KCItemSet iSet = new KCItemSet();
-        iSet.NickName = data.Owner.GetIdentity().GetName();
-        iSet.SteamID = data.Owner.GetIdentity().GetPlainId();
         if (!IsOnGround(data))
         {
             KCSaveItem itemData = GetHands(data.Owner);
             if (itemData)
             {
-                iSet.Items.Insert(itemData);
+                manager.Add(itemData);
             }
         }
         else
         {
             KCItemsGroundFinder finder = new KCItemsGroundFinder(directory.GetItemSetOptionsFile());
-            KCSaveItemCollection itemsData = finder.FindItems(data.Owner, GetRadius(data), !data.ContainsArg(ARG_ABSGROUND));
-            foreach(KCSaveItem id:itemsData)
-            {
-                iSet.Items.Insert(id);
-            }
+            manager.Add(finder.FindItems(data.Owner, GetRadius(data), !data.ContainsArg(ARG_ABSGROUND)));
         }
-        return iSet;
     }
 
     private float GetRadius(KCTextCmd data)
@@ -127,25 +111,4 @@ class KCItemsCMDSave : KCUserCMD
         return false;
     }
 
-    private string  GetSettName(KCTextCmd data)
-    {
-        if (data.Arg.Count()==0)
-        {
-            return "";
-        }
-        string settName = data.Arg[0];
-        if (settName == "")
-        {
-            return "";
-        }
-        if (data.ContainsArg(ARG_SHARED))
-        {
-            return directory.GetDataFile(settName);
-        }
-        else
-        {
-            return directory.GetDataFile(settName, data.Owner);
-        }
-
-    }
 }

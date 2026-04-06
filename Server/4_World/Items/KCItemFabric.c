@@ -138,7 +138,11 @@ class KCItemFabric
     {
         foreach(KCSaveItem itemData:childs)
         {
-            Create(parrent, itemData);
+            auto childItem = Create(parrent, itemData);
+            if (childItem==NULL)
+            {
+                KCItems.Log("Не смогли добавить ["+itemData.ItemName+"] в " + parrent, KCLogLevel.Error);
+            }
         }
     }
 
@@ -246,6 +250,22 @@ class KCItemFabric
             return NULL;
         }
         return parrent.GetInventory().LocationCreateEntity(loc, itemName, 0, 0);
+    }
+
+    EntityAI CreateOnRoute(KCSaveItem itemData, float Distance)
+    {
+        vector pos = player.GetPosition() + player.GetDirection()*Distance;
+        pos[1] = GetGame().SurfaceRoadY(pos[0], pos[2], RoadSurfaceDetection.LEGACY);
+        auto spawnItem = EntityAI.Cast(GetGame().CreateObject(itemData.ItemName, pos));
+        if (spawnItem)
+        {
+            spawnItem.PlaceOnSurface();
+            spawnItem.SetOrientation(GetWorldOrientation(player.GetOrientation()));
+            SetQuantity(spawnItem, itemData);
+            Create(spawnItem, itemData.Child);
+            return spawnItem;
+        }
+        return NULL;
     }
 
 }

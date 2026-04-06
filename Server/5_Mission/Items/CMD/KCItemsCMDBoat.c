@@ -1,37 +1,8 @@
 /// @brief Команда работы с лодочками
-class KCItemsCMDBoat : KCUserCMD
+class KCItemsCMDBoat : KCItemsCMDTransport
 {
     /// @brief название команды
     static const string CMD_NAME = "boat";
-
-    /// @brief аргумент на какой дистанции создать лодку
-    const string ARG_DISTANCE = "d";
-
-    /// @brief Аргумент для починки лодки
-    const string ARG_REPAIR = "repair";
-
-    /// @brief Аргумент для заправки
-    const string ARG_REFUEL = "refuel";
-
-    /// @brief Аргумент для толчка лодки вперед
-    const string ARG_FRONT = "f";
-
-    /// @brief Аргумент для толчка лодки назад
-    const string ARG_BACK = "b";
-
-    /// @brief Аргумент для толчка лодки влево
-    const string ARG_LEFT = "l";
-
-    /// @brief Аргумент для толчка лодки вправо
-    const string ARG_RIGHT = "r";
-
-    /// @brief Импульс по умолчанию
-    const float DEF_IMPULSE = 10000;
-
-    /// @brief Аргумент для полной починки лодки
-    ///        включая инвентарь
-    const string ARG_ALL = "all";
-    
      
     override string GetName()
     {
@@ -106,26 +77,6 @@ class KCItemsCMDBoat : KCUserCMD
             KCPlayer.SendMessage(data.Player,data.Owner.GetIdentity().GetName(),"Толкнули лодку в правый борт");
             return true;
         }
-        return true;
-    }
-
-    /// @brief Проверяем нужно ли создать лодку
-    /// @param data данные команды
-    /// @return истина если лодка должна быть создана
-    bool MustBeSpawn(KCTextCmd data)
-    {
-        if (data.ContainsArg(ARG_REPAIR))
-            return false;
-        if (data.ContainsArg(ARG_REFUEL))
-            return false;
-        if (data.ContainsArg(ARG_FRONT))
-            return false;
-        if (data.ContainsArg(ARG_BACK))
-            return false;
-        if (data.ContainsArg(ARG_LEFT))
-            return false;
-        if (data.ContainsArg(ARG_RIGHT))
-            return false;
         return true;
     }
 
