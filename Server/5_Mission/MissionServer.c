@@ -20,6 +20,7 @@ modded class MissionServer
         carsDirectory = new KCItemsCarsDirectory();
         carsDirectory.CreatePaths();
         usersCmd.RegisterCommand(KCItemsCMDCar.CMD_NAME, new KCItemsCMDCar(carsDirectory));
+        usersCmd.RegisterCommand(KCItemsCMDDel.CMD_NAME, new KCItemsCMDDel());
         KCItemsDictionary dictionary = new KCItemsDictionary();
         dictionary.Create();
 
