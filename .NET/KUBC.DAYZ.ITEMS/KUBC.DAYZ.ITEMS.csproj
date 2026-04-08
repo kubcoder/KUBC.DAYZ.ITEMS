@@ -7,11 +7,11 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<RootNamespace>KUBC.DAYZ.ITEMS</RootNamespace>
 		<Title>KUBC.DAYZ.ITEMS</Title>
-		<Version>10.0.0-rc1</Version>
+		<Version>10.0.0-rc2</Version>
 		<Authors>kot23rus</Authors>
 		<Company>KUBCODER</Company>
 		<Description>Инструменты для работы с данными мода KUBC.DAYZ.ITEMS</Description>
-		<Copyright>KUBC.DAYZ.ITEMS Copyright (C) 2025 KUBCODER</Copyright>
+		<Copyright>KUBC.DAYZ.ITEMS Copyright (C) 2026 KUBCODER</Copyright>
 		<RepositoryUrl>https://github.com/kubcoder/KUBC.DAYZ.ITEMS</RepositoryUrl>
 		<PackageReleaseNotes>Полный перезапуск пакета под нужды приложений сопровождения игровых экземпляров</PackageReleaseNotes>
 		<NeutralLanguage>ru</NeutralLanguage>
