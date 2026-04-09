@@ -32,6 +32,8 @@ modded class MissionServer
         equipDirectory = new KCItemsEquipDirectory();
         equipDirectory.CreatePaths();
         usersCmd.RegisterCommand(KCItemsCMDEquip.CMD_NAME, new KCItemsCMDEquip(equipDirectory));
+        usersCmd.RegisterCommand(KCItemsCMDFence.CMD_NAME, new KCItemsCMDFence());
+
         KCItemsDictionary dictionary = new KCItemsDictionary();
         dictionary.Create();
 
