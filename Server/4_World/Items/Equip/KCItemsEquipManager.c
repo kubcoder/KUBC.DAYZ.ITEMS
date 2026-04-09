@@ -47,5 +47,47 @@ class KCItemsEquipManager
             }
 		}
     }
+
+    bool Equip(KCItemSet equip)
+    {
+        DeleteAll();
+        auto itemFabric = new KCItemFabric(player);
+        bool errors = false;
+        foreach(auto item:equip.Items)
+        {
+            auto e = itemFabric.Create(item);
+            if (e==NULL)
+            {
+                errors = true;
+                KCItems.Log("Не смогли выдать предмет:"+ item.ItemName, KCLogLevel.Error);
+            }
+        }
+        return !errors;
+    }
+
+    bool Equip(string equipName)
+    {
+        auto mission = MissionBaseWorld.Cast(GetGame().GetMission());
+        auto directory = mission.GetEquipDirectory();
+        if (directory == NULL)
+        {
+            KCItems.Log("Директория экипировок не создана", KCLogLevel.Error);
+            return false;
+        }
+        string setFileName = directory.GetDataFile(equipName);
+        if (setFileName=="")
+        {
+            KCItems.Log("Экипировка ["+equipName+"] не существует", KCLogLevel.Error);
+            return false;
+        }
+        KCItemSet itemSet = directory.LoadFile(setFileName);
+        if (itemSet==NULL)
+        {
+            KCItems.Log("Ошибка загрузки экипировки ["+equipName+"]", KCLogLevel.Error);
+            return false;
+        }
+        return Equip(itemSet);
+    }
+
     
 }

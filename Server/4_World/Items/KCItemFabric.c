@@ -27,6 +27,10 @@ class KCItemFabric
         {
             return CreateOnHands(itemData);
         }
+        if (InventorySlots.GetSlotName(itemData.SlotID) == "Hands")
+        {
+            return CreateOnHands(itemData);
+        }
         return Create(player, itemData);
     }
 

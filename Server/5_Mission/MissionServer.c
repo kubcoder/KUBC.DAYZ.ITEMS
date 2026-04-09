@@ -6,6 +6,11 @@ modded class MissionServer
 
     private ref KCItemsEquipDirectory equipDirectory;
     
+    override KCItemsEquipDirectory GetEquipDirectory()
+    {
+        return equipDirectory;
+    }
+
     /// @brief  Инициализируем настройки мода.
     ///         В частности создаем структуру папочек, и файлы настроек 
     ///         по умолчанию.
@@ -26,6 +31,7 @@ modded class MissionServer
         usersCmd.RegisterCommand(KCItemsCMDDry.CMD_NAME, new KCItemsCMDDry());
         equipDirectory = new KCItemsEquipDirectory();
         equipDirectory.CreatePaths();
+        usersCmd.RegisterCommand(KCItemsCMDEquip.CMD_NAME, new KCItemsCMDEquip(equipDirectory));
         KCItemsDictionary dictionary = new KCItemsDictionary();
         dictionary.Create();
 

@@ -91,13 +91,13 @@ class KCItemsCMDCar : KCItemsCMDTransport
         string setFileName = directory.FindDataFile(data.Arg[0], data.Owner);
         if (setFileName=="")
         {
-            data.MessageOwner("Набор ["+data.Arg[0]+"] не существует");
+            data.MessageOwner("Машина ["+data.Arg[0]+"] не существует");
             return true;
         }
         KCItemSet itemSet = directory.LoadFile(setFileName);
         if (itemSet==NULL)
         {
-            data.MessageOwner("Ошибка загрузки набора ["+data.Arg[0]+"]");
+            data.MessageOwner("Ошибка загрузки машины ["+data.Arg[0]+"]");
             return true;
         }
         KCItemFabric fabric = new KCItemFabric(data.GetTarget());
