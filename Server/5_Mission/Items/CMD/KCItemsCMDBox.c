@@ -14,7 +14,7 @@ class KCItemsCMDBox : KCUserCMD
     {
         if (data.Arg.Count()==0)
         {
-            KCPlayer.SendMessage(data.Owner,"","Не указано название предмета для создания");
+            data.MessageOwner("Не указано название предмета для создания");
             return true;
         }
         string itemName = data.Arg[0];
@@ -22,7 +22,7 @@ class KCItemsCMDBox : KCUserCMD
         auto itemFabric = new KCItemFabric(target);
         if (!itemFabric.CanBeSpawn(itemName))
         {
-            KCPlayer.SendMessage(data.Owner,"","Пердемет ["+itemName+"] не может быть создан");
+            data.MessageOwner("Пердемет ["+itemName+"] не может быть создан");
             return true;
         }
         string boxName = DEFAULT_BOX;
@@ -32,13 +32,13 @@ class KCItemsCMDBox : KCUserCMD
         }
         if (!itemFabric.CanBeSpawn(boxName))
         {
-            KCPlayer.SendMessage(data.Owner,"","Пердемет ["+boxName+"] не может быть создан");
+            data.MessageOwner("Пердемет ["+boxName+"] не может быть создан");
             return true;
         }
         auto box = itemFabric.CreateInHands(boxName);
         if (box==NULL)
         {
-            KCPlayer.SendMessage(data.Owner,"","Не смогли создать ящик ["+boxName+"] в руках игрока");
+            data.MessageOwner("Не смогли создать ящик ["+boxName+"] в руках игрока");
             return true;
         }
         EntityAI item = itemFabric.Create(box, itemName);
@@ -50,11 +50,10 @@ class KCItemsCMDBox : KCUserCMD
         }
         if (count==0)
         {
-            KCPlayer.SendMessage(data.Owner,"","Ящик ["+boxName+"] создан, однако не смогли добавить в него ["+itemName+"]");
+            data.MessageOwner("Ящик ["+boxName+"] создан, однако не смогли добавить в него ["+itemName+"]");
             return true;
         }
-        KCPlayer.SendMessage(data.Owner,"","Выдали ящик ["+boxName+"] в который положили ["+itemName+"] - "+ count.ToString()+" шт.");
-        KCPlayer.SendMessage(target,data.Owner.GetIdentity().GetName(),"Выдали ящик ["+boxName+"] в который положили ["+itemName+"] - "+ count.ToString()+" шт.");
+        data.Message("Выдали ящик ["+boxName+"] в который положили ["+itemName+"] - "+ count.ToString()+" шт.");
         return true;
     }
 }

@@ -32,23 +32,23 @@ class KCItemsCMDSave : KCUserCMD
         manager.InitName(0);
         if (manager.GetName() == "")
         {
-            KCPlayer.SendMessage(data.Owner,"", "Вы не указали имя набора, сохранение не выполнено");
+            data.MessageOwner("Вы не указали имя набора, сохранение не выполнено");
             return true;
         }
         if (!manager.CanBeSave())
         {
-            KCPlayer.SendMessage(data.Owner,"", "Набор уже существует, сохранение не выполнено!");
+            data.MessageOwner("Набор уже существует, сохранение не выполнено!");
             return true;
         }
         
         AddItems(data, manager);
         if (!manager.Save())
         {
-            KCPlayer.SendMessage(data.Owner,"", "Отсутсвуют предметы для сохранения, сохранение не выполнено!");
+            data.MessageOwner("Отсутсвуют предметы для сохранения, сохранение не выполнено!");
             return true;
         }
         
-        KCPlayer.SendMessage(data.Owner,"","Набор " + manager.GetName() + " сохранен!");
+        data.MessageOwner("Набор " + manager.GetName() + " сохранен!");
         return true;
     }
 

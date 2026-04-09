@@ -21,13 +21,13 @@ class KCItemsCMDBat : KCUserCMD
         ItemBase itemHands = target.GetItemInHands();
         if(!itemHands)
         {
-            KCPlayer.SendMessage(data.Owner,"BAT","Не нашли объект для зарядки");
+            data.MessageOwner("Не нашли объект для зарядки");
             return true;
         }
         ComponentEnergyManager compEM = itemHands.GetCompEM();
         if (!compEM)
         {
-            KCPlayer.SendMessage(data.Owner,"BAT","Объект не иммет компонента энергии");
+            data.MessageOwner("Объект не иммет компонента энергии");
             return true;
         }
         switch (data.Arg[0])
@@ -35,13 +35,13 @@ class KCItemsCMDBat : KCUserCMD
             case ARG_DISCHARGE:
                 compEM.ConsumeEnergy(compEM.GetEnergyMax());
                 compEM.Synch();
-                KCPlayer.SendMessage(target, data.Owner.GetIdentity().GetName(),"Разрядили в ноль");
+                data.Message("Разрядили "+itemHands.GetDisplayName()+" в ноль");
                 break;
             case ARG_CHARGE:
                 float addEnergy = compEM.GetEnergyMax() - compEM.GetEnergy();
                 compEM.AddEnergy(addEnergy);
                 compEM.Synch();
-                KCPlayer.SendMessage(target, data.Owner.GetIdentity().GetName(),"Зарядили до упора");
+                data.Message("Зарядили "+itemHands.GetDisplayName()+" до упора");
                 break;
         }
         return true;

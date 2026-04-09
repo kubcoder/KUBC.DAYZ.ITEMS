@@ -39,41 +39,41 @@ class KCItemsCMDCar : KCItemsCMDTransport
                 if (data.ContainsArg(ARG_ALL))
                 {
                     manager.Repair(true);
-                    KCPlayer.SendMessage(data.GetTarget(),data.Owner.GetIdentity().GetName(),"Починили машину и все что было в ней");
+                    data.Message("Починили машину и все что было в ней");
                 }
                 else
                 {
                     manager.Repair(false);
-                    KCPlayer.SendMessage(data.GetTarget(),data.Owner.GetIdentity().GetName(),"Починили машину и все её детали");
+                    data.Message("Починили машину и все её детали");
                 }
                 return true;
             case ARG_REFUEL:
                 manager.Refuel();
-                KCPlayer.SendMessage(data.GetTarget(),data.Owner.GetIdentity().GetName(),"Заправили машину");
+                data.Message("Заправили машину");
                 return true;
             case ARG_LT:
                 manager.SetLongLife();
-                KCPlayer.SendMessage(data.GetTarget(),data.Owner.GetIdentity().GetName(),"Продлили время жизни  машины");
+                data.Message("Продлили время жизни  машины");
                 return true;
             case ARG_FRONT:
                 power = data.GetFloat(ARG_FRONT, DEF_IMPULSE);
                 manager.GetImpulseTool().FrontImpulse(power);
-                KCPlayer.SendMessage(data.GetTarget(),data.Owner.GetIdentity().GetName(),"Толкнули машину по направлению движения");
+                data.Message("Толкнули машину по направлению движения");
                 return true;
             case ARG_BACK:
                 power = data.GetFloat(ARG_BACK, DEF_IMPULSE);
                 manager.GetImpulseTool().BackImpulse(power);
-                KCPlayer.SendMessage(data.GetTarget(),data.Owner.GetIdentity().GetName(),"Толкнули машину обратно направлению движения");
+                data.Message("Толкнули машину обратно направлению движения");
                 return true;
             case ARG_LEFT:
                 power = data.GetFloat(ARG_LEFT, DEF_IMPULSE);
                 manager.GetImpulseTool().LeftImpulse(power);
-                KCPlayer.SendMessage(data.GetTarget(),data.Owner.GetIdentity().GetName(),"Толкнули машину в левый борт");
+                data.Message("Толкнули машину в левый борт");
                 return true;
             case ARG_RIGHT:
                 power = data.GetFloat(ARG_RIGHT, DEF_IMPULSE);
                 manager.GetImpulseTool().RightImpulse(power);
-                KCPlayer.SendMessage(data.GetTarget(),data.Owner.GetIdentity().GetName(),"Толкнули машину в правый борт");
+                data.Message("Толкнули машину в правый борт");
                 return true;
             case ARG_SAVE:
                 return SaveCar(data, manager);
@@ -85,36 +85,32 @@ class KCItemsCMDCar : KCItemsCMDTransport
     {
         if (data.Arg.Count()==0)
         {
-            KCPlayer.SendMessage(data.Owner,"","Не указано имя машины, выдача не выполнена");
+            data.MessageOwner("Не указано имя машины, выдача не выполнена");
             return true;
         }
         string setFileName = directory.FindDataFile(data.Arg[0], data.Owner);
         if (setFileName=="")
         {
-            KCPlayer.SendMessage(data.Owner,"","Набор ["+data.Arg[0]+"] не существует");
+            data.MessageOwner("Набор ["+data.Arg[0]+"] не существует");
             return true;
         }
         KCItemSet itemSet = directory.LoadFile(setFileName);
         if (itemSet==NULL)
         {
-            KCPlayer.SendMessage(data.Owner,"","Ошибка загрузки набора ["+data.Arg[0]+"]");
+            data.MessageOwner("Ошибка загрузки набора ["+data.Arg[0]+"]");
             return true;
         }
         KCItemFabric fabric = new KCItemFabric(data.GetTarget());
         auto car = CarScript.Cast(fabric.CreateOnRoute(itemSet.Items[0], data.GetFloat(ARG_DISTANCE, DEF_DIST)));
         if (car==NULL)
         {
-            KCPlayer.SendMessage(data.Owner,"","Ошибка создания машины ["+data.Arg[0]+"]");
+            data.MessageOwner("Ошибка создания машины ["+data.Arg[0]+"]");
             return true;
         }
         auto manager = new KCItemsCarManager(car);
         manager.Refuel();
         manager.Charge();
-        KCPlayer.SendMessage(data.Owner,"","Машина выдана ["+data.Arg[0]+"]");
-        if (data.Owner!=data.GetTarget())
-        {
-            KCPlayer.SendMessage(data.GetTarget(),data.Owner.GetIdentity().GetName(),"Машина выдана ["+data.Arg[0]+"]");
-        }
+        data.Message("Машина выдана ["+data.Arg[0]+"]");
         return true;
     }
 
@@ -133,7 +129,7 @@ class KCItemsCMDCar : KCItemsCMDTransport
         }
         else
         {
-            KCPlayer.SendMessage(data.Owner,"","Не нашли машину");
+            data.MessageOwner("Не нашли машину");
             return NULL;
         }
     }
@@ -144,19 +140,19 @@ class KCItemsCMDCar : KCItemsCMDTransport
         saveManager.InitName(1);
         if (saveManager.GetName() == "")
         {
-            KCPlayer.SendMessage(data.Owner,"", "Вы не указали имя машины, сохранение не выполнено");
+            data.MessageOwner("Вы не указали имя машины, сохранение не выполнено");
             return true;
         }
         if (!saveManager.CanBeSave())
         {
-            KCPlayer.SendMessage(data.Owner,"", "Машина уже существует, сохранение не выполнено!");
+            data.MessageOwner("Машина уже существует, сохранение не выполнено!");
             return true;
         }
         KCItemBuilder builder = new KCItemBuilder(manager.target);
         builder.Build();
         saveManager.Add(builder.ItemData);
         saveManager.Save();
-        KCPlayer.SendMessage(data.Owner,"","Машина " + saveManager.GetName() + " сохранена!");
+        data.MessageOwner("Машина " + saveManager.GetName() + " сохранена!");
         return true;
     }
 }

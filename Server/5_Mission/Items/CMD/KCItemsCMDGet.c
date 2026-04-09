@@ -20,19 +20,19 @@ class KCItemsCMDGet : KCUserCMD
     {
         if (data.Arg.Count()==0)
         {
-            KCPlayer.SendMessage(data.Owner,"","Не указано имя набора, выдача не выполнена");
+            data.MessageOwner("Не указано имя набора, выдача не выполнена");
             return true;
         }
         string setFileName = directory.FindDataFile(data.Arg[0], data.Owner);
         if (setFileName=="")
         {
-            KCPlayer.SendMessage(data.Owner,"","Набор ["+data.Arg[0]+"] не существует");
+            data.MessageOwner("Набор ["+data.Arg[0]+"] не существует");
             return true;
         }
         KCItemSet itemSet = directory.LoadFile(setFileName);
         if (itemSet==NULL)
         {
-            KCPlayer.SendMessage(data.Owner,"","Ошибка загрузки набора ["+data.Arg[0]+"]");
+            data.MessageOwner("Ошибка загрузки набора ["+data.Arg[0]+"]");
             return true;
         }
         auto fabric = new KCItemFabric(data.GetTarget());
@@ -47,12 +47,11 @@ class KCItemsCMDGet : KCUserCMD
         }
         if (created)
         {
-            KCPlayer.SendMessage(data.GetTarget(),data.Owner.GetIdentity().GetName(),"Выдал ["+data.Arg[0]+"]");
-            KCPlayer.SendMessage(data.Owner,"","Набор ["+data.Arg[0]+"] выдан");
+            data.Message("Набор ["+data.Arg[0]+"] выдан");
         }
         else
         {
-            KCPlayer.SendMessage(data.Owner,"","Набор ["+data.Arg[0]+"] не получилось выдать");
+            data.MessageOwner("Набор ["+data.Arg[0]+"] не получилось выдать");
         }
         return true;
     }    

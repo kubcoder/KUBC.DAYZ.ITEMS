@@ -32,12 +32,12 @@ class KCItemsCMDBoat : KCItemsCMDTransport
             if (data.ContainsArg(ARG_ALL))
             {
                 manager.Repair(true);
-                KCPlayer.SendMessage(data.Player,data.Owner.GetIdentity().GetName(),"Починили лодку и все что было в ней");
+                data.Message("Починили лодку и все что было в ней");
             }
             else
             {
                 manager.Repair(false);
-                KCPlayer.SendMessage(data.Player,data.Owner.GetIdentity().GetName(),"Починили лодку и все её детали");
+                data.Message("Починили лодку и все её детали");
             }
             return true;
         }
@@ -45,7 +45,7 @@ class KCItemsCMDBoat : KCItemsCMDTransport
         {
             manager.Refuel();
             manager.SetLongLife();
-            KCPlayer.SendMessage(data.Player,data.Owner.GetIdentity().GetName(),"Заправили лодку");
+            data.Message("Заправили лодку");
             return true;
         }
         float power = DEF_IMPULSE;
@@ -53,28 +53,28 @@ class KCItemsCMDBoat : KCItemsCMDTransport
         {
             power = data.GetFloat(ARG_FRONT, DEF_IMPULSE);
             manager.GetImpulseTool().FrontImpulse(power);
-            KCPlayer.SendMessage(data.Player,data.Owner.GetIdentity().GetName(),"Толкнули лодку по направлению движения");
+            data.Message("Толкнули лодку по направлению движения");
             return true;
         }
         if (data.ContainsArg(ARG_BACK))
         {
             power = data.GetFloat(ARG_BACK, DEF_IMPULSE);
             manager.GetImpulseTool().BackImpulse(power);
-            KCPlayer.SendMessage(data.Player,data.Owner.GetIdentity().GetName(),"Толкнули лодку обратно направлению движения");
+            data.Message("Толкнули лодку обратно направлению движения");
             return true;
         }
         if (data.ContainsArg(ARG_LEFT))
         {
             power = data.GetFloat(ARG_LEFT, DEF_IMPULSE);
             manager.GetImpulseTool().LeftImpulse(power);
-            KCPlayer.SendMessage(data.Player,data.Owner.GetIdentity().GetName(),"Толкнули лодку в левый борт");
+            data.Message("Толкнули лодку в левый борт");
             return true;
         }
         if (data.ContainsArg(ARG_RIGHT))
         {
             power = data.GetFloat(ARG_RIGHT, DEF_IMPULSE);
             manager.GetImpulseTool().RightImpulse(power);
-            KCPlayer.SendMessage(data.Player,data.Owner.GetIdentity().GetName(),"Толкнули лодку в правый борт");
+            data.Message("Толкнули лодку в правый борт");
             return true;
         }
         return true;
@@ -113,7 +113,7 @@ class KCItemsCMDBoat : KCItemsCMDTransport
         }
         else
         {
-            KCPlayer.SendMessage(player,"","Координата не в море лодка создана не будет");
+            data.MessageOwner("Координата не в море лодка создана не будет");
         }
         return vector.Zero;
     }

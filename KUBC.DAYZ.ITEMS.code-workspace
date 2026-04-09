@@ -12,18 +12,21 @@
 			"name": "ROOT",
 			"path": "."
 		},
+		{
+			"name": "Required",
+			"path": "./Required"
+		},
 
 	],
 	"settings": {
 		//Папочка где лежит конфиг сервера для запуска
 		"DayZ.Server.Config":"Sample\\serverDZ.cfg",
 		//Папочка где лежит экземпляр сервера DAYZ
-		"DayZ.Server.Path":"C:\\Program Files (x86)\\Steam\\steamapps\\common\\DayZ Server Exp",
+		"DayZ.Server.Path":"C:\\Program Files (x86)\\Steam\\steamapps\\common\\DayZServer",
 		"Mod.Path": "KUBC.DAYZ.ITEMS",
 		"enscript.includePaths": [
 			"P:\\scripts",
-			"P:\\KUBC.DAYZ.CONSOLE",
-			"P:\\KUBC.DAYZ.ITEMS"
+			"P:\\KUBC.DAYZ.CONSOLE"
 		],
 		"better-comments.highlightPlainText": true,
 		"better-comments.multilineComments": true,
@@ -100,7 +103,34 @@
 					"clear": false
 				}
 			},
-
+			{
+				"detail": "Создать ссылочную папку на диске P",
+				"label": "Create DEV Link",
+				"type": "shell",
+				"command": "cmd /c mklink /j 'P:\\${config:Mod.Path}'  '${workspaceFolder:SERVER}'",
+				"presentation": {
+					"echo": true,
+					"reveal": "always",
+					"focus": false,
+					"panel": "shared",
+					"showReuseMessage": false,
+					"clear": false
+				}
+			},
+			{
+				"detail": "Создать ссылочную папку требуемых модов",
+				"label": "Create Requreds",
+				"type": "shell",
+				"command": "cmd /c mklink /j '${config:DayZ.Server.Path}\\KUBC'  '${workspaceFolder:Required}'",
+				"presentation": {
+					"echo": true,
+					"reveal": "always",
+					"focus": false,
+					"panel": "shared",
+					"showReuseMessage": false,
+					"clear": false
+				}
+			}
 		]
 	}
 

@@ -23,7 +23,7 @@ class KCItemsCMDDry : KCUserCMD
                 child.SetWeightDirty();
             }
 		}
-        KCPlayer.SendMessage(data.GetTarget(),data.Owner.GetIdentity().GetName(),"Вашу одежду подсушили");
+        data.Message("Одежду подсушили");
         return true;
     }
 }
