@@ -1,7 +1,7 @@
 /// Фабрика игровых предметов
 /// используется для создания предметов
 /// в игровом мире из файла данных 
-class KCItemFabric
+class KCItemFabric : KCItemFabricBase
 {
     private PlayerBase player;
 
@@ -160,56 +160,21 @@ class KCItemFabric
     /// @return Кол-во итемов после изменений
     void SetQuantity(EntityAI item, KCSaveItem itemData)
     {
-        if (itemData.Quantity==0)
-        {
-            return;
-        }
-        Magazine_Base mb = Magazine_Base.Cast(item);
-        if (mb)
-        {
-            mb.ServerSetAmmoCount(itemData.Quantity);
-            return;
-        }
-        ItemBase itemBs = ItemBase.Cast(item);
-        if (itemBs)
-        {
-            if (itemData.LiquidType>-1)
-            {
-                itemBs.SetLiquidType(itemData.LiquidType);
-            }
-            itemBs.SetQuantity(itemData.Quantity);
-            return;
-        }
+        SetCount(item, itemData.Quantity);
     }
 
-    /// @brief Получить координаты относительно игрока
-    /// @param player относительно какого игрока добавляем поворот
-    vector GetWorldPos(vector position)
+    
+    override vector GetOrientation()
     {
-        float yaw = player.GetOrientation()[0] * Math.DEG2RAD;
-        vector pos = RotationYaw(position, yaw);
-        return pos + player.GetPosition();
+        return player.GetOrientation();
     }
 
-    vector GetWorldOrientation(vector orientaiton)
+    override vector GetPosition()
     {
-        vector o = orientaiton;
-        o[0] = o[0] + player.GetOrientation()[0];
-        if(o[0] > 180)
-            o[0] = o[0] - 360;
-        if(o[0] < -180)
-            o[0] = o[0] + 360;
-        return o;
+        return player.GetPosition();
     }
 
-	
-	vector RotationYaw(vector pos, float yaw)
-	{
-		vector result = pos;
-		result[0] = pos[0]*Math.Cos(yaw)+pos[2]*Math.Sin(yaw);
-		result[2] = pos[2]*Math.Cos(yaw)-pos[0]*Math.Sin(yaw);
-		return result;
-	}
+    
 
 
     EntityAI CreateInHands(string itemName)
