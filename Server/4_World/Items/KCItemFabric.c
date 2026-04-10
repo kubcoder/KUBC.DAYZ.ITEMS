@@ -132,8 +132,15 @@ class KCItemFabric : KCItemFabricBase
             KCItems.Log("Не смогли обнаружить местоположение инвенторя в " + parrent, KCLogLevel.Error);
             return NULL;
         }
-        KCItems.Log("Создание предмета в:" + il.DumpToString(), KCLogLevel.Info);
         EntityAI cItem = parrent.GetInventory().CreateEntityInCargoEx(itemData.ItemName, il.GetIdx(), itemData.Row, itemData.Col, itemData.Flip);
+        if (cItem)
+        {
+            SetQuantity(cItem, itemData);
+            Create(cItem, itemData.Child);
+            return cItem;
+        }
+        KCItems.Log("Не смогли создать "+itemData.ItemName+" в :" + il.DumpToString() + " с сохраненым размещением, пытаемся создать как нибудь", KCLogLevel.Error);
+        cItem = parrent.GetInventory().CreateEntityInCargo(itemData.ItemName)
         if (cItem)
         {
             SetQuantity(cItem, itemData);
