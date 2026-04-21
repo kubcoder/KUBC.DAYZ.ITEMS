@@ -140,7 +140,7 @@ class KCItemFabric : KCItemFabricBase
             return cItem;
         }
         KCItems.Log("Не смогли создать "+itemData.ItemName+" в :" + il.DumpToString() + " с сохраненым размещением, пытаемся создать как нибудь", KCLogLevel.Error);
-        cItem = parrent.GetInventory().CreateEntityInCargo(itemData.ItemName)
+        cItem = parrent.GetInventory().CreateEntityInCargo(itemData.ItemName);
         if (cItem)
         {
             SetQuantity(cItem, itemData);
