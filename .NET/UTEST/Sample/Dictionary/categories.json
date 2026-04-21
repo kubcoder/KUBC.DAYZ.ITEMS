@@ -1,0 +1,32 @@
+[
+    {
+        "ShowName": "Оружие",
+        "BaseClass": "weapon_base",
+        "Priority": 0
+    },
+    {
+        "ShowName": "Зомби",
+        "BaseClass": "ZombieBase",
+        "Priority": 1
+    },
+    {
+        "ShowName": "Животные",
+        "BaseClass": "dz_lightai",
+        "Priority": 2
+    },
+    {
+        "ShowName": "Еда",
+        "BaseClass": "edible_base",
+        "Priority": 3
+    },
+    {
+        "ShowName": "Одежда",
+        "BaseClass": "clothing_base",
+        "Priority": 4
+    },
+    {
+        "ShowName": "Транспорт",
+        "BaseClass": "transport",
+        "Priority": 5
+    }
+]

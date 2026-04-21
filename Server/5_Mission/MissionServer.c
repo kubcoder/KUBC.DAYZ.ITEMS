@@ -1,25 +1,42 @@
 modded class MissionServer
 {
+    private ref KCItemsSetsDirectory setsDirectory;
+
+    private ref KCItemsCarsDirectory carsDirectory;
+
+    private ref KCItemsEquipDirectory equipDirectory;
+    
+    override KCItemsEquipDirectory GetEquipDirectory()
+    {
+        return equipDirectory;
+    }
+
     /// @brief  Инициализируем настройки мода.
     ///         В частности создаем структуру папочек, и файлы настроек 
     ///         по умолчанию.
-    
     override void OnInit()
     {
-        super.OnInit();      
-        RegisterCommand(KCItemsCMDSpawn.CMD_NAME, new KCItemsCMDSpawn());
-        RegisterCommand(KCItemsCMDDel.CMD_NAME, new KCItemsCMDDel());
-        RegisterCommand(KCItemsCMDBox.CMD_NAME, new KCItemsCMDBox());
-        RegisterCommand(KCItemsCMDSave.CMD_NAME, new KCItemsCMDSave());
-        RegisterCommand(KCItemsCMDGet.CMD_NAME, new KCItemsCMDGet());
-        RegisterCommand(KCItemsCMDRepair.CMD_NAME, new KCItemsCMDRepair());
-        RegisterCommand(KCItemsCMDEquip.CMD_NAME, new KCItemsCMDEquip());
-        RegisterCommand(KCItemsCMDCar.CMD_NAME, new KCItemsCMDCar());
-        RegisterCommand(KCItemsCMDFence.CMD_NAME, new KCItemsCMDFence());
-        RegisterCommand(KCItemsCMDBoat.CMD_NAME, new KCItemsCMDBoat());
-        RegisterCommand(KCItemsCMDBat.CMD_NAME, new KCItemsCMDBat());
-        RegisterCommand(KCItemsCMDDry.CMD_NAME, new KCItemsCMDDry());
-        KCItems.CreatePaths();
-        KCItemDesc.CreateDictionary();
+        super.OnInit();
+        setsDirectory = new KCItemsSetsDirectory();
+        setsDirectory.CreatePaths();
+        usersCmd.RegisterCommand(KCItemsCMDSave.CMD_NAME, new KCItemsCMDSave(setsDirectory));
+        usersCmd.RegisterCommand(KCItemsCMDGet.CMD_NAME, new KCItemsCMDGet(setsDirectory));
+        usersCmd.RegisterCommand(KCItemsCMDBat.CMD_NAME, new KCItemsCMDBat());
+        usersCmd.RegisterCommand(KCItemsCMDBoat.CMD_NAME, new KCItemsCMDBoat());
+        usersCmd.RegisterCommand(KCItemsCMDBox.CMD_NAME, new KCItemsCMDBox());
+        carsDirectory = new KCItemsCarsDirectory();
+        carsDirectory.CreatePaths();
+        usersCmd.RegisterCommand(KCItemsCMDCar.CMD_NAME, new KCItemsCMDCar(carsDirectory));
+        usersCmd.RegisterCommand(KCItemsCMDDel.CMD_NAME, new KCItemsCMDDel());
+        usersCmd.RegisterCommand(KCItemsCMDDry.CMD_NAME, new KCItemsCMDDry());
+        equipDirectory = new KCItemsEquipDirectory();
+        equipDirectory.CreatePaths();
+        usersCmd.RegisterCommand(KCItemsCMDEquip.CMD_NAME, new KCItemsCMDEquip(equipDirectory));
+        usersCmd.RegisterCommand(KCItemsCMDFence.CMD_NAME, new KCItemsCMDFence());
+        usersCmd.RegisterCommand(KCItemsCMDRepair.CMD_NAME, new KCItemsCMDRepair());
+        usersCmd.RegisterCommand(KCItemsCMDSpawn.CMD_NAME, new KCItemsCMDSpawn());
+        KCItemsDictionary dictionary = new KCItemsDictionary();
+        dictionary.Create();
+
     }
 }

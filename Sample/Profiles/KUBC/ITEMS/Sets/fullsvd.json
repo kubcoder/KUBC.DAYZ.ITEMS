@@ -1,0 +1,515 @@
+{
+    "NickName": "VeiBae",
+    "SteamID": "76561199107815092",
+    "Items": [
+        {
+            "ItemName": "WoodenCrate",
+            "Healt": 400.0,
+            "Quantity": 0.0,
+            "Col": 0,
+            "Row": 0,
+            "Flip": 0,
+            "Position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "Orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "IsAbsolute": 0,
+            "Child": [
+                {
+                    "ItemName": "Mag_SVD_10Rnd",
+                    "Healt": 100.0,
+                    "Quantity": 10.0,
+                    "Col": 0,
+                    "Row": 3,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -1,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "Mag_SVD_10Rnd",
+                    "Healt": 100.0,
+                    "Quantity": 10.0,
+                    "Col": 1,
+                    "Row": 3,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -1,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "Mag_SVD_10Rnd",
+                    "Healt": 100.0,
+                    "Quantity": 10.0,
+                    "Col": 2,
+                    "Row": 3,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -1,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "AmmoBox_762x54Tracer_20Rnd",
+                    "Healt": 100.0,
+                    "Quantity": 0.0,
+                    "Col": 4,
+                    "Row": 4,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -1,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "AmmoBox_762x54Tracer_20Rnd",
+                    "Healt": 100.0,
+                    "Quantity": 0.0,
+                    "Col": 3,
+                    "Row": 3,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -1,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "AmmoBox_762x54Tracer_20Rnd",
+                    "Healt": 100.0,
+                    "Quantity": 0.0,
+                    "Col": 4,
+                    "Row": 3,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -1,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "AmmoBox_762x54Tracer_20Rnd",
+                    "Healt": 100.0,
+                    "Quantity": 0.0,
+                    "Col": 5,
+                    "Row": 3,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -1,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "AmmoBox_762x54Tracer_20Rnd",
+                    "Healt": 100.0,
+                    "Quantity": 0.0,
+                    "Col": 6,
+                    "Row": 3,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -1,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "AmmoBox_762x54Tracer_20Rnd",
+                    "Healt": 100.0,
+                    "Quantity": 0.0,
+                    "Col": 7,
+                    "Row": 3,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -1,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "AmmoBox_762x54Tracer_20Rnd",
+                    "Healt": 100.0,
+                    "Quantity": 0.0,
+                    "Col": 8,
+                    "Row": 3,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -1,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "AmmoBox_762x54Tracer_20Rnd",
+                    "Healt": 100.0,
+                    "Quantity": 0.0,
+                    "Col": 9,
+                    "Row": 3,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -1,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "AmmoBox_762x54Tracer_20Rnd",
+                    "Healt": 100.0,
+                    "Quantity": 0.0,
+                    "Col": 7,
+                    "Row": 4,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -1,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "AmmoBox_762x54Tracer_20Rnd",
+                    "Healt": 100.0,
+                    "Quantity": 0.0,
+                    "Col": 8,
+                    "Row": 4,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -1,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "AmmoBox_762x54Tracer_20Rnd",
+                    "Healt": 100.0,
+                    "Quantity": 0.0,
+                    "Col": 9,
+                    "Row": 4,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -1,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "AmmoBox_762x54Tracer_20Rnd",
+                    "Healt": 100.0,
+                    "Quantity": 0.0,
+                    "Col": 6,
+                    "Row": 4,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -1,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "AmmoBox_762x54Tracer_20Rnd",
+                    "Healt": 100.0,
+                    "Quantity": 0.0,
+                    "Col": 5,
+                    "Row": 4,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -1,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "AmmoBox_762x54Tracer_20Rnd",
+                    "Healt": 100.0,
+                    "Quantity": 0.0,
+                    "Col": 3,
+                    "Row": 4,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -1,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "SVD",
+                    "Healt": 250.0,
+                    "Quantity": 0.0,
+                    "Col": 0,
+                    "Row": 0,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [
+                        {
+                            "ItemName": "Mag_SVD_10Rnd",
+                            "Healt": 100.0,
+                            "Quantity": 9.0,
+                            "Col": -1,
+                            "Row": -1,
+                            "Flip": 0,
+                            "Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Orientation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "IsAbsolute": 0,
+                            "Child": [],
+                            "SlotID": -493635884,
+                            "LiquidType": -1
+                        },
+                        {
+                            "ItemName": "AK_Suppressor",
+                            "Healt": 4.0,
+                            "Quantity": 0.0,
+                            "Col": -1,
+                            "Row": -1,
+                            "Flip": 0,
+                            "Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Orientation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "IsAbsolute": 0,
+                            "Child": [],
+                            "SlotID": 956435721,
+                            "LiquidType": -1
+                        },
+                        {
+                            "ItemName": "PSO1Optic",
+                            "Healt": 50.0,
+                            "Quantity": 0.0,
+                            "Col": -1,
+                            "Row": -1,
+                            "Flip": 0,
+                            "Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Orientation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "IsAbsolute": 0,
+                            "Child": [
+                                {
+                                    "ItemName": "Battery9V",
+                                    "Healt": 12.286885261535645,
+                                    "Quantity": 34.0,
+                                    "Col": -1,
+                                    "Row": -1,
+                                    "Flip": 0,
+                                    "Position": [
+                                        0.0,
+                                        0.0,
+                                        0.0
+                                    ],
+                                    "Orientation": [
+                                        0.0,
+                                        0.0,
+                                        0.0
+                                    ],
+                                    "IsAbsolute": 0,
+                                    "Child": [],
+                                    "SlotID": -131201905,
+                                    "LiquidType": -1
+                                }
+                            ],
+                            "SlotID": 1449537616,
+                            "LiquidType": -1
+                        }
+                    ],
+                    "SlotID": -1,
+                    "LiquidType": -1
+                }
+            ],
+            "SlotID": 0,
+            "LiquidType": -1
+        }
+    ]
+}

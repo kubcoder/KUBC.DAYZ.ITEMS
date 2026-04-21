@@ -5,28 +5,24 @@ class KCItemsCMDDel : KCUserCMD
     static const string CMD_NAME = "del";
     
     /// @brief аргумент указывающий что нужно удалить итем из рук
-    static const string ARG_INHAND = "h";
+    const string ARG_INHAND = "h";
     
     /// @brief Дистанция удаления по умолчанию
-    static const float DEFAULT_RADIUS = 3;
+    const float DEFAULT_RADIUS = 3;
 
     override string GetName()
     {
         return KCItemsCMDDel.CMD_NAME;
     }
 
-    override bool OnExecute(PlayerBase user, KCTextCmd data)
+    override bool Execute(KCTextCmd data)
     {
-        if (!data.Player)
-        {
-            data.Player = user;
-        }
         float radius = DEFAULT_RADIUS;
         if (data.Arg.Count()>0)
         {
             if (data.Arg[0]==ARG_INHAND)
             {
-                EntityAI itemHands = data.Player.GetItemInHands();
+                EntityAI itemHands = data.GetTarget().GetItemInHands();
                 if(itemHands)
                 {
                     GetGame().ObjectDelete(itemHands);
@@ -41,7 +37,7 @@ class KCItemsCMDDel : KCUserCMD
         }
         ref array<Object> nearest_objects = new array<Object>;
         ref array<CargoBase> proxy_cargos = new array<CargoBase>;
-        GetGame().GetObjectsAtPosition ( data.Player.GetPosition(), radius, nearest_objects, proxy_cargos);
+        GetGame().GetObjectsAtPosition ( data.GetTarget().GetPosition(), radius, nearest_objects, proxy_cargos);
         foreach(Object obj:nearest_objects)
         {
             Delete(obj);

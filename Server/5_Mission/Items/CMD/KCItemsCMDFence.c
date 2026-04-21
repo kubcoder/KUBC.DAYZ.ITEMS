@@ -5,19 +5,18 @@ class KCItemsCMDFence : KCUserCMD
     static const string CMD_NAME = "fence";
     
     /// @brief Радиус поиска заборов по умолчанию
-    static const float DEF_RADIUS = 10;
+    const float DEF_RADIUS = 10;
+
+    /// @brief Аргумент поиска кода замка
+    const string ARG_CODE = "code";
 
     override string GetName()
     {
         return KCItemsCMDFence.CMD_NAME;
     }
 
-    override bool OnExecute(PlayerBase user, KCTextCmd data)
+    override bool Execute(KCTextCmd data)
     {
-        if (!data.Player)
-        {
-            data.Player = user;
-        }
         float radius = KCItemsCMDFence.DEF_RADIUS;
         if(data.Arg.Count()>1)
         {
@@ -29,7 +28,7 @@ class KCItemsCMDFence : KCUserCMD
         }
         ref array<Object> nearest_objects = new array<Object>;
         ref array<CargoBase> proxy_cargos = new array<CargoBase>;
-        GetGame().GetObjectsAtPosition ( user.GetPosition(), radius, nearest_objects, proxy_cargos);
+        GetGame().GetObjectsAtPosition ( data.GetTarget().GetPosition(), radius, nearest_objects, proxy_cargos);
         foreach(Object obj:nearest_objects)
         {
             Fence cFence = Fence.Cast(obj);
@@ -37,13 +36,13 @@ class KCItemsCMDFence : KCUserCMD
             {
                 switch (data.Arg[0])
                 {
-                    case "code":
+                    case ARG_CODE:
                         if(cFence.IsLocked())
                         {
                             CombinationLock cLock = cFence.GetCombinationLock();
                             if (cLock)
                             {
-                                KCPlayer.SendMessage(user,"", "Комбинация замка:" + cLock.m_CombinationLocked);                         
+                                data.Message("Комбинация замка:" + cLock.m_CombinationLocked);
                             }
                         }
                         break;
@@ -51,6 +50,5 @@ class KCItemsCMDFence : KCUserCMD
             }
         }
         return true;
-        
     }
 }

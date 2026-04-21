@@ -12,6 +12,13 @@ class KCItemsRepairTool
         tEntity = entity;
     }
 
+    void All()
+    {
+        Healt();
+        Atach();
+        Child();
+    }
+
     /// @brief Чиним предмет, включая все зоны повреждений
     void Healt()
     {

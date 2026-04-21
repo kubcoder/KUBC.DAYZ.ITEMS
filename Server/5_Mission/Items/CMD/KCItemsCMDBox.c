@@ -1,81 +1,59 @@
-/// @brief Команда выдачи ящичка
 class KCItemsCMDBox : KCUserCMD
 {
     /// @brief название команды
     static const string CMD_NAME = "box";
-    
+
+    const string DEFAULT_BOX = "WoodenCrate";
 
     override string GetName()
     {
         return KCItemsCMDBox.CMD_NAME;
     }
 
-    override bool OnExecute(PlayerBase user, KCTextCmd data)
+    override bool Execute(KCTextCmd data)
     {
-        if (!data.Player)
+        if (data.Arg.Count()==0)
         {
-            data.Player = user;
+            data.MessageOwner("Не указано название предмета для создания");
+            return true;
         }
-        string BoxName = "WoodenCrate";
-        string ItemName = "";
-        if (data.Arg.Count()>0)
+        string itemName = data.Arg[0];
+        auto target = data.GetTarget();
+        auto itemFabric = new KCItemFabric(target);
+        if (!itemFabric.CanBeSpawn(itemName))
         {
-            ItemName = data.Arg[0];
+            data.MessageOwner("Пердемет ["+itemName+"] не может быть создан");
+            return true;
         }
+        string boxName = DEFAULT_BOX;
         if (data.Arg.Count()>1)
         {
-            BoxName = data.Arg[1];
+            boxName = data.Arg[1];
         }
-        if (IsAviable(BoxName))
+        if (!itemFabric.CanBeSpawn(boxName))
         {
-            if (IsAviable(ItemName))
-            {
-                EntityAI box = EntityAI.Cast(data.Player.GetHumanInventory().CreateInHands(BoxName));
-                if (box)
-                {
-                    Log("Ящик создан");
-                    InventoryLocation loc = new InventoryLocation();
-                    while(box.GetInventory().FindFirstFreeLocationForNewEntity(ItemName, FindInventoryLocationType.ANY_CARGO, loc))
-                    {
-                        Log("Создаем объект " + ItemName);
-                        EntityAI item =  box.GetInventory().LocationCreateEntity(loc, ItemName, 0, 0);
-                        loc = new InventoryLocation();
-                    }
-                }
-                KCPlayer.SendMessage(data.Player,user.GetIdentity().GetName(),"Выдали " + BoxName + " забитый " + ItemName);
-                return true;
-            }
-            else
-            {
-                KCPlayer.SendMessage(user,"","Не смогли найти тип: " + ItemName);
-                return false;
-            }
+            data.MessageOwner("Пердемет ["+boxName+"] не может быть создан");
+            return true;
         }
-        else
+        auto box = itemFabric.CreateInHands(boxName);
+        if (box==NULL)
         {
-            KCPlayer.SendMessage(user,"","Не смогли найти тип ящика: " + BoxName);
-            return false;
+            data.MessageOwner("Не смогли создать ящик ["+boxName+"] в руках игрока");
+            return true;
         }
-    }
-    bool IsAviable(string ItemName)
-    {
-        if (ItemName=="")
+        EntityAI item = itemFabric.Create(box, itemName);
+        int count = 0;
+        while(item!=null)
         {
-            return false;
+            count++;
+            item = itemFabric.Create(box, itemName);
         }
-        TStringArray cfgPaths = new TStringArray;
-        cfgPaths.Insert( "CfgVehicles" );
-        cfgPaths.Insert( "CfgWeapons" );
-        cfgPaths.Insert( "CfgMagazines" );
-        foreach(string path:cfgPaths)
+        if (count==0)
         {
-            int scope = GetGame().ConfigGetInt( path + " " + ItemName + " scope" );
-            if(scope>1)
-            {
-                return true;
-            }
+            data.MessageOwner("Ящик ["+boxName+"] создан, однако не смогли добавить в него ["+itemName+"]");
+            return true;
         }
-        return false;
-
+        data.Message("Выдали ящик ["+boxName+"] в который положили ["+itemName+"] - "+ count.ToString()+" шт.");
+        return true;
     }
 }

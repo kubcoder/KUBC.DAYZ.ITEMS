@@ -1,37 +1,8 @@
 /// @brief Команда работы с лодочками
-class KCItemsCMDBoat : KCUserCMD
+class KCItemsCMDBoat : KCItemsCMDTransport
 {
     /// @brief название команды
     static const string CMD_NAME = "boat";
-
-    /// @brief аргумент на какой дистанции создать лодку
-    static const string ARG_DISTANCE = "d";
-
-    /// @brief Аргумент для починки лодки
-    static const string ARG_REPAIR = "repair";
-
-    /// @brief Аргумент для заправки
-    static const string ARG_REFUEL = "refuel";
-
-    /// @brief Аргумент для толчка лодки вперед
-    static const string ARG_FRONT = "f";
-
-    /// @brief Аргумент для толчка лодки назад
-    static const string ARG_BACK = "b";
-
-    /// @brief Аргумент для толчка лодки влево
-    static const string ARG_LEFT = "l";
-
-    /// @brief Аргумент для толчка лодки вправо
-    static const string ARG_RIGHT = "r";
-
-    /// @brief Импульс по умолчанию
-    static const float DEF_IMPULSE = 10000;
-
-    /// @brief Аргумент для полной починки лодки
-    ///        включая инвентарь
-    static const string ARG_ALL = "all";
-    
      
     override string GetName()
     {
@@ -39,96 +10,73 @@ class KCItemsCMDBoat : KCUserCMD
     }
 
     
-    override bool OnExecute(PlayerBase user, KCTextCmd data)
+    override bool Execute(KCTextCmd data)
     {
-        if (data.Arg.Count()>0)
+        if (data.Arg.Count()==0)
         {
-            if (!data.Player)
+            return true;
+        }
+        if (MustBeSpawn(data))
+        {
+            SpawnBoat(data);
+            return true;
+        }
+        
+        KCItemsBoatManager manager = GetManager(data);
+        if (manager==NULL)
+        {
+            return true;
+        }
+        if (data.ContainsArg(ARG_REPAIR))
+        {
+            if (data.ContainsArg(ARG_ALL))
             {
-                data.Player = user;
-            }
-            if (MustBeSpawn(data))
-            {
-                SpawnBoat(data);
+                manager.Repair(true);
+                data.Message("Починили лодку и все что было в ней");
             }
             else
             {
-                KCItemsBoatManager manager = GetManager(data);
-                if (manager)
-                {
-                    if (data.ContainsArg(ARG_REPAIR))
-                    {
-                        if (data.ContainsArg(ARG_ALL))
-                        {
-                            manager.Repair(true);
-                            KCPlayer.SendMessage(data.Player,user.GetIdentity().GetName(),"Починили лодку и все что было в ней");
-                        }
-                        else
-                        {
-                            manager.Repair(false);
-                            KCPlayer.SendMessage(data.Player,user.GetIdentity().GetName(),"Починили лодку и все её детали");
-                        }
-                        return true;
-                    }
-                    if (data.ContainsArg(ARG_REFUEL))
-                    {
-                        manager.Refuel();
-                        manager.SetLongLife();
-                        KCPlayer.SendMessage(data.Player,user.GetIdentity().GetName(),"Заправили лодку");
-                        return true;
-                    }
-                    float power = DEF_IMPULSE;
-                    if (data.ContainsArg(ARG_FRONT))
-                    {
-                        power = data.GetFloat(ARG_FRONT, DEF_IMPULSE);
-                        manager.GetImpulseTool().FrontImpulse(power);
-                        KCPlayer.SendMessage(data.Player,user.GetIdentity().GetName(),"Толкнули лодку по направлению движения");
-                        return true;
-                    }
-                    if (data.ContainsArg(ARG_BACK))
-                    {
-                        power = data.GetFloat(ARG_BACK, DEF_IMPULSE);
-                        manager.GetImpulseTool().BackImpulse(power);
-                        KCPlayer.SendMessage(data.Player,user.GetIdentity().GetName(),"Толкнули лодку обратно направлению движения");
-                        return true;
-                    }
-                    if (data.ContainsArg(ARG_LEFT))
-                    {
-                        power = data.GetFloat(ARG_LEFT, DEF_IMPULSE);
-                        manager.GetImpulseTool().LeftImpulse(power);
-                        KCPlayer.SendMessage(data.Player,user.GetIdentity().GetName(),"Толкнули лодку в левый борт");
-                        return true;
-                    }
-                    if (data.ContainsArg(ARG_RIGHT))
-                    {
-                        power = data.GetFloat(ARG_RIGHT, DEF_IMPULSE);
-                        manager.GetImpulseTool().RightImpulse(power);
-                        KCPlayer.SendMessage(data.Player,user.GetIdentity().GetName(),"Толкнули лодку в правый борт");
-                        return true;
-                    }
-                }
+                manager.Repair(false);
+                data.Message("Починили лодку и все её детали");
             }
+            return true;
         }
-        return true;
-    }
-
-    /// @brief Проверяем нужно ли создать лодку
-    /// @param data данные команды
-    /// @return истина если лодка должна быть создана
-    bool MustBeSpawn(KCTextCmd data)
-    {
-        if (data.ContainsArg(ARG_REPAIR))
-            return false;
         if (data.ContainsArg(ARG_REFUEL))
-            return false;
+        {
+            manager.Refuel();
+            manager.SetLongLife();
+            data.Message("Заправили лодку");
+            return true;
+        }
+        float power = DEF_IMPULSE;
         if (data.ContainsArg(ARG_FRONT))
-            return false;
+        {
+            power = data.GetFloat(ARG_FRONT, DEF_IMPULSE);
+            manager.GetImpulseTool().FrontImpulse(power);
+            data.Message("Толкнули лодку по направлению движения");
+            return true;
+        }
         if (data.ContainsArg(ARG_BACK))
-            return false;
+        {
+            power = data.GetFloat(ARG_BACK, DEF_IMPULSE);
+            manager.GetImpulseTool().BackImpulse(power);
+            data.Message("Толкнули лодку обратно направлению движения");
+            return true;
+        }
         if (data.ContainsArg(ARG_LEFT))
-            return false;
+        {
+            power = data.GetFloat(ARG_LEFT, DEF_IMPULSE);
+            manager.GetImpulseTool().LeftImpulse(power);
+            data.Message("Толкнули лодку в левый борт");
+            return true;
+        }
         if (data.ContainsArg(ARG_RIGHT))
-            return false;
+        {
+            power = data.GetFloat(ARG_RIGHT, DEF_IMPULSE);
+            manager.GetImpulseTool().RightImpulse(power);
+            data.Message("Толкнули лодку в правый борт");
+            return true;
+        }
         return true;
     }
 
@@ -156,8 +104,8 @@ class KCItemsCMDBoat : KCUserCMD
     vector GetPosition(KCTextCmd data)
     {
         float distance = data.GetFloat(ARG_DISTANCE, 10);
-        Log("Дистанция создания лодки: " + distance);
-        vector pos = data.Player.GetPosition() + data.Player.GetDirection() * distance;
+        auto player = data.GetTarget();
+        vector pos = player.GetPosition() + player.GetDirection() * distance;
         if (GetGame().SurfaceIsSea(pos[0],pos[2]))
         {
             pos[1] = GetGame().SurfaceGetSeaLevel();
@@ -165,8 +113,7 @@ class KCItemsCMDBoat : KCUserCMD
         }
         else
         {
-            Log("Координата это не море");
-            KCPlayer.SendMessage(data.Player,"","Координата не в море лодка создана не будет");
+            data.MessageOwner("Координата не в море лодка создана не будет");
         }
         return vector.Zero;
     }
@@ -174,15 +121,16 @@ class KCItemsCMDBoat : KCUserCMD
     KCItemsBoatManager GetManager(KCTextCmd data)
     {
         float radius = data.GetFloat(ARG_DISTANCE, 10);
+        auto player = data.GetTarget();
         KCItemsBoatFinder boatFinder = new KCItemsBoatFinder();
-        BoatScript boat = boatFinder.GetBoat(data.Player.GetPosition(), radius);
+        BoatScript boat = boatFinder.GetBoat(player.GetPosition(), radius);
         if (boat)
         {
             return new KCItemsBoatManager(boat);
         }
         else
         {
-            KCPlayer.SendMessage(data.Player,"","Не нашли лодку");
+            KCPlayer.SendMessage(player,"","Не нашли лодку");
             return NULL;
         }
     }

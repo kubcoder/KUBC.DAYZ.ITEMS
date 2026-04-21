@@ -1,6 +1,20 @@
 # KUBC.DAYZ.ITEMS
 Серверный мод для игры [DAYZ SA](https://dayz.com/) для работы с игровыми предметами. Для работы мода необходимо подключить серверный мод [KUBC.DAYZ.CONSOLE](https://github.com/kubcoder/KUBC.DAYZ.CONSOLE)
 
+Данный серверный мод добавляет команды администратора вводимые через игровой чат:
+
+- [spawn](https://kubcoder.ru/dayz/items/cmd/spawn) создать игровой предмет
+- [box](https://kubcoder.ru/dayz/items/cmd/box) создать ящик игровых предметов
+- [del](https://kubcoder.ru/dayz/items/cmd/del)  удалить игровой предмет
+- [save](https://kubcoder.ru/dayz/items/cmd/save) сохранить набор игровых предметов
+- [get](https://kubcoder.ru/dayz/items/cmd/get) выдать набор игровых предметов
+- [car](https://kubcoder.ru/dayz/items/cmd/car) команда сохранения/создания и обслуживания транспортных средств
+- [equip](https://kubcoder.ru/dayz/items/cmd/equip) команда сохранения/создания экипировки игрока
+- [repair](https://kubcoder.ru/dayz/items/cmd/repair) команда "ремонта" игровых предметов
+- [boat](https://kubcoder.ru/dayz/items/cmd/boat) для администрорования лодок, и карабликов!
+- [bat](https://kubcoder.ru/dayz/items/cmd/bat) позволяющая заряжать/разряжать батарейки
+- [dry](https://kubcoder.ru/dayz/items/cmd/dry) позволяющая высушить вещи игрока
+
 **[Подробное описание на сайте разработчика](https://kubcoder.ru/dayz/items)**
 
 

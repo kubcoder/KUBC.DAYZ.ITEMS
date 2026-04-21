@@ -8,13 +8,10 @@ class KCItemsCMDDry : KCUserCMD
     {
         return KCItemsCMDDry.CMD_NAME;
     }
-    override bool OnExecute(PlayerBase user, KCTextCmd data)
+    override bool Execute(KCTextCmd data)
     {
-        if (!data.Player)
-        {
-            data.Player = user;
-        }
-        GameInventory inventory = data.Player.GetInventory();
+        
+        GameInventory inventory = data.GetTarget().GetInventory();
 		if (inventory)
 		{
 			array<EntityAI> itemsArray = new array<EntityAI>;
@@ -26,7 +23,7 @@ class KCItemsCMDDry : KCUserCMD
                 child.SetWeightDirty();
             }
 		}
-        KCPlayer.SendMessage(data.Player,user.GetIdentity().GetName(),"Вашу одежду подсушили");
+        data.Message("Одежду подсушили");
         return true;
     }
 }

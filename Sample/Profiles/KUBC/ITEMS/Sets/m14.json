@@ -1,0 +1,73 @@
+{
+    "NickName": "(Admin) Berserk",
+    "SteamID": "76561199067227300",
+    "Items": [
+        {
+            "ItemName": "M14",
+            "Healt": 247.27273559570313,
+            "Quantity": 0.0,
+            "Col": 0,
+            "Row": 0,
+            "Flip": 0,
+            "Position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "Orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "IsAbsolute": 0,
+            "Child": [
+                {
+                    "ItemName": "ACOGOptic_6x",
+                    "Healt": 50.0,
+                    "Quantity": 0.0,
+                    "Col": -1,
+                    "Row": -1,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -1034251040,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "Mag_M14_20Rnd",
+                    "Healt": 100.0,
+                    "Quantity": 20.0,
+                    "Col": -1,
+                    "Row": -1,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -493635884,
+                    "LiquidType": -1
+                }
+            ],
+            "SlotID": 0,
+            "LiquidType": -1
+        }
+    ]
+}
