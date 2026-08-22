@@ -167,7 +167,16 @@ class KCItemFabric : KCItemFabricBase
     /// @return Кол-во итемов после изменений
     void SetQuantity(EntityAI item, KCSaveItem itemData)
     {
-        SetCount(item, itemData.Quantity);
+        if (itemData.LiquidType >-1)
+        {
+            item.SetLiquidType(itemData.LiquidType);
+            item.SetQuantity(itemData.Quantity);
+        }
+        else
+        {
+            int count = SetCount(item, itemData.Quantity);
+        }
+        
     }
 
     

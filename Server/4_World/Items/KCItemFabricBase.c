@@ -15,33 +15,17 @@ class KCItemFabricBase
         {
             return SetCount(mb, count);
         }
-        float ms = item.ConfigGetFloat("varStackMax");
-        int qm = item.ConfigGetInt("varQuantityMax");
-        if (ms >= 1)
-            qm = ms;    
-        if (qm<1)
-        {
-            qm=1;
-        }
         ItemBase itemBs = ItemBase.Cast(item);
-        if (count>qm)
-        {
-            count = qm;
-        }
         if (itemBs)
         {
             itemBs.SetQuantity(count);
             return count;
         }
-        else
-        {
-            return qm;
-        }             
+        return 1;             
     }
 
     private int SetCount(Magazine_Base mb, int count)
     {
-        
         int qm = mb.GetAmmoMax();
         if (qm<1)
         {

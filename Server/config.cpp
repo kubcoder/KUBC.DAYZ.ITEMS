@@ -17,7 +17,7 @@ class CfgMods
 	{
 		name = "KUBC.DAYZ.ITEMS";
 		author = "kubcoder";
-		version = 3.0;
+		version = 3.1;
 		type = "mod";
 		class defs 
 		{
