@@ -168,8 +168,17 @@ class KCItemFabric : KCItemFabricBase
     void SetQuantity(EntityAI item, KCSaveItem itemData)
     {
         KCItems.Log("Задаем количество ["+item+"] до значения + " + itemData.Quantity);
-        int count = SetCount(item, itemData.Quantity);
-        KCItems.Log("Количество ["+item+"] после задания + " + count);
+        if (itemData.LiquidType >-1)
+        {
+            item.SetLiquidType(itemData.LiquidType);
+            item.SetQuantity(itemData.Quantity);
+        }
+        else
+        {
+            int count = SetCount(item, itemData.Quantity);
+            KCItems.Log("Количество ["+item+"] после задания + " + count);
+        }
+        
     }
 
     
