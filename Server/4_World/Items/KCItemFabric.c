@@ -167,7 +167,9 @@ class KCItemFabric : KCItemFabricBase
     /// @return Кол-во итемов после изменений
     void SetQuantity(EntityAI item, KCSaveItem itemData)
     {
-        SetCount(item, itemData.Quantity);
+        KCItems.Log("Задаем количество ["+item+"] до значения + " + itemData.Quantity);
+        int count = SetCount(item, itemData.Quantity);
+        KCItems.Log("Количество ["+item+"] после задания + " + count);
     }
 
     
