@@ -17,18 +17,18 @@ class CfgMods
 	{
 		name = "KUBC.DAYZ.ITEMS";
 		author = "kubcoder";
-		version = 3.1;
+		version = 3.2;
 		type = "mod";
 		class defs 
 		{
 			class worldScriptModule {
 				value = "";
-				files[] = {"KUBC.DAYZ.ITEMS\4_World"};
+				files[] = {"KUBC.DAYZ.ITEMS/4_World"};
 			};
 			class missionScriptModule
 			{
 				value="";
-				files[]={"KUBC.DAYZ.ITEMS\5_Mission"};
+				files[]={"KUBC.DAYZ.ITEMS/5_Mission"};
 			};
 		}; 
 	};
