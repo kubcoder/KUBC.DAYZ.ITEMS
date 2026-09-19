@@ -22,6 +22,7 @@ class KCItemsGroundFinder
         GetGame().GetObjectsAtPosition (player.GetPosition(), radius, nearest_objects, proxy_cargos);
         foreach(Object obj:nearest_objects)
         {
+            KCItems.Log("Найден предмет:"+ obj);
             if(options.IsSaveItem(obj.GetType()))
             {
                 EntityAI eA = EntityAI.Cast(obj);
@@ -41,6 +42,10 @@ class KCItemsGroundFinder
                     }
                     result.Insert(builder.ItemData);
                 }
+            }
+            else
+            {
+                KCItems.Log("Предмет:"+ obj + " заблокирован настройками, не включен в набор");
             }
         }
         return result;
