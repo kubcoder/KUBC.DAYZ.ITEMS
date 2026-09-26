@@ -9,9 +9,11 @@
         "WoodBase",
         "Building",
         "BuildingSuper",
+        "HouseNoDestruct",
         "BaseBuildingBase",
         "FenceKit",
         "WatchtowerKit",
-        "TerritoryFlagKit"
+        "TerritoryFlagKit",
+        "transport"
     ]
 }
