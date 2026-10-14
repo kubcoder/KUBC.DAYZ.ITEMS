@@ -1,13 +1,14 @@
 {
     "NickName": "kot23rus",
     "SteamID": "76561198054180540",
+    "Notes": "",
     "Items": [
         {
-            "ItemName": "AK101",
-            "Healt": 300.0,
+            "ItemName": "Motorbike_01_Red",
+            "Healt": 1000.0,
             "Quantity": 0.0,
-            "Col": 0,
-            "Row": 0,
+            "Col": -1,
+            "Row": -1,
             "Flip": 0,
             "Position": [
                 0.0,
@@ -22,51 +23,7 @@
             "IsAbsolute": 0,
             "Child": [
                 {
-                    "ItemName": "Mag_AK101_30Rnd",
-                    "Healt": 100.0,
-                    "Quantity": 29.0,
-                    "Col": -1,
-                    "Row": -1,
-                    "Flip": 0,
-                    "Position": [
-                        0.0,
-                        0.0,
-                        0.0
-                    ],
-                    "Orientation": [
-                        0.0,
-                        0.0,
-                        0.0
-                    ],
-                    "IsAbsolute": 0,
-                    "Child": [],
-                    "SlotID": -493635884,
-                    "LiquidType": -1
-                },
-                {
-                    "ItemName": "AK_PlasticHndgrd",
-                    "Healt": 170.0,
-                    "Quantity": 0.0,
-                    "Col": -1,
-                    "Row": -1,
-                    "Flip": 0,
-                    "Position": [
-                        0.0,
-                        0.0,
-                        0.0
-                    ],
-                    "Orientation": [
-                        0.0,
-                        0.0,
-                        0.0
-                    ],
-                    "IsAbsolute": 0,
-                    "Child": [],
-                    "SlotID": -1892350148,
-                    "LiquidType": -1
-                },
-                {
-                    "ItemName": "AK_PlasticBttstck",
+                    "ItemName": "Motorbike_01_Wheel_1",
                     "Healt": 200.0,
                     "Quantity": 0.0,
                     "Col": -1,
@@ -84,11 +41,77 @@
                     ],
                     "IsAbsolute": 0,
                     "Child": [],
-                    "SlotID": -54823519,
+                    "SlotID": 313260344,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "Motorbike_01_Wheel_2",
+                    "Healt": 200.0,
+                    "Quantity": 0.0,
+                    "Col": -1,
+                    "Row": -1,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": 313260345,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "SparkPlug",
+                    "Healt": 20.0,
+                    "Quantity": 0.0,
+                    "Col": -1,
+                    "Row": -1,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": -626843635,
+                    "LiquidType": -1
+                },
+                {
+                    "ItemName": "HeadlightH7",
+                    "Healt": 10.0,
+                    "Quantity": 0.0,
+                    "Col": -1,
+                    "Row": -1,
+                    "Flip": 0,
+                    "Position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "Orientation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "IsAbsolute": 0,
+                    "Child": [],
+                    "SlotID": 673890682,
                     "LiquidType": -1
                 }
             ],
-            "SlotID": 0,
+            "SlotID": -1,
             "LiquidType": -1
         }
     ]

@@ -22,7 +22,7 @@
 		//Папочка где лежит конфиг сервера для запуска
 		"DayZ.Server.Config":"Sample\\serverDZ.cfg",
 		//Папочка где лежит экземпляр сервера DAYZ
-		"DayZ.Server.Path":"C:\\Program Files (x86)\\Steam\\steamapps\\common\\DayZServer",
+		"DayZ.Server.Path":"C:\\Program Files (x86)\\Steam\\steamapps\\common\\DayZ Server Exp",
 		"Mod.Path": "KUBC.DAYZ.ITEMS",
 		"enscript.includePaths": [
 			"P:\\scripts",

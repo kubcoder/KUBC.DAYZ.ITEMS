@@ -4,6 +4,8 @@ modded class MissionServer
 
     private ref KCItemsCarsDirectory carsDirectory;
 
+    private ref KCItemsMotoDirectory motoDirectory;
+
     private ref KCItemsEquipDirectory equipDirectory;
     
     override KCItemsEquipDirectory GetEquipDirectory()
@@ -35,6 +37,9 @@ modded class MissionServer
         usersCmd.RegisterCommand(KCItemsCMDFence.CMD_NAME, new KCItemsCMDFence());
         usersCmd.RegisterCommand(KCItemsCMDRepair.CMD_NAME, new KCItemsCMDRepair());
         usersCmd.RegisterCommand(KCItemsCMDSpawn.CMD_NAME, new KCItemsCMDSpawn());
+        motoDirectory = new KCItemsMotoDirectory();
+        motoDirectory.CreatePaths();
+        usersCmd.RegisterCommand(KCItemsCMDMoto.CMD_NAME, new KCItemsCMDMoto(motoDirectory));
         KCItemsDictionary dictionary = new KCItemsDictionary();
         dictionary.Create();
 

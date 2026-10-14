@@ -4,9 +4,19 @@ class KCItemsDirectory:KCDirectory
     /// @brief Корневая папка класса мода
     const string MOD_PATH = "ITEMS";
 
+    /// @brief Имя файла настроек
+    const string SET_FILENAME = "ItemsSetOptions.json";
+
     void KCItemsDirectory()
     {
         pathNames.Insert(MOD_PATH);
+    }
+
+    /// @brief Получить имя файла конфигурации сохраннеия
+    /// @return Полное имя файла конфигурации сохранения наборов
+    string GetItemSetOptionsFile()
+    {
+        return GetName(SET_FILENAME);
     }
 
     /// Получить корневую папку мода

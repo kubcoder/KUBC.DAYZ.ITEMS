@@ -14,6 +14,7 @@
 - [boat](https://kubcoder.ru/dayz/items/cmd/boat) для администрорования лодок, и карабликов!
 - [bat](https://kubcoder.ru/dayz/items/cmd/bat) позволяющая заряжать/разряжать батарейки
 - [dry](https://kubcoder.ru/dayz/items/cmd/dry) позволяющая высушить вещи игрока
+- [moto](https://kubcoder.ru/dayz/items/cmd/moto) команда сохранения/создания и обслуживания мотоциклов
 
 **[Подробное описание на сайте разработчика](https://kubcoder.ru/dayz/items)**
 

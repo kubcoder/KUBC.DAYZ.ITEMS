@@ -132,19 +132,16 @@ class KCItemFabric : KCItemFabricBase
             KCItems.Log("Не смогли обнаружить местоположение инвенторя в " + parrent, KCLogLevel.Error);
             return NULL;
         }
-        EntityAI cItem = parrent.GetInventory().CreateEntityInCargoEx(itemData.ItemName, il.GetIdx(), itemData.Row, itemData.Col, itemData.Flip);
+        EntityAI cItem = EntityAI.Cast(GetGame().CreateObject( itemData.ItemName, parrent.GetPosition()));
         if (cItem)
         {
             SetQuantity(cItem, itemData);
             Create(cItem, itemData.Child);
-            return cItem;
-        }
-        KCItems.Log("Не смогли создать "+itemData.ItemName+" в :" + il.DumpToString() + " с сохраненым размещением, пытаемся создать как нибудь", KCLogLevel.Error);
-        cItem = parrent.GetInventory().CreateEntityInCargo(itemData.ItemName);
-        if (cItem)
-        {
-            SetQuantity(cItem, itemData);
-            Create(cItem, itemData.Child);
+            InventoryLocation src = new InventoryLocation();
+            cItem.GetInventory().GetCurrentInventoryLocation(src);
+            InventoryLocation dst = new InventoryLocation();
+            dst.SetCargoAuto(parrent.GetInventory().GetCargo(), cItem, itemData.Row, itemData.Col, itemData.Flip);
+            cItem.GetInventory().TakeToDst(InventoryMode.SERVER, src, dst);
             return cItem;
         }
         return NULL;
