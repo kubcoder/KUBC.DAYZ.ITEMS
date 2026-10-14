@@ -1,5 +1,12 @@
 # Журнал версий
-
+## 4.0
+**ВАЖНО!!!** Моду требуется версия игры не ниже 1.30
+Добавлено
+- [#43](https://github.com/kubcoder/KUBC.DAYZ.ITEMS/issues/43): Команда спавна/сохранения/ремонта/заправки мотоциклов
+Исправлено
+- [#42](https://github.com/kubcoder/KUBC.DAYZ.ITEMS/issues/42): Краш мода на старте сервера
+- [#30](https://github.com/kubcoder/KUBC.DAYZ.ITEMS/issues/30): Не выдавались предметы сильной вложености.
+- [#44](https://github.com/kubcoder/KUBC.DAYZ.ITEMS/issues/44): Место размещения файла конфигурации сохранения наборов
 ## 3.1
 Исправлено
 - [#38](https://github.com/kubcoder/KUBC.DAYZ.ITEMS/issues/38): Не наполнялись предметы указанным содержимым (например водой, бензином или пивом)
