@@ -33,6 +33,7 @@ class KCItemsCMDCar : KCItemsCMDTransport
             return true;
         }
         float power = DEF_IMPULSE;
+
         switch (data.Arg[0])
         {
             case ARG_REPAIR:
@@ -55,28 +56,36 @@ class KCItemsCMDCar : KCItemsCMDTransport
                 manager.SetLongLife();
                 data.Message("Продлили время жизни  машины");
                 return true;
-            case ARG_FRONT:
-                power = data.GetFloat(ARG_FRONT, DEF_IMPULSE);
-                manager.GetImpulseTool().FrontImpulse(power);
-                data.Message("Толкнули машину по направлению движения");
-                return true;
-            case ARG_BACK:
-                power = data.GetFloat(ARG_BACK, DEF_IMPULSE);
-                manager.GetImpulseTool().BackImpulse(power);
-                data.Message("Толкнули машину обратно направлению движения");
-                return true;
-            case ARG_LEFT:
-                power = data.GetFloat(ARG_LEFT, DEF_IMPULSE);
-                manager.GetImpulseTool().LeftImpulse(power);
-                data.Message("Толкнули машину в левый борт");
-                return true;
-            case ARG_RIGHT:
-                power = data.GetFloat(ARG_RIGHT, DEF_IMPULSE);
-                manager.GetImpulseTool().RightImpulse(power);
-                data.Message("Толкнули машину в правый борт");
-                return true;
             case ARG_SAVE:
                 return SaveCar(data, manager);
+        }
+        if (data.ContainsArg(ARG_FRONT))
+        {
+            power = data.GetFloat(ARG_FRONT, DEF_IMPULSE);
+            manager.GetImpulseTool().FrontImpulse(power);
+            data.Message("Толкнули машину по направлению движения");
+            return true;
+        }
+        if (data.ContainsArg(ARG_BACK))
+        {
+            power = data.GetFloat(ARG_BACK, DEF_IMPULSE);
+            manager.GetImpulseTool().BackImpulse(power);
+            data.Message("Толкнули машину обратно направлению движения");
+            return true;
+        }
+        if (data.ContainsArg(ARG_LEFT))
+        {
+            power = data.GetFloat(ARG_LEFT, DEF_IMPULSE);
+            manager.GetImpulseTool().LeftImpulse(power);
+            data.Message("Толкнули машину в левый борт");
+            return true;
+        }
+        if (data.ContainsArg(ARG_RIGHT))
+        {
+            power = data.GetFloat(ARG_RIGHT, DEF_IMPULSE);
+            manager.GetImpulseTool().RightImpulse(power);
+            data.Message("Толкнули машину в правый борт");
+            return true;
         }
         return true;
     }
