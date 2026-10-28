@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Text.Json;
@@ -35,11 +35,35 @@ public class FileManager(DirectoryInfo dictionaryPath)
     /// <summary>
     /// Загрузить справочник игровых предметов
     /// </summary>
+    /// <param name="cancelationToken">Токен отмены</param>
     /// <returns>Справочник игровых предметов</returns>
     public async Task<KCDictionary?> LoadDictionaryAsync(CancellationToken cancelationToken = default)
     {
-        using FileStream fileStream = DictionaryFile.OpenRead();
-        return await JsonSerializer.DeserializeAsync<KCDictionary>(fileStream, cancellationToken:cancelationToken);
+        return await LoadDictionaryAsync(DictionaryFile, cancelationToken);
+    }
+
+    /// <summary>
+    /// Загрузить справочник игровых предметов
+    /// </summary>
+    /// <param name="fileName">Имя файла для загрузки</param>
+    /// <param name="cancelationToken">Токен отмены</param>
+    /// <returns>Справочник игровых предметов</returns>
+    public async Task<KCDictionary?> LoadDictionaryAsync(string fileName, CancellationToken cancelationToken = default)
+    {
+        return await LoadDictionaryAsync(GetFile(fileName), cancelationToken);
+    }
+
+
+    /// <summary>
+    ///  Загрузить справочник игровых предметов
+    /// </summary>
+    /// <param name="fileDictionary">Файл для загрузки</param>
+    /// <param name="cancelationToken">Токен отмены</param>
+    /// <returns>Справочник игровых предметов</returns>
+    public async Task<KCDictionary?> LoadDictionaryAsync(FileInfo fileDictionary, CancellationToken cancelationToken = default)
+    {
+        using FileStream fileStream = fileDictionary.OpenRead();
+        return await JsonSerializer.DeserializeAsync<KCDictionary>(fileStream, cancellationToken: cancelationToken);
     }
 
     /// <summary>
